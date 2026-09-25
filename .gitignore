@@ -1,0 +1,4 @@
+dist/audio/
+site-preview/
+__pycache__/
+.upload-state.json

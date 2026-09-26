@@ -1,38 +1,38 @@
 name: Publish Ivory English
-
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [release.json]
-
+    paths:
+      - 'dist/**'
+      - 'release.json'
+      - 'scripts/check_text.py'
+      - '.github/workflows/pages.yml'
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: github-pages
   cancel-in-progress: false
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Read the existing site release
-        uses: actions/checkout@v6
-      - name: Restore and verify every website file
-        run: python deploy/github/restore_site.py --output "$RUNNER_TEMP/ivory-site"
-      - name: Configure Pages
+      - name: Checkout existing Ivory site
+        uses: actions/checkout@v4
+      - name: Validate published text without audio files
+        run: python scripts/check_text.py
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload the complete website
+      - name: Upload static website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ${{ runner.temp }}/ivory-site
-      - name: Publish
+          path: dist
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

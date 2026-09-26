@@ -1,0 +1,206 @@
+{
+  "day": 1,
+  "title": "A Friendly First Conversation",
+  "sentences": [
+    {
+      "en": "Hello! It is nice to meet you.",
+      "ar": "مرحبًا! سعيد بلقائك.",
+      "id": "day-01-01"
+    },
+    {
+      "en": "How are you today?",
+      "ar": "كيف حالك اليوم؟",
+      "id": "day-01-02"
+    },
+    {
+      "en": "I am doing well, thank you.",
+      "ar": "أنا بخير، شكرًا لك.",
+      "id": "day-01-03"
+    },
+    {
+      "en": "What is your name?",
+      "ar": "ما اسمك؟",
+      "id": "day-01-04"
+    },
+    {
+      "en": "My name is Khaled.",
+      "ar": "اسمي خالد.",
+      "id": "day-01-05"
+    },
+    {
+      "en": "May I ask your name?",
+      "ar": "هل يمكنني أن أسألك عن اسمك؟",
+      "id": "day-01-06"
+    },
+    {
+      "en": "Where are you from?",
+      "ar": "من أين أنت؟",
+      "id": "day-01-07"
+    },
+    {
+      "en": "I am from Saudi Arabia.",
+      "ar": "أنا من السعودية.",
+      "id": "day-01-08"
+    },
+    {
+      "en": "Do you live around here?",
+      "ar": "هل تسكن قريبًا من هنا؟",
+      "id": "day-01-09"
+    },
+    {
+      "en": "I live in Riyadh.",
+      "ar": "أسكن في الرياض.",
+      "id": "day-01-10"
+    },
+    {
+      "en": "Is this your first visit?",
+      "ar": "هل هذه زيارتك الأولى؟",
+      "id": "day-01-11"
+    },
+    {
+      "en": "Yes, I am here for the first time.",
+      "ar": "نعم، هذه أول مرة آتي فيها.",
+      "id": "day-01-12"
+    },
+    {
+      "en": "Welcome to our city.",
+      "ar": "أهلًا بك في مدينتنا.",
+      "id": "day-01-13"
+    },
+    {
+      "en": "Thank you for the warm welcome.",
+      "ar": "شكرًا على الترحيب الحار.",
+      "id": "day-01-14"
+    },
+    {
+      "en": "What do you do?",
+      "ar": "ماذا تعمل؟",
+      "id": "day-01-15"
+    },
+    {
+      "en": "I work in technology.",
+      "ar": "أعمل في مجال التقنية.",
+      "id": "day-01-16"
+    },
+    {
+      "en": "That sounds interesting.",
+      "ar": "يبدو ذلك ممتعًا.",
+      "id": "day-01-17"
+    },
+    {
+      "en": "Do you speak English?",
+      "ar": "هل تتحدث الإنجليزية؟",
+      "id": "day-01-18"
+    },
+    {
+      "en": "I am still learning English.",
+      "ar": "ما زلت أتعلم الإنجليزية.",
+      "id": "day-01-19"
+    },
+    {
+      "en": "Could you speak more slowly?",
+      "ar": "هل يمكنك أن تتحدث ببطء أكثر؟",
+      "id": "day-01-20"
+    },
+    {
+      "en": "Of course, no problem.",
+      "ar": "بالتأكيد، لا مشكلة.",
+      "id": "day-01-21"
+    },
+    {
+      "en": "Sorry, I did not catch that.",
+      "ar": "عذرًا، لم أفهم ما قلت.",
+      "id": "day-01-22"
+    },
+    {
+      "en": "Could you say it again?",
+      "ar": "هل يمكنك أن تعيد ما قلت؟",
+      "id": "day-01-23"
+    },
+    {
+      "en": "What does that word mean?",
+      "ar": "ما معنى تلك الكلمة؟",
+      "id": "day-01-24"
+    },
+    {
+      "en": "Let me explain it simply.",
+      "ar": "دعني أشرحها ببساطة.",
+      "id": "day-01-25"
+    },
+    {
+      "en": "I understand now.",
+      "ar": "فهمت الآن.",
+      "id": "day-01-26"
+    },
+    {
+      "en": "It was lovely talking to you.",
+      "ar": "سعدت بالحديث معك.",
+      "id": "day-01-27"
+    },
+    {
+      "en": "I enjoyed our conversation.",
+      "ar": "استمتعت بمحادثتنا.",
+      "id": "day-01-28"
+    },
+    {
+      "en": "Do you have any questions?",
+      "ar": "هل لديك أي أسئلة؟",
+      "id": "day-01-29"
+    },
+    {
+      "en": "Not right now, thank you.",
+      "ar": "ليس الآن، شكرًا لك.",
+      "id": "day-01-30"
+    },
+    {
+      "en": "I hope we meet again.",
+      "ar": "أتمنى أن نلتقي مجددًا.",
+      "id": "day-01-31"
+    },
+    {
+      "en": "Have a wonderful day.",
+      "ar": "أتمنى لك يومًا رائعًا.",
+      "id": "day-01-32"
+    },
+    {
+      "en": "Take care and see you soon.",
+      "ar": "اعتنِ بنفسك وأراك قريبًا.",
+      "id": "day-01-33"
+    },
+    {
+      "en": "Goodbye, and thank you again.",
+      "ar": "مع السلامة، وشكرًا لك مرة أخرى.",
+      "id": "day-01-34"
+    }
+  ],
+  "story": {
+    "title": "A Friendly First Conversation",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "At the beginning of the week, Khaled met a new neighbor. They wanted to get to know each other, so they spoke slowly and clearly. Khaled said, “Hello! It is nice to meet you.” His friend replied, “How are you today?” Khaled said, “I am doing well, thank you.” His friend replied, “What is your name?” Khaled said, “My name is Khaled.” His friend replied, “May I ask your name?” Khaled said, “Where are you from?” His friend replied, “I am from Saudi Arabia.” Khaled said, “Do you live around here?” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "A useful exchange",
+        "paragraphs": [
+          "As they continued, they learned to explain what they needed. Khaled said, “I live in Riyadh.” His friend replied, “Is this your first visit?” Khaled said, “Yes, I am here for the first time.” His friend replied, “Welcome to our city.” Khaled said, “Thank you for the warm welcome.” His friend replied, “What do you do?” Khaled said, “I work in technology.” His friend replied, “That sounds interesting.” Khaled said, “Do you speak English?” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Making it clearer",
+        "paragraphs": [
+          "They listened, asked questions, and tried the next useful expressions. Khaled said, “I am still learning English.” His friend replied, “Could you speak more slowly?” Khaled said, “Of course, no problem.” His friend replied, “Sorry, I did not catch that.” Khaled said, “Could you say it again?” His friend replied, “What does that word mean?” Khaled said, “Let me explain it simply.” His friend replied, “I understand now.” Khaled said, “It was lovely talking to you.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Ending well",
+        "paragraphs": [
+          "Before leaving, they finished the conversation warmly. Khaled said, “I enjoyed our conversation.” His friend replied, “Do you have any questions?” Khaled said, “Not right now, thank you.” His friend replied, “I hope we meet again.” Khaled said, “Have a wonderful day.” His friend replied, “Take care and see you soon.” Khaled said, “Goodbye, and thank you again.” They felt more confident after practising together."
+        ]
+      }
+    ],
+    "estimatedSeconds": 133
+  }
+}

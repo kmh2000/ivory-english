@@ -1,0 +1,206 @@
+{
+  "day": 3,
+  "title": "A Productive Morning",
+  "sentences": [
+    {
+      "en": "My alarm rings at six.",
+      "ar": "يرن المنبه عند السادسة.",
+      "id": "day-03-01"
+    },
+    {
+      "en": "I wake up and open my eyes.",
+      "ar": "أستيقظ وأفتح عينيّ.",
+      "id": "day-03-02"
+    },
+    {
+      "en": "I get out of bed slowly.",
+      "ar": "أنهض من السرير ببطء.",
+      "id": "day-03-03"
+    },
+    {
+      "en": "First, I make my bed.",
+      "ar": "أولًا، أرتب سريري.",
+      "id": "day-03-04"
+    },
+    {
+      "en": "Then I wash my face.",
+      "ar": "ثم أغسل وجهي.",
+      "id": "day-03-05"
+    },
+    {
+      "en": "I brush my teeth every morning.",
+      "ar": "أنظف أسناني كل صباح.",
+      "id": "day-03-06"
+    },
+    {
+      "en": "I drink a glass of water.",
+      "ar": "أشرب كوبًا من الماء.",
+      "id": "day-03-07"
+    },
+    {
+      "en": "I open the window for fresh air.",
+      "ar": "أفتح النافذة للهواء النقي.",
+      "id": "day-03-08"
+    },
+    {
+      "en": "I check the time.",
+      "ar": "أتفقد الوقت.",
+      "id": "day-03-09"
+    },
+    {
+      "en": "I put on clean clothes.",
+      "ar": "أرتدي ملابس نظيفة.",
+      "id": "day-03-10"
+    },
+    {
+      "en": "I prepare a simple breakfast.",
+      "ar": "أجهز فطورًا بسيطًا.",
+      "id": "day-03-11"
+    },
+    {
+      "en": "I usually eat eggs and bread.",
+      "ar": "عادةً آكل البيض والخبز.",
+      "id": "day-03-12"
+    },
+    {
+      "en": "I make a cup of coffee.",
+      "ar": "أعد كوبًا من القهوة.",
+      "id": "day-03-13"
+    },
+    {
+      "en": "I take my time while eating.",
+      "ar": "آخذ وقتي أثناء الأكل.",
+      "id": "day-03-14"
+    },
+    {
+      "en": "I write down my main tasks.",
+      "ar": "أدوّن مهامي الرئيسية.",
+      "id": "day-03-15"
+    },
+    {
+      "en": "I check my schedule for the day.",
+      "ar": "أراجع جدول اليوم.",
+      "id": "day-03-16"
+    },
+    {
+      "en": "I put my keys in my pocket.",
+      "ar": "أضع مفاتيحي في جيبي.",
+      "id": "day-03-17"
+    },
+    {
+      "en": "I make sure I have my phone.",
+      "ar": "أتأكد من أن هاتفي معي.",
+      "id": "day-03-18"
+    },
+    {
+      "en": "I leave home on time.",
+      "ar": "أغادر المنزل في الوقت المناسب.",
+      "id": "day-03-19"
+    },
+    {
+      "en": "The street is busy this morning.",
+      "ar": "الشارع مزدحم هذا الصباح.",
+      "id": "day-03-20"
+    },
+    {
+      "en": "I listen to English on my way.",
+      "ar": "أستمع إلى الإنجليزية في طريقي.",
+      "id": "day-03-21"
+    },
+    {
+      "en": "I arrive a few minutes early.",
+      "ar": "أصل قبل الموعد ببضع دقائق.",
+      "id": "day-03-22"
+    },
+    {
+      "en": "I greet the people around me.",
+      "ar": "ألقي التحية على من حولي.",
+      "id": "day-03-23"
+    },
+    {
+      "en": "I start with the most important task.",
+      "ar": "أبدأ بالمهمة الأكثر أهمية.",
+      "id": "day-03-24"
+    },
+    {
+      "en": "I take a short break later.",
+      "ar": "آخذ استراحة قصيرة لاحقًا.",
+      "id": "day-03-25"
+    },
+    {
+      "en": "I drink enough water during the day.",
+      "ar": "أشرب ماءً كافيًا خلال اليوم.",
+      "id": "day-03-26"
+    },
+    {
+      "en": "I have lunch around one.",
+      "ar": "أتناول الغداء قرابة الواحدة.",
+      "id": "day-03-27"
+    },
+    {
+      "en": "I finish my work in the afternoon.",
+      "ar": "أنهي عملي في فترة العصر.",
+      "id": "day-03-28"
+    },
+    {
+      "en": "I return home and rest a little.",
+      "ar": "أعود إلى المنزل وأرتاح قليلًا.",
+      "id": "day-03-29"
+    },
+    {
+      "en": "I go for a walk before dinner.",
+      "ar": "أتمشى قبل العشاء.",
+      "id": "day-03-30"
+    },
+    {
+      "en": "I review my English notes.",
+      "ar": "أراجع ملاحظاتي الإنجليزية.",
+      "id": "day-03-31"
+    },
+    {
+      "en": "I prepare everything for tomorrow.",
+      "ar": "أجهز كل شيء للغد.",
+      "id": "day-03-32"
+    },
+    {
+      "en": "I turn off my phone before bed.",
+      "ar": "أغلق هاتفي قبل النوم.",
+      "id": "day-03-33"
+    },
+    {
+      "en": "I go to sleep at a regular time.",
+      "ar": "أنام في وقت منتظم.",
+      "id": "day-03-34"
+    }
+  ],
+  "story": {
+    "title": "A Productive Morning",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "On a calm morning, Khaled decided to follow a simple routine. His goal was to leave home without rushing. Khaled said, “My alarm rings at six.” His friend replied, “I wake up and open my eyes.” Khaled said, “I get out of bed slowly.” His friend replied, “First, I make my bed.” Khaled said, “Then I wash my face.” His friend replied, “I brush my teeth every morning.” Khaled said, “I drink a glass of water.” His friend replied, “I open the window for fresh air.” Khaled said, “I check the time.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "A useful exchange",
+        "paragraphs": [
+          "As they continued, they learned to explain what they needed. Khaled said, “I put on clean clothes.” His friend replied, “I prepare a simple breakfast.” Khaled said, “I usually eat eggs and bread.” His friend replied, “I make a cup of coffee.” Khaled said, “I take my time while eating.” His friend replied, “I write down my main tasks.” Khaled said, “I check my schedule for the day.” His friend replied, “I put my keys in my pocket.” Khaled said, “I make sure I have my phone.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Making it clearer",
+        "paragraphs": [
+          "They listened, asked questions, and tried the next useful expressions. Khaled said, “I leave home on time.” His friend replied, “The street is busy this morning.” Khaled said, “I listen to English on my way.” His friend replied, “I arrive a few minutes early.” Khaled said, “I greet the people around me.” His friend replied, “I start with the most important task.” Khaled said, “I take a short break later.” His friend replied, “I drink enough water during the day.” Khaled said, “I have lunch around one.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Ending well",
+        "paragraphs": [
+          "Before leaving, they finished the conversation warmly. Khaled said, “I finish my work in the afternoon.” His friend replied, “I return home and rest a little.” Khaled said, “I go for a walk before dinner.” His friend replied, “I review my English notes.” Khaled said, “I prepare everything for tomorrow.” His friend replied, “I turn off my phone before bed.” Khaled said, “I go to sleep at a regular time.” They felt more confident after practising together."
+        ]
+      }
+    ],
+    "estimatedSeconds": 148
+  }
+}

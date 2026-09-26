@@ -1,0 +1,206 @@
+{
+  "day": 7,
+  "title": "Cooking Together",
+  "sentences": [
+    {
+      "en": "I am getting hungry.",
+      "ar": "بدأت أشعر بالجوع.",
+      "id": "day-07-01"
+    },
+    {
+      "en": "What would you like to eat?",
+      "ar": "ماذا تود أن تأكل؟",
+      "id": "day-07-02"
+    },
+    {
+      "en": "I would like something healthy.",
+      "ar": "أود شيئًا صحيًا.",
+      "id": "day-07-03"
+    },
+    {
+      "en": "Do you have any fresh fruit?",
+      "ar": "هل لديكم فاكهة طازجة؟",
+      "id": "day-07-04"
+    },
+    {
+      "en": "I usually eat breakfast early.",
+      "ar": "عادةً أتناول الفطور مبكرًا.",
+      "id": "day-07-05"
+    },
+    {
+      "en": "I prefer water with my meal.",
+      "ar": "أفضل الماء مع وجبتي.",
+      "id": "day-07-06"
+    },
+    {
+      "en": "Could I have a glass of water?",
+      "ar": "هل يمكنني الحصول على كوب ماء؟",
+      "id": "day-07-07"
+    },
+    {
+      "en": "I do not want any added sugar.",
+      "ar": "لا أريد أي سكر مضاف.",
+      "id": "day-07-08"
+    },
+    {
+      "en": "This food smells delicious.",
+      "ar": "رائحة هذا الطعام شهية.",
+      "id": "day-07-09"
+    },
+    {
+      "en": "What ingredients are in this dish?",
+      "ar": "ما مكونات هذا الطبق؟",
+      "id": "day-07-10"
+    },
+    {
+      "en": "It contains rice and vegetables.",
+      "ar": "يحتوي على الأرز والخضروات.",
+      "id": "day-07-11"
+    },
+    {
+      "en": "I would like some chicken, please.",
+      "ar": "أود بعض الدجاج من فضلك.",
+      "id": "day-07-12"
+    },
+    {
+      "en": "Is the soup hot?",
+      "ar": "هل الحساء ساخن؟",
+      "id": "day-07-13"
+    },
+    {
+      "en": "Please let it cool a little.",
+      "ar": "دعه يبرد قليلًا من فضلك.",
+      "id": "day-07-14"
+    },
+    {
+      "en": "I like spicy food.",
+      "ar": "أحب الطعام الحار.",
+      "id": "day-07-15"
+    },
+    {
+      "en": "This sauce is too spicy for me.",
+      "ar": "هذه الصلصة حارة جدًا بالنسبة لي.",
+      "id": "day-07-16"
+    },
+    {
+      "en": "Could you add less salt?",
+      "ar": "هل يمكنك إضافة كمية أقل من الملح؟",
+      "id": "day-07-17"
+    },
+    {
+      "en": "The salad tastes fresh.",
+      "ar": "مذاق السلطة طازج.",
+      "id": "day-07-18"
+    },
+    {
+      "en": "I am allergic to this ingredient.",
+      "ar": "لدي حساسية من هذا المكوّن.",
+      "id": "day-07-19"
+    },
+    {
+      "en": "Please check the ingredients for me.",
+      "ar": "تحقق لي من المكونات من فضلك.",
+      "id": "day-07-20"
+    },
+    {
+      "en": "I am trying a new recipe.",
+      "ar": "أجرّب وصفة جديدة.",
+      "id": "day-07-21"
+    },
+    {
+      "en": "First, wash the vegetables.",
+      "ar": "أولًا، اغسل الخضروات.",
+      "id": "day-07-22"
+    },
+    {
+      "en": "Then cut them into small pieces.",
+      "ar": "ثم قطّعها إلى قطع صغيرة.",
+      "id": "day-07-23"
+    },
+    {
+      "en": "Heat the pan over medium heat.",
+      "ar": "سخّن المقلاة على نار متوسطة.",
+      "id": "day-07-24"
+    },
+    {
+      "en": "Cook the chicken thoroughly.",
+      "ar": "اطهِ الدجاج جيدًا.",
+      "id": "day-07-25"
+    },
+    {
+      "en": "I think the meal is ready.",
+      "ar": "أظن أن الوجبة جاهزة.",
+      "id": "day-07-26"
+    },
+    {
+      "en": "Would you like another serving?",
+      "ar": "هل تود حصة أخرى؟",
+      "id": "day-07-27"
+    },
+    {
+      "en": "No, thank you; I am full.",
+      "ar": "لا شكرًا، لقد شبعت.",
+      "id": "day-07-28"
+    },
+    {
+      "en": "Can we save the leftovers?",
+      "ar": "هل يمكننا حفظ بقايا الطعام؟",
+      "id": "day-07-29"
+    },
+    {
+      "en": "Put them in the refrigerator.",
+      "ar": "ضعها في الثلاجة.",
+      "id": "day-07-30"
+    },
+    {
+      "en": "I will wash the dishes later.",
+      "ar": "سأغسل الأطباق لاحقًا.",
+      "id": "day-07-31"
+    },
+    {
+      "en": "That was a satisfying meal.",
+      "ar": "كانت وجبة مشبعة.",
+      "id": "day-07-32"
+    },
+    {
+      "en": "Thank you for cooking today.",
+      "ar": "شكرًا لأنك طبخت اليوم.",
+      "id": "day-07-33"
+    },
+    {
+      "en": "Let us have dinner together tomorrow.",
+      "ar": "لنتناول العشاء معًا غدًا.",
+      "id": "day-07-34"
+    }
+  ],
+  "story": {
+    "title": "Cooking Together",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Khaled and his friend planned a fresh dinner at home. They talked about ingredients, cooking steps, and personal preferences. Khaled said, “I am getting hungry.” His friend replied, “What would you like to eat?” Khaled said, “I would like something healthy.” His friend replied, “Do you have any fresh fruit?” Khaled said, “I usually eat breakfast early.” His friend replied, “I prefer water with my meal.” Khaled said, “Could I have a glass of water?” His friend replied, “I do not want any added sugar.” Khaled said, “This food smells delicious.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "A useful exchange",
+        "paragraphs": [
+          "As they continued, they learned to explain what they needed. Khaled said, “What ingredients are in this dish?” His friend replied, “It contains rice and vegetables.” Khaled said, “I would like some chicken, please.” His friend replied, “Is the soup hot?” Khaled said, “Please let it cool a little.” His friend replied, “I like spicy food.” Khaled said, “This sauce is too spicy for me.” His friend replied, “Could you add less salt?” Khaled said, “The salad tastes fresh.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Making it clearer",
+        "paragraphs": [
+          "They listened, asked questions, and tried the next useful expressions. Khaled said, “I am allergic to this ingredient.” His friend replied, “Please check the ingredients for me.” Khaled said, “I am trying a new recipe.” His friend replied, “First, wash the vegetables.” Khaled said, “Then cut them into small pieces.” His friend replied, “Heat the pan over medium heat.” Khaled said, “Cook the chicken thoroughly.” His friend replied, “I think the meal is ready.” Khaled said, “Would you like another serving?” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Ending well",
+        "paragraphs": [
+          "Before leaving, they finished the conversation warmly. Khaled said, “No, thank you; I am full.” His friend replied, “Can we save the leftovers?” Khaled said, “Put them in the refrigerator.” His friend replied, “I will wash the dishes later.” Khaled said, “That was a satisfying meal.” His friend replied, “Thank you for cooking today.” Khaled said, “Let us have dinner together tomorrow.” They felt more confident after practising together."
+        ]
+      }
+    ],
+    "estimatedSeconds": 139
+  }
+}

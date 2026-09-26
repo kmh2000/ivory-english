@@ -1,12 +1,9 @@
 # Ivory English — progress
+Updated: 2026-09-26
 
-Updated: 2026-09-25
-
-- Scope: publish days 1–10 now, then add existing lessons in 10-day batches.
-- Original 90-day source remains untouched.
-- Staged: 10 lessons, 340 daily sentences, 4 bonus sentences, 10 timed stories, 354 original MP3s.
-- UI: original ivory design, 1.5× default playback, 100% volume, Arabic translations, repeat controls, real story word timings.
-- Gradual release: future days have a clear availability notice and are not fetched before publication.
-- Progress: local browser storage retains listened sentences, completed days and last lesson; adding batches does not reset it.
-- Transfer: binary audio bundles with per-file SHA-256 validation; later releases append a new batch.
-- Publication: pending verification of upload and GitHub Pages deployment.
+- Found: repository had the full 90-day catalog but no actual `dist/data/day-XX.json` files or MP3 bundles.
+- Added: interim text-first days 1–10, with 340 bilingual sentences and 10 short readers.
+- Preserved: ivory site layout, preference keys, last lesson and day completion storage.
+- Changed: Pages workflow serves `dist/` directly; no MP3 restore, hash check, or voice QA gate.
+- Added: text-only validator and sequential ten-day source import helper, which never alters previously released lessons.
+- Next: enable GitHub Pages with source GitHub Actions if not already configured; verify deployment run. Import days 11–90 only from the user's actual complete source to preserve those originals.

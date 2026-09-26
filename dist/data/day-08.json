@@ -1,0 +1,206 @@
+{
+  "day": 8,
+  "title": "A Quiet Café Visit",
+  "sentences": [
+    {
+      "en": "Is there a café nearby?",
+      "ar": "هل يوجد مقهى قريب؟",
+      "id": "day-08-01"
+    },
+    {
+      "en": "Yes, there is one across the street.",
+      "ar": "نعم، يوجد واحد على الجهة المقابلة من الشارع.",
+      "id": "day-08-02"
+    },
+    {
+      "en": "Let us find a quiet table.",
+      "ar": "لنبحث عن طاولة هادئة.",
+      "id": "day-08-03"
+    },
+    {
+      "en": "Do you have a table for two?",
+      "ar": "هل لديكم طاولة لشخصين؟",
+      "id": "day-08-04"
+    },
+    {
+      "en": "We can sit by the window.",
+      "ar": "يمكننا الجلوس قرب النافذة.",
+      "id": "day-08-05"
+    },
+    {
+      "en": "May I see the menu, please?",
+      "ar": "هل يمكنني رؤية القائمة من فضلك؟",
+      "id": "day-08-06"
+    },
+    {
+      "en": "What would you recommend?",
+      "ar": "بماذا تنصح؟",
+      "id": "day-08-07"
+    },
+    {
+      "en": "I would like a black coffee.",
+      "ar": "أود قهوة سوداء.",
+      "id": "day-08-08"
+    },
+    {
+      "en": "Could I have it without sugar?",
+      "ar": "هل يمكنني الحصول عليها دون سكر؟",
+      "id": "day-08-09"
+    },
+    {
+      "en": "Do you have any herbal tea?",
+      "ar": "هل لديكم شاي أعشاب؟",
+      "id": "day-08-10"
+    },
+    {
+      "en": "I will order a hot tea instead.",
+      "ar": "سأطلب شايًا ساخنًا بدلًا من ذلك.",
+      "id": "day-08-11"
+    },
+    {
+      "en": "Would you like something to eat?",
+      "ar": "هل تود شيئًا للأكل؟",
+      "id": "day-08-12"
+    },
+    {
+      "en": "I will have a small sandwich.",
+      "ar": "سآخذ شطيرة صغيرة.",
+      "id": "day-08-13"
+    },
+    {
+      "en": "Is this made fresh today?",
+      "ar": "هل أُعد هذا طازجًا اليوم؟",
+      "id": "day-08-14"
+    },
+    {
+      "en": "How much does the coffee cost?",
+      "ar": "كم سعر القهوة؟",
+      "id": "day-08-15"
+    },
+    {
+      "en": "Can I pay by card?",
+      "ar": "هل يمكنني الدفع بالبطاقة؟",
+      "id": "day-08-16"
+    },
+    {
+      "en": "Please bring two glasses of water.",
+      "ar": "أحضر كوبين من الماء من فضلك.",
+      "id": "day-08-17"
+    },
+    {
+      "en": "Could you make it a little hotter?",
+      "ar": "هل يمكنك جعله أسخن قليلًا؟",
+      "id": "day-08-18"
+    },
+    {
+      "en": "The atmosphere is very relaxing.",
+      "ar": "الأجواء مريحة جدًا.",
+      "id": "day-08-19"
+    },
+    {
+      "en": "I like the music in this place.",
+      "ar": "تعجبني الموسيقى في هذا المكان.",
+      "id": "day-08-20"
+    },
+    {
+      "en": "This seat is available, right?",
+      "ar": "هذا المقعد متاح، صحيح؟",
+      "id": "day-08-21"
+    },
+    {
+      "en": "I am waiting for a friend.",
+      "ar": "أنا أنتظر صديقًا.",
+      "id": "day-08-22"
+    },
+    {
+      "en": "He said he would be here soon.",
+      "ar": "قال إنه سيصل قريبًا.",
+      "id": "day-08-23"
+    },
+    {
+      "en": "Sorry, I kept you waiting.",
+      "ar": "عذرًا، جعلتك تنتظر.",
+      "id": "day-08-24"
+    },
+    {
+      "en": "No problem, please sit down.",
+      "ar": "لا مشكلة، تفضل بالجلوس.",
+      "id": "day-08-25"
+    },
+    {
+      "en": "How has your day been?",
+      "ar": "كيف كان يومك؟",
+      "id": "day-08-26"
+    },
+    {
+      "en": "It has been a busy morning.",
+      "ar": "كان صباحًا مزدحمًا.",
+      "id": "day-08-27"
+    },
+    {
+      "en": "I needed a short break.",
+      "ar": "كنت بحاجة إلى استراحة قصيرة.",
+      "id": "day-08-28"
+    },
+    {
+      "en": "Shall we order another drink?",
+      "ar": "هل نطلب مشروبًا آخر؟",
+      "id": "day-08-29"
+    },
+    {
+      "en": "No, I think I am ready to leave.",
+      "ar": "لا، أظن أنني مستعد للمغادرة.",
+      "id": "day-08-30"
+    },
+    {
+      "en": "Could we have the bill, please?",
+      "ar": "هل يمكننا الحصول على الحساب من فضلك؟",
+      "id": "day-08-31"
+    },
+    {
+      "en": "Let us split the bill.",
+      "ar": "لنتقاسم الحساب.",
+      "id": "day-08-32"
+    },
+    {
+      "en": "Thank you for the excellent service.",
+      "ar": "شكرًا على الخدمة الممتازة.",
+      "id": "day-08-33"
+    },
+    {
+      "en": "I would love to come back.",
+      "ar": "يسعدني أن أعود إلى هنا.",
+      "id": "day-08-34"
+    }
+  ],
+  "story": {
+    "title": "A Quiet Café Visit",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "After a long morning, Khaled and his friend entered a small café to relax and practise ordering politely. Khaled said, “Is there a café nearby?” His friend replied, “Yes, there is one across the street.” Khaled said, “Let us find a quiet table.” His friend replied, “Do you have a table for two?” Khaled said, “We can sit by the window.” His friend replied, “May I see the menu, please?” Khaled said, “What would you recommend?” His friend replied, “I would like a black coffee.” Khaled said, “Could I have it without sugar?” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "A useful exchange",
+        "paragraphs": [
+          "As they continued, they learned to explain what they needed. Khaled said, “Do you have any herbal tea?” His friend replied, “I will order a hot tea instead.” Khaled said, “Would you like something to eat?” His friend replied, “I will have a small sandwich.” Khaled said, “Is this made fresh today?” His friend replied, “How much does the coffee cost?” Khaled said, “Can I pay by card?” His friend replied, “Please bring two glasses of water.” Khaled said, “Could you make it a little hotter?” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Making it clearer",
+        "paragraphs": [
+          "They listened, asked questions, and tried the next useful expressions. Khaled said, “The atmosphere is very relaxing.” His friend replied, “I like the music in this place.” Khaled said, “This seat is available, right?” His friend replied, “I am waiting for a friend.” Khaled said, “He said he would be here soon.” His friend replied, “Sorry, I kept you waiting.” Khaled said, “No problem, please sit down.” His friend replied, “How has your day been?” Khaled said, “It has been a busy morning.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Ending well",
+        "paragraphs": [
+          "Before leaving, they finished the conversation warmly. Khaled said, “I needed a short break.” His friend replied, “Shall we order another drink?” Khaled said, “No, I think I am ready to leave.” His friend replied, “Could we have the bill, please?” Khaled said, “Let us split the bill.” His friend replied, “Thank you for the excellent service.” Khaled said, “I would love to come back.” They felt more confident after practising together."
+        ]
+      }
+    ],
+    "estimatedSeconds": 144
+  }
+}

@@ -1,32 +1,23 @@
-# Ivory English — gradual release
+# Ivory English — gradual text releases
 
-موقع تعلّم الإنجليزية بالتصميم العاجي الأصلي. الإصدار الأول ينشر **الأيام 1–10** من خطة 90 يومًا، ويحتوي على **340 جملة يومية + 4 إضافية، و10 قصص، و354 تسجيل MP3**.
+An ivory-themed 90-day bilingual English course. This repository now contains a usable **text-first release for days 1–10**: 340 English/Arabic sentences, 10 short contextual readers, and 4 bonus expressions. The original 90-day complete ZIP (including its 20-minute stories and MP3s) is **not present in this repository**. These ten short lessons are a functional interim text edition and are not represented as the original full-length stories.
 
-كل يوم يحتوي على 34 جملة مترجمة وقصة بمدة 20 دقيقة عند سرعة 1×. السرعة الافتراضية 1.5× والصوت 100٪؛ التحكم بالسرعة والتكرار وإخفاء الترجمة وتظليل كلمات القصة متاح. التسجيلات الأصلية موجودة ولا تحتاج إعادة توليد. أمثلة التعريف بالنفس للتدرّب، ويمكن للمتعلّم تغييرها لتناسبه.
+The browser's English speech synthesis is available for sentence and reader playback where supported. Recorded MP3 assets are intentionally not required to deploy. Preferences and completed/listened days remain in localStorage under the existing `ivory.*.v1` keys. Deploying additional batches at the same URL will not reset that progress.
 
-التقدّم والإعدادات محفوظة في المتصفح على الجهاز نفسه. إضافة دفعات جديدة إلى الرابط نفسه لا تمس هذه البيانات. مسح بيانات المتصفح أو الانتقال إلى جهاز آخر لا ينقل التقدّم.
+## Publish
 
-## تشغيل نسخة محلية
+In repository Settings → Pages → Build and deployment, choose **GitHub Actions**. The workflow `Publish Ivory English` validates the published JSON and deploys `dist/` directly on pushes to main or manual dispatch. Do not claim the public URL is live until the deployment run completes successfully.
 
-```bash
-python scripts/restore_site.py --output site-preview
-python -m http.server 8000 --directory site-preview
-```
+## Release the existing original material in ten-day batches
 
-ثم افتح `http://localhost:8000`.
-
-## إضافة الدفعة التالية
-
-المحتوى الأصلي للأيام 1–90 محفوظ في مشروع المصدر الكامل. لإضافة الأيام 11–20 من ملفات موجودة بالفعل:
+Keep the original complete ZIP/source outside the repository. From the extracted original `dist` directory, run:
 
 ```bash
-python scripts/prepare_batch.py --source /path/to/original/dist --through 20
+python scripts/prepare_text_batch.py --source /path/to/original/dist --through 20
+python scripts/check_text.py
+git add dist/data release.json
+git commit -m "Publish text days 11-20"
+git push
 ```
 
-بعد مراجعة الدفعة، ارفع الملفات الجديدة وتحديثات `dist/data` و`release.json` إلى `main`. يعمل النشر تلقائيًا من GitHub Actions. كل دفعة تضيف 10 أيام؛ الدفعات السابقة لا تُرفع أو تُولّد مجددًا. يمكن تعديل الواجهة والترجمات مباشرة في `dist`؛ تغييرات نصوص الإنجليزية تحتاج صوتًا مطابقًا وتوقيتًا مطابقًا قبل النشر.
-
-الصوت موزّع في حزم ثنائية داخل `releases/`. `scripts/restore_site.py` يعيد ملفات MP3 الأصلية بعد التحقق من SHA-256 لكل جزء ولكل تسجيل، ولا يعيد ترميزها. الموقع المنشور يحمّل بيانات اليوم المختار فقط والصوت عند تشغيله.
-
-## GitHub Pages
-
-من إعدادات المستودع، اختر **Pages → Build and deployment → Source → GitHub Actions**. بعدها ينشر مسار **Publish Ivory English** أي تعديل للموقع. حالة النشر الفعلية موجودة في Actions و`PROGRESS.md`؛ لا تعتبر وجود الملفات وحده إثباتًا أن الموقع منشور.
+Repeat `--through 30`, `40`, …, `90`. The importer copies only the ten new days, strips links to unpublished audio, and retains every previously published day unchanged. Full original MP3s can be added separately later with matching media references. The first ten days here are a usable replacement edition because their original source files were not found in this repository.

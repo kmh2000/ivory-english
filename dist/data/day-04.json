@@ -1,0 +1,206 @@
+{
+  "day": 4,
+  "title": "A Visit at Home",
+  "sentences": [
+    {
+      "en": "Welcome to my home.",
+      "ar": "أهلًا بك في منزلي.",
+      "id": "day-04-01"
+    },
+    {
+      "en": "Please come inside.",
+      "ar": "تفضل بالدخول.",
+      "id": "day-04-02"
+    },
+    {
+      "en": "You can leave your shoes here.",
+      "ar": "يمكنك ترك حذائك هنا.",
+      "id": "day-04-03"
+    },
+    {
+      "en": "The living room is on the left.",
+      "ar": "غرفة المعيشة على اليسار.",
+      "id": "day-04-04"
+    },
+    {
+      "en": "The kitchen is next to it.",
+      "ar": "المطبخ بجوارها.",
+      "id": "day-04-05"
+    },
+    {
+      "en": "Would you like some water?",
+      "ar": "هل تود بعض الماء؟",
+      "id": "day-04-06"
+    },
+    {
+      "en": "Make yourself comfortable.",
+      "ar": "خذ راحتك.",
+      "id": "day-04-07"
+    },
+    {
+      "en": "This chair is very comfortable.",
+      "ar": "هذا الكرسي مريح جدًا.",
+      "id": "day-04-08"
+    },
+    {
+      "en": "The window lets in a lot of light.",
+      "ar": "تسمح النافذة بدخول الكثير من الضوء.",
+      "id": "day-04-09"
+    },
+    {
+      "en": "I usually read in this corner.",
+      "ar": "عادةً أقرأ في هذه الزاوية.",
+      "id": "day-04-10"
+    },
+    {
+      "en": "The bedroom is upstairs.",
+      "ar": "غرفة النوم في الطابق العلوي.",
+      "id": "day-04-11"
+    },
+    {
+      "en": "The bathroom is down the hall.",
+      "ar": "دورة المياه في نهاية الممر.",
+      "id": "day-04-12"
+    },
+    {
+      "en": "Please close the door gently.",
+      "ar": "أغلق الباب برفق من فضلك.",
+      "id": "day-04-13"
+    },
+    {
+      "en": "Can you turn on the light?",
+      "ar": "هل يمكنك تشغيل الضوء؟",
+      "id": "day-04-14"
+    },
+    {
+      "en": "The air conditioner is running.",
+      "ar": "مكيف الهواء يعمل.",
+      "id": "day-04-15"
+    },
+    {
+      "en": "It feels cool in here.",
+      "ar": "الجو بارد ومنعش هنا.",
+      "id": "day-04-16"
+    },
+    {
+      "en": "I need to clean the table.",
+      "ar": "أحتاج إلى تنظيف الطاولة.",
+      "id": "day-04-17"
+    },
+    {
+      "en": "The dishes are in the sink.",
+      "ar": "الأطباق في حوض الغسيل.",
+      "id": "day-04-18"
+    },
+    {
+      "en": "I will wash them after lunch.",
+      "ar": "سأغسلها بعد الغداء.",
+      "id": "day-04-19"
+    },
+    {
+      "en": "Where did I leave my keys?",
+      "ar": "أين تركت مفاتيحي؟",
+      "id": "day-04-20"
+    },
+    {
+      "en": "They are beside the television.",
+      "ar": "إنها بجوار التلفاز.",
+      "id": "day-04-21"
+    },
+    {
+      "en": "I cannot find the remote control.",
+      "ar": "لا أستطيع العثور على جهاز التحكم.",
+      "id": "day-04-22"
+    },
+    {
+      "en": "Look under the sofa.",
+      "ar": "انظر تحت الأريكة.",
+      "id": "day-04-23"
+    },
+    {
+      "en": "The laundry is ready.",
+      "ar": "الغسيل جاهز.",
+      "id": "day-04-24"
+    },
+    {
+      "en": "I need to fold these clothes.",
+      "ar": "أحتاج إلى طي هذه الملابس.",
+      "id": "day-04-25"
+    },
+    {
+      "en": "Could you open the curtains?",
+      "ar": "هل يمكنك فتح الستائر؟",
+      "id": "day-04-26"
+    },
+    {
+      "en": "There is a small balcony outside.",
+      "ar": "توجد شرفة صغيرة بالخارج.",
+      "id": "day-04-27"
+    },
+    {
+      "en": "I like keeping things organized.",
+      "ar": "أحب المحافظة على ترتيب الأشياء.",
+      "id": "day-04-28"
+    },
+    {
+      "en": "We have a guest room as well.",
+      "ar": "لدينا غرفة للضيوف أيضًا.",
+      "id": "day-04-29"
+    },
+    {
+      "en": "Let me show you around.",
+      "ar": "دعني آخذك في جولة.",
+      "id": "day-04-30"
+    },
+    {
+      "en": "The house is quiet at night.",
+      "ar": "المنزل هادئ ليلًا.",
+      "id": "day-04-31"
+    },
+    {
+      "en": "Please feel at home.",
+      "ar": "اعتبر نفسك في بيتك.",
+      "id": "day-04-32"
+    },
+    {
+      "en": "Thank you for visiting us.",
+      "ar": "شكرًا لزيارتك لنا.",
+      "id": "day-04-33"
+    },
+    {
+      "en": "You are welcome any time.",
+      "ar": "أهلًا بك في أي وقت.",
+      "id": "day-04-34"
+    }
+  ],
+  "story": {
+    "title": "A Visit at Home",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "A friend visited Khaled at home for the first time. They walked through the rooms and talked about everyday objects and habits. Khaled said, “Welcome to my home.” His friend replied, “Please come inside.” Khaled said, “You can leave your shoes here.” His friend replied, “The living room is on the left.” Khaled said, “The kitchen is next to it.” His friend replied, “Would you like some water?” Khaled said, “Make yourself comfortable.” His friend replied, “This chair is very comfortable.” Khaled said, “The window lets in a lot of light.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "A useful exchange",
+        "paragraphs": [
+          "As they continued, they learned to explain what they needed. Khaled said, “I usually read in this corner.” His friend replied, “The bedroom is upstairs.” Khaled said, “The bathroom is down the hall.” His friend replied, “Please close the door gently.” Khaled said, “Can you turn on the light?” His friend replied, “The air conditioner is running.” Khaled said, “It feels cool in here.” His friend replied, “I need to clean the table.” Khaled said, “The dishes are in the sink.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Making it clearer",
+        "paragraphs": [
+          "They listened, asked questions, and tried the next useful expressions. Khaled said, “I will wash them after lunch.” His friend replied, “Where did I leave my keys?” Khaled said, “They are beside the television.” His friend replied, “I cannot find the remote control.” Khaled said, “Look under the sofa.” His friend replied, “The laundry is ready.” Khaled said, “I need to fold these clothes.” His friend replied, “Could you open the curtains?” Khaled said, “There is a small balcony outside.” They paused for a moment to remember each expression."
+        ]
+      },
+      {
+        "heading": "Ending well",
+        "paragraphs": [
+          "Before leaving, they finished the conversation warmly. Khaled said, “I like keeping things organized.” His friend replied, “We have a guest room as well.” Khaled said, “Let me show you around.” His friend replied, “The house is quiet at night.” Khaled said, “Please feel at home.” His friend replied, “Thank you for visiting us.” Khaled said, “You are welcome any time.” They felt more confident after practising together."
+        ]
+      }
+    ],
+    "estimatedSeconds": 139
+  }
+}

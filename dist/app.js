@@ -39,15 +39,34 @@ const saveProgress=()=>{try{localStorage.setItem('ivory.progress.v1',JSON.string
 const isPublished=day=>!!indexData?.days.find(d=>d.day===day&&d.available!==false);
 const availableDays=()=>indexData.days.filter(d=>d.available!==false);
 
-const defaultPrefs={speed:1.5,volume:1,hideArabic:false,shadow:false,repeat:1,voice:''};
+const defaultPrefs={speed:1,volume:1,hideArabic:false,shadow:false,repeat:1,voice:'',accent:'en-US',voiceByAccent:{}};
 let prefs={...defaultPrefs};
 try{const saved=JSON.parse(localStorage.getItem('ivory.preferences.v1')||'{}');for(const k of Object.keys(defaultPrefs))if(k in saved)prefs[k]=saved[k];}catch{}
-if(![.5,.75,1,1.25,1.5,1.75,2,2.5].includes(prefs.speed))prefs.speed=1.5;
+if(![.5,.75,1,1.25,1.5,1.75,2,2.5].includes(prefs.speed))prefs.speed=1;
+if(!['en-US','en-GB'].includes(prefs.accent))prefs.accent='en-US';
+if(!prefs.voiceByAccent||typeof prefs.voiceByAccent!=='object'||Array.isArray(prefs.voiceByAccent))prefs.voiceByAccent={};
 if(typeof prefs.volume!=='number'||prefs.volume<0||prefs.volume>1)prefs.volume=1;
 prefs.repeat=[3,50].includes(prefs.repeat)?50:1;
 const savePrefs=()=>{try{localStorage.setItem('ivory.preferences.v1',JSON.stringify(prefs));}catch{}};
 function toast(message){clearTimeout(toastTimer);const t=$('#toast');t.textContent=message;t.hidden=false;toastTimer=setTimeout(()=>t.hidden=true,4500);}
 function wordCount(s){return (s.match(/\S+/g)||[]).length;}
+
+const accentMatches=(voice,accent)=>String(voice.lang||'').replace('_','-').toLowerCase()===accent.toLowerCase();
+function preferredAccentVoice(accent){
+  const candidates=voices.filter(v=>accentMatches(v,accent));
+  const voiceScore=v=>{
+    const name=String(v.name||'').toLowerCase();
+    let score=0;
+    if(/(natural|neural|premium|enhanced)/i.test(name))score+=150;
+    if(/(siri|samantha|daniel|serena|kate|oliver|ava|aria|jenny|ryan|sonia|libby|stephanie|allison)/i.test(name))score+=55;
+    if(/microsoft/i.test(name))score+=18;
+    if(v.localService)score+=5;
+    if(/(compact|basic|robot)/i.test(name))score-=80;
+    return score;
+  };
+  return candidates.slice().sort((a,b)=>voiceScore(b)-voiceScore(a))[0]||null;
+}
+
 function buildStory(story){
   storyTokens=[];storyPieces=[];let offset=0,wordId=0,pieceId=0;
   const sections=story.sections.map((section,sectionIndex)=>{
@@ -92,7 +111,7 @@ class LearningPlayer{
     this.updateUI();
   }
   clearHighlights(){for(const e of $$('.active-word,.active-fragment'))e.classList.remove('active-word','active-fragment');}
-  get selectedVoice(){return voices.find(v=>v.voiceURI===prefs.voice)||voices.find(v=>/en-US/i.test(v.lang)&&/Aria|Samantha|Jenny|Natural/i.test(v.name))||voices.find(v=>/^en[-_]US/i.test(v.lang))||voices[0]||null;}
+  get selectedVoice(){return voices.find(v=>v.voiceURI===prefs.voice&&accentMatches(v,prefs.accent))||preferredAccentVoice(prefs.accent)||null;}
   async playSentence(n,all=false,repeats=null){
     const list=currentLesson?.sentences||indexData?.bonus;
     if(!list||!list[n])return;
@@ -145,7 +164,7 @@ class LearningPlayer{
   speak(text,start,onend){
     if(!('speechSynthesis'in window)||typeof SpeechSynthesisUtterance==='undefined'){this.stop();toast('جهازك لا يدعم النطق المباشر. اختر الملف الصوتي إذا كان متاحًا.');return;}
     const version=this.token,utterance=new SpeechSynthesisUtterance(text);
-    this.utterance=utterance;utterance.lang=this.selectedVoice?.lang||'en-US';utterance.voice=this.selectedVoice;utterance.rate=prefs.speed;utterance.volume=prefs.volume;
+    this.utterance=utterance;utterance.lang=prefs.accent;utterance.voice=this.selectedVoice;utterance.rate=prefs.speed;utterance.volume=prefs.volume;
     this.boundaries=false;this.startedAt=Date.now();
     utterance.onstart=()=>{if(version!==this.token)return;this.playing=true;this.paused=false;if(this.kind==='story')this.highlightFragment(start,start+text.length);this.updateUI();};
     utterance.onboundary=(e)=>{if(version!==this.token||!this.playing||e.name==='sentence')return;this.boundaries=true;if(this.kind==='story'){this.nativePosition=start+e.charIndex;this.highlight(closestToken(this.nativePosition));}else{const bar=$(`[data-sentence="${this.position}"] .audio-line span`);if(bar)bar.style.width=`${Math.min(99,(e.charIndex+1)/text.length*100)}%`;}this.updateProgress();};
@@ -240,7 +259,7 @@ function sentenceMarkup(s,n){
   const seconds=currentLesson?.audio?.sentences?.clips[n]?currentLesson.audio.sentences.clips[n].end-currentLesson.audio.sentences.clips[n].start:wordCount(s.en)/2.6;
   return `<article class="sentence-card" data-sentence="${n}"><div class="sentence-top"><span class="sentence-index">${pad(n+1)}</span><div class="sentence-body"><p class="sentence-en" lang="en">${esc(s.en)}</p><p class="sentence-ar" lang="ar" dir="rtl" ${prefs.hideArabic?'hidden':''}>${esc(s.ar)}</p>${prefs.hideArabic?'<button class="translation-reveal" type="button" lang="ar">إظهار الترجمة</button>':''}</div></div><div class="sentence-player"><button type="button" class="sentence-play" aria-label="Play sentence ${n+1}">${icon('play')}</button><div class="audio-line" aria-hidden="true"><span></span></div><span class="audio-time">${currentLesson?.audio?.sentences?'':'≈ '}${clock(seconds/prefs.speed)}</span><button type="button" class="repeat-button" aria-label="Repeat sentence ${n+1} 50 times" title="Repeat 50 times">${icon('repeat')}</button>${currentLesson?.audio?.sentences?.clips[n]?.url?`<a class="repeat-button" href="${esc(assetURL(currentLesson.audio.sentences.clips[n].url))}" download aria-label="Download sentence ${n+1} audio" title="Download MP3">${icon('download')}</a>`:''}</div></article>`;
 }
-function sidebarMarkup(){return `<aside class="lesson-sidebar" aria-label="Listening settings"><h2 class="sidebar-heading">Make it your pace.</h2><div class="sidebar-group"><label class="control-label" for="voice-select">English voice <span>الصوت</span></label><select id="voice-select" aria-label="English voice"></select><p class="control-label"><span>Playback speed</span><strong id="speed-value">${prefs.speed}×</strong></p><div class="speed-options" aria-label="Playback speed">${[.5,.75,1,1.25,1.5,1.75,2,2.5].map(s=>`<button class="speed-option ${prefs.speed===s?'active':''}" data-speed="${s}" aria-pressed="${prefs.speed===s}">${s}×</button>`).join('')}</div><label class="control-label" for="volume">Volume <span id="volume-value">${Math.round(prefs.volume*100)}%</span></label><input id="volume" class="range" type="range" min="0" max="100" step="1" value="${Math.round(prefs.volume*100)}" aria-label="Volume"></div><div class="sidebar-group"><div class="sidebar-divider"></div><label class="check-label" for="hide-arabic"><span>Recall the meaning</span><input id="hide-arabic" type="checkbox" ${prefs.hideArabic?'checked':''}></label><p class="sidebar-help" lang="ar" dir="rtl">أخفِ الترجمة، حاول تتذكر المعنى، ثم اكشفها للتأكد.</p><label class="check-label" for="shadow"><span>Listen & repeat</span><input id="shadow" type="checkbox" ${prefs.shadow?'checked':''}></label><p class="sidebar-help" lang="ar" dir="rtl">وقفة بعد كل جملة تعطيك وقت تكررها بصوتك.</p><label class="check-label" for="repeat"><span>Repeat each line 50×</span><input id="repeat" type="checkbox" ${prefs.repeat===50?'checked':''}></label><div class="sidebar-divider"></div><a class="btn btn-subtle" style="width:100%" href="#daily-story">Today's story ${icon('book')}</a></div><p class="sidebar-help" lang="ar" dir="rtl">إعداداتك محفوظة على هذا الجهاز. أمثلة التعريف بالنفس للتدرب؛ غيّر تفاصيلها لتناسبك.</p></aside>`;}
+function sidebarMarkup(){return `<aside class="lesson-sidebar" aria-label="Listening settings"><h2 class="sidebar-heading">Make it your pace.</h2><div class="sidebar-group"><span class="control-label" id="accent-label">English accent <span lang="ar">اللهجة</span></span><div class="accent-options" role="group" aria-labelledby="accent-label"><button type="button" data-accent="en-US" class="accent-option ${prefs.accent==='en-US'?'active':''}" aria-pressed="${prefs.accent==='en-US'}">🇺🇸 American</button><button type="button" data-accent="en-GB" class="accent-option ${prefs.accent==='en-GB'?'active':''}" aria-pressed="${prefs.accent==='en-GB'}">🇬🇧 British</button></div><label class="control-label" for="voice-select">Available voices <span lang="ar">الصوت</span></label><select id="voice-select" aria-label="Voice for the chosen English accent"></select><button class="btn btn-subtle voice-preview" type="button" id="voice-preview">${icon('volume')} Listen to a sample</button><p class="sidebar-help accent-help" id="voice-status" lang="ar" dir="rtl" role="status"></p><p class="control-label"><span>Playback speed</span><strong id="speed-value">${prefs.speed}×</strong></p><div class="speed-options" aria-label="Playback speed">${[.5,.75,1,1.25,1.5,1.75,2,2.5].map(s=>`<button class="speed-option ${prefs.speed===s?'active':''}" data-speed="${s}" aria-pressed="${prefs.speed===s}">${s}×</button>`).join('')}</div><label class="control-label" for="volume">Volume <span id="volume-value">${Math.round(prefs.volume*100)}%</span></label><input id="volume" class="range" type="range" min="0" max="100" step="1" value="${Math.round(prefs.volume*100)}" aria-label="Volume"></div><div class="sidebar-group"><div class="sidebar-divider"></div><label class="check-label" for="hide-arabic"><span>Recall the meaning</span><input id="hide-arabic" type="checkbox" ${prefs.hideArabic?'checked':''}></label><p class="sidebar-help" lang="ar" dir="rtl">أخفِ الترجمة، حاول تتذكر المعنى، ثم اكشفها للتأكد.</p><label class="check-label" for="shadow"><span>Listen & repeat</span><input id="shadow" type="checkbox" ${prefs.shadow?'checked':''}></label><p class="sidebar-help" lang="ar" dir="rtl">وقفة بعد كل جملة تعطيك وقت تكررها بصوتك.</p><label class="check-label" for="repeat"><span>Repeat each line 50×</span><input id="repeat" type="checkbox" ${prefs.repeat===50?'checked':''}></label><div class="sidebar-divider"></div><a class="btn btn-subtle" style="width:100%" href="#daily-story">Today's story ${icon('book')}</a></div><p class="sidebar-help" lang="ar" dir="rtl">إعداداتك محفوظة على هذا الجهاز. أمثلة التعريف بالنفس للتدرب؛ غيّر تفاصيلها لتناسبك.</p></aside>`;}
 function renderLesson(data){
   currentLesson=data;seen=new Set((Array.isArray(progress.listened[data.day])?progress.listened[data.day]:[]).filter(n=>Number.isInteger(n)&&n>=0&&n<34));progress.lastDay=data.day;saveProgress();const story=buildStory(data.story);const actual=data.audio?.story?.duration;
   main.innerHTML=`<div class="breadcrumb"><a class="btn-text" href="#days">${icon('back')} The 90-day plan</a><span class="small-note">DAY ${pad(data.day)} OF 90</span></div>
@@ -268,9 +287,54 @@ function attachSentenceEvents(){
 function populateVoices(){
   const select=$('#voice-select');if(!select)return;
   voices=('speechSynthesis'in window?window.speechSynthesis.getVoices():[]).filter(v=>/^en(?:[-_]|$)/i.test(v.lang));
-  select.innerHTML=(currentLesson?.audio?.sentences?'<option value="recorded">English · Audio recording</option>':'')+voices.map(v=>`<option value="${esc(v.voiceURI)}">${esc(v.name)} (${esc(v.lang)})</option>`).join('')+'<option value="device">Device default · English</option>';
-  select.value=audioMode==='recorded'&&currentLesson?.audio?.sentences?'recorded':voices.some(v=>v.voiceURI===prefs.voice)?prefs.voice:'device';
-  select.onchange=()=>{const was=player.playing,kind=player.kind,n=player.position,w=player.storyWord,all=player.all;player.stop();audioMode=select.value==='recorded'?'recorded':'device';prefs.voice=select.value==='recorded'||select.value==='device'?'':select.value;savePrefs();if(was){if(kind==='story')player.playStory(Math.max(0,w));else if(kind==='sentence')player.playSentence(n,all);}player.updateUI();};
+  const matching=voices.filter(v=>accentMatches(v,prefs.accent));
+  select.innerHTML=(currentLesson?.audio?.sentences?'<option value="recorded">Lesson recording</option>':'')+
+    '<option value="auto">Auto · Best available ('+prefs.accent+')</option>'+
+    matching.map(v=>'<option value="'+esc(v.voiceURI)+'">'+esc(v.name)+(v.localService?'':' · Online')+'</option>').join('');
+  const stored=prefs.voiceByAccent[prefs.accent]||prefs.voice;
+  const custom=matching.find(v=>v.voiceURI===stored);
+  if(audioMode==='recorded'&&currentLesson?.audio?.sentences)select.value='recorded';
+  else select.value=custom?custom.voiceURI:'auto';
+  // A previous saved voice may belong to the other accent: never use it.
+  prefs.voice=custom?custom.voiceURI:'';
+  const status=$('#voice-status');
+  if(status)status.textContent=matching.length
+    ? 'يتم اختيار أفضل صوت متاح لهذه اللهجة من جهازك. الأصوات العصبية أو المحسّنة تعطي نتيجة أقرب للطبيعي إن توفرت.'
+    : 'لا يوجد صوت '+(prefs.accent==='en-GB'?'بريطاني':'أمريكي')+' مُثبّت في هذا المتصفح. سنطلب اللهجة المختارة، لكن الجهاز قد يستخدم صوته الافتراضي.';
+  select.onchange=()=>{
+    const was=player.playing,kind=player.kind,n=player.position,w=player.storyWord,all=player.all;
+    player.stop();audioMode=select.value==='recorded'?'recorded':'device';
+    prefs.voice=select.value==='auto'||select.value==='recorded'?'':select.value;
+    prefs.voiceByAccent[prefs.accent]=prefs.voice;savePrefs();
+    if(was){if(kind==='story')player.playStory(Math.max(0,w));else if(kind==='sentence')player.playSentence(n,all);}
+    player.updateUI();
+  };
+  for(const b of $$('.accent-option')){
+    const chosen=b.dataset.accent===prefs.accent;
+    b.classList.toggle('active',chosen);b.setAttribute('aria-pressed',String(chosen));
+    b.onclick=()=>{
+      if(prefs.accent===b.dataset.accent)return;
+      const was=player.playing,kind=player.kind,n=player.position,w=player.storyWord,all=player.all;
+      player.stop();
+      prefs.voiceByAccent[prefs.accent]=prefs.voice;
+      prefs.accent=b.dataset.accent;
+      prefs.voice=prefs.voiceByAccent[prefs.accent]||'';
+      audioMode='device';savePrefs();populateVoices();
+      if(was){if(kind==='story')player.playStory(Math.max(0,w));else if(kind==='sentence')player.playSentence(n,all);}
+    };
+  }
+  const sample=$('#voice-preview');
+  if(sample)sample.onclick=()=>{
+    if(!('speechSynthesis' in window)||typeof SpeechSynthesisUtterance==='undefined'){
+      toast('المتصفح لا يدعم تشغيل الأصوات.');return;
+    }
+    player.stop();
+    const voice=player.selectedVoice;
+    const utterance=new SpeechSynthesisUtterance('Hello, Dina! It is lovely to speak English with you. Let us practice together.');
+    utterance.lang=prefs.accent;utterance.voice=voice;utterance.rate=1;utterance.volume=prefs.volume;
+    utterance.onerror=()=>toast('تعذر تشغيل العينة. قد تحتاج إلى تنزيل صوت إنجليزي على جهازك.');
+    window.speechSynthesis.speak(utterance);
+  };
 }
 function setSpeed(speed){
   if(![.5,.75,1,1.25,1.5,1.75,2,2.5].includes(speed))throw Error('Unsupported speed');

@@ -9,3 +9,5 @@ Updated: 2026-11-04
 - Preserved: Dina dedication, playback settings, saved lesson progress, and the existing GitHub Pages path.
 - Updated: card duration estimates reflect short readers, not 20-minute stories.
 - Pending: original complete 20-minute stories, MP3 voice assets, and days 31–90. The original full source ZIP is not in this repository.
+
+- 2026-11-04: Added American/British accent selector, accent-specific voice options, voice sample, and saved choice. Browser-installed voices are not the same as GPT neural speech.

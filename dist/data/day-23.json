@@ -1,0 +1,207 @@
+{
+  "day": 23,
+  "title": "Messages and email",
+  "titleAr": "الرسائل والبريد",
+  "sentences": [
+    {
+      "en": "I sent you a message yesterday.",
+      "ar": "أرسلت لك رسالة أمس.",
+      "id": "day-23-01"
+    },
+    {
+      "en": "Did you have a chance to read it?",
+      "ar": "هل سنحت لك فرصة لقراءتها؟",
+      "id": "day-23-02"
+    },
+    {
+      "en": "Sorry for the late reply.",
+      "ar": "أعتذر عن التأخر في الرد.",
+      "id": "day-23-03"
+    },
+    {
+      "en": "I was away from my phone.",
+      "ar": "كنت بعيدًا عن هاتفي.",
+      "id": "day-23-04"
+    },
+    {
+      "en": "I'll reply as soon as I can.",
+      "ar": "سأرد حالما أستطيع.",
+      "id": "day-23-05"
+    },
+    {
+      "en": "Could you send me the details?",
+      "ar": "هل يمكنك إرسال التفاصيل لي؟",
+      "id": "day-23-06"
+    },
+    {
+      "en": "Please include the date and time.",
+      "ar": "يرجى ذكر التاريخ والوقت.",
+      "id": "day-23-07"
+    },
+    {
+      "en": "I've attached the document.",
+      "ar": "أرفقت المستند.",
+      "id": "day-23-08"
+    },
+    {
+      "en": "Let me know if the file opens.",
+      "ar": "أخبرني إن كان الملف يفتح.",
+      "id": "day-23-09"
+    },
+    {
+      "en": "I think the attachment is missing.",
+      "ar": "أعتقد أن المرفق غير موجود.",
+      "id": "day-23-10"
+    },
+    {
+      "en": "I'll send it again right away.",
+      "ar": "سأرسله مجددًا فورًا.",
+      "id": "day-23-11"
+    },
+    {
+      "en": "What should I write in the subject line?",
+      "ar": "ماذا أكتب في عنوان الرسالة؟",
+      "id": "day-23-12"
+    },
+    {
+      "en": "Keep the subject short and clear.",
+      "ar": "اجعل العنوان قصيرًا وواضحًا.",
+      "id": "day-23-13"
+    },
+    {
+      "en": "Could you confirm that you received this?",
+      "ar": "هل يمكنك تأكيد استلام الرسالة؟",
+      "id": "day-23-14"
+    },
+    {
+      "en": "I received it, thank you.",
+      "ar": "وصلتني، شكرًا لك.",
+      "id": "day-23-15"
+    },
+    {
+      "en": "I will review it this evening.",
+      "ar": "سأراجعها هذا المساء.",
+      "id": "day-23-16"
+    },
+    {
+      "en": "Would you prefer email or a text message?",
+      "ar": "هل تفضل البريد الإلكتروني أم الرسائل النصية؟",
+      "id": "day-23-17"
+    },
+    {
+      "en": "Email is easier for longer updates.",
+      "ar": "البريد الإلكتروني أسهل للتحديثات الطويلة.",
+      "id": "day-23-18"
+    },
+    {
+      "en": "I'll copy the team on the email.",
+      "ar": "سأضيف الفريق في نسخة من البريد.",
+      "id": "day-23-19"
+    },
+    {
+      "en": "Please don't share this message publicly.",
+      "ar": "يرجى عدم مشاركة هذه الرسالة علنًا.",
+      "id": "day-23-20"
+    },
+    {
+      "en": "There was a mistake in my previous email.",
+      "ar": "كان هناك خطأ في بريدي السابق.",
+      "id": "day-23-21"
+    },
+    {
+      "en": "Here is the corrected information.",
+      "ar": "إليك المعلومات المصححة.",
+      "id": "day-23-22"
+    },
+    {
+      "en": "I appreciate your quick response.",
+      "ar": "أقدر ردك السريع.",
+      "id": "day-23-23"
+    },
+    {
+      "en": "Could you clarify one point?",
+      "ar": "هل يمكنك توضيح نقطة واحدة؟",
+      "id": "day-23-24"
+    },
+    {
+      "en": "I want to make sure I understood.",
+      "ar": "أريد التأكد من أنني فهمت.",
+      "id": "day-23-25"
+    },
+    {
+      "en": "Let's keep the conversation in one thread.",
+      "ar": "لنواصل المحادثة في سلسلة رسائل واحدة.",
+      "id": "day-23-26"
+    },
+    {
+      "en": "I'll follow up tomorrow morning.",
+      "ar": "سأتابع الموضوع صباح الغد.",
+      "id": "day-23-27"
+    },
+    {
+      "en": "You can reach me here anytime.",
+      "ar": "يمكنك التواصل معي هنا في أي وقت.",
+      "id": "day-23-28"
+    },
+    {
+      "en": "I'll turn off notifications tonight.",
+      "ar": "سأوقف الإشعارات الليلة.",
+      "id": "day-23-29"
+    },
+    {
+      "en": "I haven't checked my inbox yet.",
+      "ar": "لم أتفقد صندوق الوارد بعد.",
+      "id": "day-23-30"
+    },
+    {
+      "en": "Your message was very helpful.",
+      "ar": "كانت رسالتك مفيدة جدًا.",
+      "id": "day-23-31"
+    },
+    {
+      "en": "I'll save the details for later.",
+      "ar": "سأحفظ التفاصيل للرجوع إليها لاحقًا.",
+      "id": "day-23-32"
+    },
+    {
+      "en": "Thanks for keeping me updated.",
+      "ar": "شكرًا لإطلاعي على المستجدات.",
+      "id": "day-23-33"
+    },
+    {
+      "en": "Looking forward to hearing from you.",
+      "ar": "أتطلع إلى ردك.",
+      "id": "day-23-34"
+    }
+  ],
+  "story": {
+    "title": "Messages and email",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring messages and email. The aim was to have a clear, natural conversation in English. Dina said, “I sent you a message yesterday.” A friend replied, “Did you have a chance to read it?” Dina said, “Sorry for the late reply.” A friend replied, “I was away from my phone.” They paused to remember the meaning. Dina said, “I'll reply as soon as I can.” A friend replied, “Could you send me the details?” Dina said, “Please include the date and time.” A friend replied, “I've attached the document.” They paused to remember the meaning. Dina said, “Let me know if the file opens.” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “I think the attachment is missing.” A friend replied, “I'll send it again right away.” Dina said, “What should I write in the subject line?” A friend replied, “Keep the subject short and clear.” They paused to remember the meaning. Dina said, “Could you confirm that you received this?” A friend replied, “I received it, thank you.” Dina said, “I will review it this evening.” A friend replied, “Would you prefer email or a text message?” They paused to remember the meaning. Dina said, “Email is easier for longer updates.” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “I'll copy the team on the email.” A friend replied, “Please don't share this message publicly.” Dina said, “There was a mistake in my previous email.” A friend replied, “Here is the corrected information.” They paused to remember the meaning. Dina said, “I appreciate your quick response.” A friend replied, “Could you clarify one point?” Dina said, “I want to make sure I understood.” A friend replied, “Let's keep the conversation in one thread.” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “I'll follow up tomorrow morning.” A friend replied, “You can reach me here anytime.” Dina said, “I'll turn off notifications tonight.” A friend replied, “I haven't checked my inbox yet.” They paused to remember the meaning. Dina said, “Your message was very helpful.” A friend replied, “I'll save the details for later.” Dina said, “Thanks for keeping me updated.” A friend replied, “Looking forward to hearing from you.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 156
+  }
+}

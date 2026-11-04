@@ -1,0 +1,207 @@
+{
+  "day": 20,
+  "title": "At the clinic",
+  "titleAr": "في العيادة",
+  "sentences": [
+    {
+      "en": "I would like to book an appointment.",
+      "ar": "أود حجز موعد.",
+      "id": "day-20-01"
+    },
+    {
+      "en": "Is the doctor available tomorrow?",
+      "ar": "هل الطبيب متاح غدًا؟",
+      "id": "day-20-02"
+    },
+    {
+      "en": "What time should I arrive?",
+      "ar": "في أي وقت ينبغي أن أحضر؟",
+      "id": "day-20-03"
+    },
+    {
+      "en": "Please bring your identification.",
+      "ar": "يرجى إحضار إثبات الهوية.",
+      "id": "day-20-04"
+    },
+    {
+      "en": "I have an appointment at ten.",
+      "ar": "لدي موعد الساعة العاشرة.",
+      "id": "day-20-05"
+    },
+    {
+      "en": "Where is the reception desk?",
+      "ar": "أين مكتب الاستقبال؟",
+      "id": "day-20-06"
+    },
+    {
+      "en": "I need to update my details.",
+      "ar": "أحتاج إلى تحديث بياناتي.",
+      "id": "day-20-07"
+    },
+    {
+      "en": "Could you confirm my appointment?",
+      "ar": "هل يمكنك تأكيد موعدي؟",
+      "id": "day-20-08"
+    },
+    {
+      "en": "Please take a seat in the waiting area.",
+      "ar": "تفضل بالجلوس في منطقة الانتظار.",
+      "id": "day-20-09"
+    },
+    {
+      "en": "The doctor will see you shortly.",
+      "ar": "سيستقبلك الطبيب بعد قليل.",
+      "id": "day-20-10"
+    },
+    {
+      "en": "What brings you here today?",
+      "ar": "ما سبب زيارتك اليوم؟",
+      "id": "day-20-11"
+    },
+    {
+      "en": "I have not been feeling well.",
+      "ar": "لم أكن أشعر أنني بخير.",
+      "id": "day-20-12"
+    },
+    {
+      "en": "When did the symptoms begin?",
+      "ar": "متى بدأت الأعراض؟",
+      "id": "day-20-13"
+    },
+    {
+      "en": "They started two days ago.",
+      "ar": "بدأت قبل يومين.",
+      "id": "day-20-14"
+    },
+    {
+      "en": "Does anything make it worse?",
+      "ar": "هل هناك شيء يزيدها سوءًا؟",
+      "id": "day-20-15"
+    },
+    {
+      "en": "It gets worse in the evening.",
+      "ar": "تزداد سوءًا في المساء.",
+      "id": "day-20-16"
+    },
+    {
+      "en": "Do you have any allergies?",
+      "ar": "هل لديك أي حساسية؟",
+      "id": "day-20-17"
+    },
+    {
+      "en": "I am not sure about that.",
+      "ar": "لست متأكدًا من ذلك.",
+      "id": "day-20-18"
+    },
+    {
+      "en": "Are you taking any medication?",
+      "ar": "هل تتناول أي أدوية؟",
+      "id": "day-20-19"
+    },
+    {
+      "en": "Here is a list of my medications.",
+      "ar": "هذه قائمة أدويتي.",
+      "id": "day-20-20"
+    },
+    {
+      "en": "The doctor asked a few questions.",
+      "ar": "طرح الطبيب بعض الأسئلة.",
+      "id": "day-20-21"
+    },
+    {
+      "en": "I need to describe the pain clearly.",
+      "ar": "أحتاج إلى وصف الألم بوضوح.",
+      "id": "day-20-22"
+    },
+    {
+      "en": "It feels better when I rest.",
+      "ar": "أشعر بتحسن عندما أرتاح.",
+      "id": "day-20-23"
+    },
+    {
+      "en": "Do I need any tests?",
+      "ar": "هل أحتاج إلى أي فحوصات؟",
+      "id": "day-20-24"
+    },
+    {
+      "en": "The nurse will explain the next step.",
+      "ar": "ستشرح الممرضة الخطوة التالية.",
+      "id": "day-20-25"
+    },
+    {
+      "en": "How long will the results take?",
+      "ar": "كم ستستغرق النتائج؟",
+      "id": "day-20-26"
+    },
+    {
+      "en": "You can view the results online.",
+      "ar": "يمكنك الاطلاع على النتائج عبر الإنترنت.",
+      "id": "day-20-27"
+    },
+    {
+      "en": "Could you explain that again?",
+      "ar": "هل يمكنك شرح ذلك مرة أخرى؟",
+      "id": "day-20-28"
+    },
+    {
+      "en": "I want to understand the instructions.",
+      "ar": "أريد فهم التعليمات.",
+      "id": "day-20-29"
+    },
+    {
+      "en": "Should I schedule a follow-up visit?",
+      "ar": "هل ينبغي أن أحجز موعد متابعة؟",
+      "id": "day-20-30"
+    },
+    {
+      "en": "Please contact the clinic if needed.",
+      "ar": "يرجى التواصل مع العيادة عند الحاجة.",
+      "id": "day-20-31"
+    },
+    {
+      "en": "Thank you for answering my questions.",
+      "ar": "شكرًا للإجابة عن أسئلتي.",
+      "id": "day-20-32"
+    },
+    {
+      "en": "I will follow the doctor's advice.",
+      "ar": "سأتبع نصيحة الطبيب.",
+      "id": "day-20-33"
+    },
+    {
+      "en": "I hope to feel better soon.",
+      "ar": "آمل أن أشعر بتحسن قريبًا.",
+      "id": "day-20-34"
+    }
+  ],
+  "story": {
+    "title": "At the clinic",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle at the clinic in everyday English. The goal was to communicate clearly and politely. Dina practiced “I would like to book an appointment.” A useful phrase was “Is the doctor available tomorrow?” A useful phrase was “What time should I arrive?” They repeated it to remember the meaning. Dina practiced “Please bring your identification.” A useful phrase was “I have an appointment at ten.” A useful phrase was “Where is the reception desk?” They repeated it to remember the meaning. Dina practiced “I need to update my details.” A useful phrase was “Could you confirm my appointment?” A useful phrase was “Please take a seat in the waiting area.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “The doctor will see you shortly.” A useful phrase was “What brings you here today?” A useful phrase was “I have not been feeling well.” They repeated it to remember the meaning. Dina practiced “When did the symptoms begin?” A useful phrase was “They started two days ago.” A useful phrase was “Does anything make it worse?” They repeated it to remember the meaning. Dina practiced “It gets worse in the evening.” A useful phrase was “Do you have any allergies?” A useful phrase was “I am not sure about that.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “Are you taking any medication?” A useful phrase was “Here is a list of my medications.” A useful phrase was “The doctor asked a few questions.” They repeated it to remember the meaning. Dina practiced “I need to describe the pain clearly.” A useful phrase was “It feels better when I rest.” A useful phrase was “Do I need any tests?” They repeated it to remember the meaning. Dina practiced “The nurse will explain the next step.” A useful phrase was “How long will the results take?” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “You can view the results online.” A useful phrase was “Could you explain that again?” A useful phrase was “I want to understand the instructions.” They repeated it to remember the meaning. Dina practiced “Should I schedule a follow-up visit?” A useful phrase was “Please contact the clinic if needed.” A useful phrase was “Thank you for answering my questions.” They repeated it to remember the meaning. Dina practiced “I will follow the doctor's advice.” A useful phrase was “I hope to feel better soon.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 177
+  }
+}

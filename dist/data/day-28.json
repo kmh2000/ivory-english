@@ -1,0 +1,207 @@
+{
+  "day": 28,
+  "title": "Feelings and moods",
+  "titleAr": "المشاعر والمزاج",
+  "sentences": [
+    {
+      "en": "How are you feeling today?",
+      "ar": "كيف تشعر اليوم؟",
+      "id": "day-28-01"
+    },
+    {
+      "en": "I'm feeling optimistic about the week.",
+      "ar": "أشعر بالتفاؤل تجاه هذا الأسبوع.",
+      "id": "day-28-02"
+    },
+    {
+      "en": "I woke up in a good mood.",
+      "ar": "استيقظت بمزاج جيد.",
+      "id": "day-28-03"
+    },
+    {
+      "en": "I feel a little nervous about tomorrow.",
+      "ar": "أشعر ببعض التوتر بشأن الغد.",
+      "id": "day-28-04"
+    },
+    {
+      "en": "It's normal to feel nervous sometimes.",
+      "ar": "من الطبيعي أن نتوتر أحيانًا.",
+      "id": "day-28-05"
+    },
+    {
+      "en": "I'm excited about the new opportunity.",
+      "ar": "أنا متحمس للفرصة الجديدة.",
+      "id": "day-28-06"
+    },
+    {
+      "en": "I was surprised by the news.",
+      "ar": "تفاجأت بالخبر.",
+      "id": "day-28-07"
+    },
+    {
+      "en": "That was a pleasant surprise.",
+      "ar": "كانت مفاجأة سارة.",
+      "id": "day-28-08"
+    },
+    {
+      "en": "I'm disappointed with the result.",
+      "ar": "أشعر بخيبة أمل من النتيجة.",
+      "id": "day-28-09"
+    },
+    {
+      "en": "I hoped things would go differently.",
+      "ar": "كنت آمل أن تسير الأمور بشكل مختلف.",
+      "id": "day-28-10"
+    },
+    {
+      "en": "I feel relieved now that it's over.",
+      "ar": "أشعر بالارتياح الآن بعد انتهائه.",
+      "id": "day-28-11"
+    },
+    {
+      "en": "I've had a stressful day.",
+      "ar": "مررت بيوم مرهق.",
+      "id": "day-28-12"
+    },
+    {
+      "en": "I need a moment to collect my thoughts.",
+      "ar": "أحتاج لحظة لترتيب أفكاري.",
+      "id": "day-28-13"
+    },
+    {
+      "en": "I'm not angry; I'm just frustrated.",
+      "ar": "لست غاضبًا، بل أشعر بالإحباط.",
+      "id": "day-28-14"
+    },
+    {
+      "en": "Could we talk about this calmly?",
+      "ar": "هل يمكننا التحدث عن هذا بهدوء؟",
+      "id": "day-28-15"
+    },
+    {
+      "en": "I appreciate you listening to me.",
+      "ar": "أقدّر إنصاتك لي.",
+      "id": "day-28-16"
+    },
+    {
+      "en": "I'm proud of what we achieved.",
+      "ar": "أنا فخور بما حققناه.",
+      "id": "day-28-17"
+    },
+    {
+      "en": "That compliment made me smile.",
+      "ar": "جعلتني تلك المجاملة أبتسم.",
+      "id": "day-28-18"
+    },
+    {
+      "en": "I felt embarrassed at first.",
+      "ar": "شعرت بالحرج في البداية.",
+      "id": "day-28-19"
+    },
+    {
+      "en": "Everyone makes mistakes occasionally.",
+      "ar": "الجميع يرتكب الأخطاء أحيانًا.",
+      "id": "day-28-20"
+    },
+    {
+      "en": "I'm grateful for your support.",
+      "ar": "أنا ممتن لدعمك.",
+      "id": "day-28-21"
+    },
+    {
+      "en": "I missed my friends this week.",
+      "ar": "اشتقت إلى أصدقائي هذا الأسبوع.",
+      "id": "day-28-22"
+    },
+    {
+      "en": "Seeing them lifted my mood.",
+      "ar": "رؤيتهم حسنت مزاجي.",
+      "id": "day-28-23"
+    },
+    {
+      "en": "I feel more confident than before.",
+      "ar": "أشعر بثقة أكبر من السابق.",
+      "id": "day-28-24"
+    },
+    {
+      "en": "I don't always know how to explain my feelings.",
+      "ar": "لا أعرف دائمًا كيف أشرح مشاعري.",
+      "id": "day-28-25"
+    },
+    {
+      "en": "It's okay to ask for space.",
+      "ar": "لا بأس أن أطلب بعض المساحة.",
+      "id": "day-28-26"
+    },
+    {
+      "en": "I need some quiet time.",
+      "ar": "أحتاج إلى بعض الوقت الهادئ.",
+      "id": "day-28-27"
+    },
+    {
+      "en": "I'm happy with my progress.",
+      "ar": "أنا سعيد بتقدمي.",
+      "id": "day-28-28"
+    },
+    {
+      "en": "I felt uncertain about the decision.",
+      "ar": "شعرت بعدم اليقين بشأن القرار.",
+      "id": "day-28-29"
+    },
+    {
+      "en": "Talking it through helped me.",
+      "ar": "ساعدني مناقشة الأمر.",
+      "id": "day-28-30"
+    },
+    {
+      "en": "I'm looking forward to better days.",
+      "ar": "أتطلع إلى أيام أفضل.",
+      "id": "day-28-31"
+    },
+    {
+      "en": "My mood can change during the day.",
+      "ar": "قد يتغير مزاجي خلال اليوم.",
+      "id": "day-28-32"
+    },
+    {
+      "en": "I try to notice what affects me.",
+      "ar": "أحاول ملاحظة ما يؤثر فيّ.",
+      "id": "day-28-33"
+    },
+    {
+      "en": "It's helpful to express feelings honestly.",
+      "ar": "من المفيد التعبير عن المشاعر بصدق.",
+      "id": "day-28-34"
+    }
+  ],
+  "story": {
+    "title": "Feelings and moods",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring feelings and moods. The aim was to have a clear, natural conversation in English. Dina said, “How are you feeling today?” A friend replied, “I'm feeling optimistic about the week.” Dina said, “I woke up in a good mood.” A friend replied, “I feel a little nervous about tomorrow.” They paused to remember the meaning. Dina said, “It's normal to feel nervous sometimes.” A friend replied, “I'm excited about the new opportunity.” Dina said, “I was surprised by the news.” A friend replied, “That was a pleasant surprise.” They paused to remember the meaning. Dina said, “I'm disappointed with the result.” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “I hoped things would go differently.” A friend replied, “I feel relieved now that it's over.” Dina said, “I've had a stressful day.” A friend replied, “I need a moment to collect my thoughts.” They paused to remember the meaning. Dina said, “I'm not angry; I'm just frustrated.” A friend replied, “Could we talk about this calmly?” Dina said, “I appreciate you listening to me.” A friend replied, “I'm proud of what we achieved.” They paused to remember the meaning. Dina said, “That compliment made me smile.” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “I felt embarrassed at first.” A friend replied, “Everyone makes mistakes occasionally.” Dina said, “I'm grateful for your support.” A friend replied, “I missed my friends this week.” They paused to remember the meaning. Dina said, “Seeing them lifted my mood.” A friend replied, “I feel more confident than before.” Dina said, “I don't always know how to explain my feelings.” A friend replied, “It's okay to ask for space.” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “I need some quiet time.” A friend replied, “I'm happy with my progress.” Dina said, “I felt uncertain about the decision.” A friend replied, “Talking it through helped me.” They paused to remember the meaning. Dina said, “I'm looking forward to better days.” A friend replied, “My mood can change during the day.” Dina said, “I try to notice what affects me.” A friend replied, “It's helpful to express feelings honestly.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 154
+  }
+}

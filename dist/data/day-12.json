@@ -1,0 +1,207 @@
+{
+  "day": 12,
+  "title": "Money and payment",
+  "titleAr": "النقود والدفع",
+  "sentences": [
+    {
+      "en": "How much is the total?",
+      "ar": "كم المبلغ الإجمالي؟",
+      "id": "day-12-01"
+    },
+    {
+      "en": "I would like to pay by card.",
+      "ar": "أود الدفع بالبطاقة.",
+      "id": "day-12-02"
+    },
+    {
+      "en": "Do you accept cash?",
+      "ar": "هل تقبلون الدفع نقدًا؟",
+      "id": "day-12-03"
+    },
+    {
+      "en": "Can I use contactless payment?",
+      "ar": "هل يمكنني الدفع دون تلامس؟",
+      "id": "day-12-04"
+    },
+    {
+      "en": "The card machine is not working.",
+      "ar": "جهاز الدفع بالبطاقة لا يعمل.",
+      "id": "day-12-05"
+    },
+    {
+      "en": "Let me try another card.",
+      "ar": "دعني أجرب بطاقة أخرى.",
+      "id": "day-12-06"
+    },
+    {
+      "en": "Please enter your PIN.",
+      "ar": "أدخل رقمك السري من فضلك.",
+      "id": "day-12-07"
+    },
+    {
+      "en": "The payment went through.",
+      "ar": "تمت عملية الدفع بنجاح.",
+      "id": "day-12-08"
+    },
+    {
+      "en": "Could I get a receipt?",
+      "ar": "هل يمكنني الحصول على إيصال؟",
+      "id": "day-12-09"
+    },
+    {
+      "en": "I think I was charged twice.",
+      "ar": "أعتقد أن المبلغ خُصم مرتين.",
+      "id": "day-12-10"
+    },
+    {
+      "en": "Let us check the transaction.",
+      "ar": "دعنا نتحقق من العملية.",
+      "id": "day-12-11"
+    },
+    {
+      "en": "The refund may take a few days.",
+      "ar": "قد يستغرق رد المبلغ بضعة أيام.",
+      "id": "day-12-12"
+    },
+    {
+      "en": "What is the price before tax?",
+      "ar": "كم السعر قبل الضريبة؟",
+      "id": "day-12-13"
+    },
+    {
+      "en": "Is the service fee included?",
+      "ar": "هل رسوم الخدمة مشمولة؟",
+      "id": "day-12-14"
+    },
+    {
+      "en": "I need to stick to my budget.",
+      "ar": "أحتاج إلى الالتزام بميزانيتي.",
+      "id": "day-12-15"
+    },
+    {
+      "en": "I track my spending every week.",
+      "ar": "أتابع مصروفاتي كل أسبوع.",
+      "id": "day-12-16"
+    },
+    {
+      "en": "I am saving for a new laptop.",
+      "ar": "أدخر لشراء حاسوب محمول جديد.",
+      "id": "day-12-17"
+    },
+    {
+      "en": "This purchase can wait.",
+      "ar": "يمكن تأجيل هذا الشراء.",
+      "id": "day-12-18"
+    },
+    {
+      "en": "Can we split the bill?",
+      "ar": "هل يمكننا تقسيم الفاتورة؟",
+      "id": "day-12-19"
+    },
+    {
+      "en": "I will pay my share.",
+      "ar": "سأدفع حصتي.",
+      "id": "day-12-20"
+    },
+    {
+      "en": "You can send me the amount later.",
+      "ar": "يمكنك تحويل المبلغ لي لاحقًا.",
+      "id": "day-12-21"
+    },
+    {
+      "en": "I transferred the money yesterday.",
+      "ar": "حوّلت المال أمس.",
+      "id": "day-12-22"
+    },
+    {
+      "en": "Have you received the transfer?",
+      "ar": "هل وصلك التحويل؟",
+      "id": "day-12-23"
+    },
+    {
+      "en": "The bank app shows it is pending.",
+      "ar": "تطبيق البنك يعرض أن العملية قيد الانتظار.",
+      "id": "day-12-24"
+    },
+    {
+      "en": "There is not enough balance.",
+      "ar": "لا يوجد رصيد كافٍ.",
+      "id": "day-12-25"
+    },
+    {
+      "en": "I need to withdraw some cash.",
+      "ar": "أحتاج إلى سحب بعض النقود.",
+      "id": "day-12-26"
+    },
+    {
+      "en": "Where is the nearest ATM?",
+      "ar": "أين أقرب صراف آلي؟",
+      "id": "day-12-27"
+    },
+    {
+      "en": "The machine charges a small fee.",
+      "ar": "الجهاز يفرض رسومًا بسيطة.",
+      "id": "day-12-28"
+    },
+    {
+      "en": "I would like to exchange some currency.",
+      "ar": "أود تبديل بعض العملات.",
+      "id": "day-12-29"
+    },
+    {
+      "en": "What is today's exchange rate?",
+      "ar": "ما سعر الصرف اليوم؟",
+      "id": "day-12-30"
+    },
+    {
+      "en": "Please count the change.",
+      "ar": "من فضلك عدّ الباقي.",
+      "id": "day-12-31"
+    },
+    {
+      "en": "The amount seems correct.",
+      "ar": "يبدو أن المبلغ صحيح.",
+      "id": "day-12-32"
+    },
+    {
+      "en": "I will keep a record of this payment.",
+      "ar": "سأحتفظ بسجل لهذه الدفعة.",
+      "id": "day-12-33"
+    },
+    {
+      "en": "Thank you, everything is settled.",
+      "ar": "شكرًا، كل شيء تمت تسويته.",
+      "id": "day-12-34"
+    }
+  ],
+  "story": {
+    "title": "Money and payment",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle money and payment in everyday English. The goal was to communicate clearly and politely. Dina practiced “How much is the total?” A useful phrase was “I would like to pay by card.” A useful phrase was “Do you accept cash?” They repeated it to remember the meaning. Dina practiced “Can I use contactless payment?” A useful phrase was “The card machine is not working.” A useful phrase was “Let me try another card.” They repeated it to remember the meaning. Dina practiced “Please enter your PIN.” A useful phrase was “The payment went through.” A useful phrase was “Could I get a receipt?” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “I think I was charged twice.” A useful phrase was “Let us check the transaction.” A useful phrase was “The refund may take a few days.” They repeated it to remember the meaning. Dina practiced “What is the price before tax?” A useful phrase was “Is the service fee included?” A useful phrase was “I need to stick to my budget.” They repeated it to remember the meaning. Dina practiced “I track my spending every week.” A useful phrase was “I am saving for a new laptop.” A useful phrase was “This purchase can wait.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “Can we split the bill?” A useful phrase was “I will pay my share.” A useful phrase was “You can send me the amount later.” They repeated it to remember the meaning. Dina practiced “I transferred the money yesterday.” A useful phrase was “Have you received the transfer?” A useful phrase was “The bank app shows it is pending.” They repeated it to remember the meaning. Dina practiced “There is not enough balance.” A useful phrase was “I need to withdraw some cash.” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “Where is the nearest ATM?” A useful phrase was “The machine charges a small fee.” A useful phrase was “I would like to exchange some currency.” They repeated it to remember the meaning. Dina practiced “What is today's exchange rate?” A useful phrase was “Please count the change.” A useful phrase was “The amount seems correct.” They repeated it to remember the meaning. Dina practiced “I will keep a record of this payment.” A useful phrase was “Thank you, everything is settled.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 174
+  }
+}

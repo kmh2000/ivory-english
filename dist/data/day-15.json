@@ -1,0 +1,207 @@
+{
+  "day": 15,
+  "title": "Weather and seasons",
+  "titleAr": "الطقس والفصول",
+  "sentences": [
+    {
+      "en": "What is the weather like today?",
+      "ar": "كيف حال الطقس اليوم؟",
+      "id": "day-15-01"
+    },
+    {
+      "en": "It is sunny but a little windy.",
+      "ar": "الجو مشمس لكنه عاصف قليلًا.",
+      "id": "day-15-02"
+    },
+    {
+      "en": "The temperature is rising.",
+      "ar": "درجة الحرارة ترتفع.",
+      "id": "day-15-03"
+    },
+    {
+      "en": "It might rain this evening.",
+      "ar": "قد تمطر هذا المساء.",
+      "id": "day-15-04"
+    },
+    {
+      "en": "Did you check the forecast?",
+      "ar": "هل تحققت من توقعات الطقس؟",
+      "id": "day-15-05"
+    },
+    {
+      "en": "There is a chance of thunderstorms.",
+      "ar": "هناك احتمال لحدوث عواصف رعدية.",
+      "id": "day-15-06"
+    },
+    {
+      "en": "Take an umbrella just in case.",
+      "ar": "خذ مظلة احتياطًا.",
+      "id": "day-15-07"
+    },
+    {
+      "en": "The sky is getting cloudy.",
+      "ar": "السماء تزداد غيومًا.",
+      "id": "day-15-08"
+    },
+    {
+      "en": "I can hear thunder in the distance.",
+      "ar": "أستطيع سماع الرعد من بعيد.",
+      "id": "day-15-09"
+    },
+    {
+      "en": "It started raining suddenly.",
+      "ar": "بدأ المطر فجأة.",
+      "id": "day-15-10"
+    },
+    {
+      "en": "The roads are wet and slippery.",
+      "ar": "الطرق مبللة وزلقة.",
+      "id": "day-15-11"
+    },
+    {
+      "en": "It feels colder than yesterday.",
+      "ar": "الجو أبرد مما كان عليه أمس.",
+      "id": "day-15-12"
+    },
+    {
+      "en": "I need a warmer jacket.",
+      "ar": "أحتاج سترة أكثر دفئًا.",
+      "id": "day-15-13"
+    },
+    {
+      "en": "Winter evenings can be chilly.",
+      "ar": "قد تكون أمسيات الشتاء باردة.",
+      "id": "day-15-14"
+    },
+    {
+      "en": "Summer days are very hot here.",
+      "ar": "أيام الصيف حارة جدًا هنا.",
+      "id": "day-15-15"
+    },
+    {
+      "en": "I prefer mild weather.",
+      "ar": "أفضل الطقس المعتدل.",
+      "id": "day-15-16"
+    },
+    {
+      "en": "Spring is my favorite season.",
+      "ar": "الربيع هو فصلي المفضل.",
+      "id": "day-15-17"
+    },
+    {
+      "en": "The flowers bloom in spring.",
+      "ar": "تتفتح الأزهار في الربيع.",
+      "id": "day-15-18"
+    },
+    {
+      "en": "Autumn brings cooler mornings.",
+      "ar": "يجلب الخريف صباحات أبرد.",
+      "id": "day-15-19"
+    },
+    {
+      "en": "The air feels fresh after the rain.",
+      "ar": "يبدو الهواء منعشًا بعد المطر.",
+      "id": "day-15-20"
+    },
+    {
+      "en": "It is too humid to go running.",
+      "ar": "الرطوبة عالية جدًا للركض.",
+      "id": "day-15-21"
+    },
+    {
+      "en": "Remember to drink enough water.",
+      "ar": "تذكر أن تشرب كمية كافية من الماء.",
+      "id": "day-15-22"
+    },
+    {
+      "en": "The sun sets later in summer.",
+      "ar": "تغرب الشمس في وقت متأخر صيفًا.",
+      "id": "day-15-23"
+    },
+    {
+      "en": "We should avoid the midday heat.",
+      "ar": "علينا تجنب حرارة منتصف النهار.",
+      "id": "day-15-24"
+    },
+    {
+      "en": "There is a strong wind outside.",
+      "ar": "هناك رياح قوية في الخارج.",
+      "id": "day-15-25"
+    },
+    {
+      "en": "The dust makes it hard to see.",
+      "ar": "الغبار يصعّب الرؤية.",
+      "id": "day-15-26"
+    },
+    {
+      "en": "I will close the windows.",
+      "ar": "سأغلق النوافذ.",
+      "id": "day-15-27"
+    },
+    {
+      "en": "The weather is improving now.",
+      "ar": "الطقس يتحسن الآن.",
+      "id": "day-15-28"
+    },
+    {
+      "en": "Let us enjoy the cool breeze.",
+      "ar": "دعنا نستمتع بالنسيم البارد.",
+      "id": "day-15-29"
+    },
+    {
+      "en": "The forecast says tomorrow will be clear.",
+      "ar": "تقول التوقعات إن الغد سيكون صحوًا.",
+      "id": "day-15-30"
+    },
+    {
+      "en": "We can have a picnic this weekend.",
+      "ar": "يمكننا الخروج في نزهة نهاية الأسبوع.",
+      "id": "day-15-31"
+    },
+    {
+      "en": "I hope the rain stops soon.",
+      "ar": "آمل أن يتوقف المطر قريبًا.",
+      "id": "day-15-32"
+    },
+    {
+      "en": "Every season has something special.",
+      "ar": "لكل فصل ما يميزه.",
+      "id": "day-15-33"
+    },
+    {
+      "en": "Good weather makes the day brighter.",
+      "ar": "الطقس الجميل يجعل اليوم أجمل.",
+      "id": "day-15-34"
+    }
+  ],
+  "story": {
+    "title": "Weather and seasons",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle weather and seasons in everyday English. The goal was to communicate clearly and politely. Dina practiced “What is the weather like today?” A useful phrase was “It is sunny but a little windy.” A useful phrase was “The temperature is rising.” They repeated it to remember the meaning. Dina practiced “It might rain this evening.” A useful phrase was “Did you check the forecast?” A useful phrase was “There is a chance of thunderstorms.” They repeated it to remember the meaning. Dina practiced “Take an umbrella just in case.” A useful phrase was “The sky is getting cloudy.” A useful phrase was “I can hear thunder in the distance.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “It started raining suddenly.” A useful phrase was “The roads are wet and slippery.” A useful phrase was “It feels colder than yesterday.” They repeated it to remember the meaning. Dina practiced “I need a warmer jacket.” A useful phrase was “Winter evenings can be chilly.” A useful phrase was “Summer days are very hot here.” They repeated it to remember the meaning. Dina practiced “I prefer mild weather.” A useful phrase was “Spring is my favorite season.” A useful phrase was “The flowers bloom in spring.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “Autumn brings cooler mornings.” A useful phrase was “The air feels fresh after the rain.” A useful phrase was “It is too humid to go running.” They repeated it to remember the meaning. Dina practiced “Remember to drink enough water.” A useful phrase was “The sun sets later in summer.” A useful phrase was “We should avoid the midday heat.” They repeated it to remember the meaning. Dina practiced “There is a strong wind outside.” A useful phrase was “The dust makes it hard to see.” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “I will close the windows.” A useful phrase was “The weather is improving now.” A useful phrase was “Let us enjoy the cool breeze.” They repeated it to remember the meaning. Dina practiced “The forecast says tomorrow will be clear.” A useful phrase was “We can have a picnic this weekend.” A useful phrase was “I hope the rain stops soon.” They repeated it to remember the meaning. Dina practiced “Every season has something special.” A useful phrase was “Good weather makes the day brighter.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 175
+  }
+}

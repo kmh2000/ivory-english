@@ -1,0 +1,207 @@
+{
+  "day": 26,
+  "title": "People and descriptions",
+  "titleAr": "وصف الأشخاص",
+  "sentences": [
+    {
+      "en": "What does your new colleague look like?",
+      "ar": "كيف يبدو زميلك الجديد؟",
+      "id": "day-26-01"
+    },
+    {
+      "en": "She's tall and has curly hair.",
+      "ar": "هي طويلة ولديها شعر مجعد.",
+      "id": "day-26-02"
+    },
+    {
+      "en": "He usually wears glasses.",
+      "ar": "عادةً يرتدي نظارة.",
+      "id": "day-26-03"
+    },
+    {
+      "en": "She has a friendly smile.",
+      "ar": "لديها ابتسامة ودودة.",
+      "id": "day-26-04"
+    },
+    {
+      "en": "He's easy to recognize.",
+      "ar": "من السهل التعرف عليه.",
+      "id": "day-26-05"
+    },
+    {
+      "en": "What kind of person is he?",
+      "ar": "ما طبيعة شخصيته؟",
+      "id": "day-26-06"
+    },
+    {
+      "en": "He's patient and thoughtful.",
+      "ar": "هو صبور ومراعٍ للآخرين.",
+      "id": "day-26-07"
+    },
+    {
+      "en": "She's confident without being arrogant.",
+      "ar": "هي واثقة من نفسها دون غرور.",
+      "id": "day-26-08"
+    },
+    {
+      "en": "He is good at explaining things.",
+      "ar": "يجيد شرح الأشياء.",
+      "id": "day-26-09"
+    },
+    {
+      "en": "She listens carefully to others.",
+      "ar": "تنصت جيدًا للآخرين.",
+      "id": "day-26-10"
+    },
+    {
+      "en": "My manager is very organized.",
+      "ar": "مديري منظم جدًا.",
+      "id": "day-26-11"
+    },
+    {
+      "en": "My sister is creative and curious.",
+      "ar": "أختي مبدعة وفضولية.",
+      "id": "day-26-12"
+    },
+    {
+      "en": "My brother is quieter than I am.",
+      "ar": "أخي أهدأ مني.",
+      "id": "day-26-13"
+    },
+    {
+      "en": "We have very different personalities.",
+      "ar": "لدينا شخصيتان مختلفتان جدًا.",
+      "id": "day-26-14"
+    },
+    {
+      "en": "He's a little shy at first.",
+      "ar": "هو خجول قليلًا في البداية.",
+      "id": "day-26-15"
+    },
+    {
+      "en": "She becomes talkative around friends.",
+      "ar": "تصبح كثيرة الحديث مع الأصدقاء.",
+      "id": "day-26-16"
+    },
+    {
+      "en": "I admire her sense of humor.",
+      "ar": "أعجب بحسها الفكاهي.",
+      "id": "day-26-17"
+    },
+    {
+      "en": "He always keeps his promises.",
+      "ar": "هو يفي بوعوده دائمًا.",
+      "id": "day-26-18"
+    },
+    {
+      "en": "She's reliable when things get difficult.",
+      "ar": "يمكن الاعتماد عليها عندما تصبح الأمور صعبة.",
+      "id": "day-26-19"
+    },
+    {
+      "en": "He can be stubborn sometimes.",
+      "ar": "قد يكون عنيدًا أحيانًا.",
+      "id": "day-26-20"
+    },
+    {
+      "en": "Nobody is perfect.",
+      "ar": "لا أحد كامل.",
+      "id": "day-26-21"
+    },
+    {
+      "en": "I try not to judge people too quickly.",
+      "ar": "أحاول ألّا أحكم على الناس بسرعة.",
+      "id": "day-26-22"
+    },
+    {
+      "en": "First impressions can be misleading.",
+      "ar": "قد تكون الانطباعات الأولى مضللة.",
+      "id": "day-26-23"
+    },
+    {
+      "en": "We share the same interests.",
+      "ar": "لدينا اهتمامات مشتركة.",
+      "id": "day-26-24"
+    },
+    {
+      "en": "I enjoy talking to people from different backgrounds.",
+      "ar": "أستمتع بالحديث مع أناس من خلفيات مختلفة.",
+      "id": "day-26-25"
+    },
+    {
+      "en": "She has a calm way of speaking.",
+      "ar": "تتحدث بطريقة هادئة.",
+      "id": "day-26-26"
+    },
+    {
+      "en": "He treats everyone with respect.",
+      "ar": "يعامل الجميع باحترام.",
+      "id": "day-26-27"
+    },
+    {
+      "en": "I appreciate honest people.",
+      "ar": "أقدّر الأشخاص الصادقين.",
+      "id": "day-26-28"
+    },
+    {
+      "en": "She's always willing to help.",
+      "ar": "هي مستعدة دائمًا للمساعدة.",
+      "id": "day-26-29"
+    },
+    {
+      "en": "He pays attention to small details.",
+      "ar": "يهتم بالتفاصيل الصغيرة.",
+      "id": "day-26-30"
+    },
+    {
+      "en": "They make a great team.",
+      "ar": "يشكلان فريقًا رائعًا.",
+      "id": "day-26-31"
+    },
+    {
+      "en": "We get along well despite our differences.",
+      "ar": "ننسجم رغم اختلافاتنا.",
+      "id": "day-26-32"
+    },
+    {
+      "en": "I hope to get to know them better.",
+      "ar": "آمل أن أتعرف إليهم أكثر.",
+      "id": "day-26-33"
+    },
+    {
+      "en": "Everyone has a unique story.",
+      "ar": "لكل شخص قصة فريدة.",
+      "id": "day-26-34"
+    }
+  ],
+  "story": {
+    "title": "People and descriptions",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring people and descriptions. The aim was to have a clear, natural conversation in English. Dina said, “What does your new colleague look like?” A friend replied, “She's tall and has curly hair.” Dina said, “He usually wears glasses.” A friend replied, “She has a friendly smile.” They paused to remember the meaning. Dina said, “He's easy to recognize.” A friend replied, “What kind of person is he?” Dina said, “He's patient and thoughtful.” A friend replied, “She's confident without being arrogant.” They paused to remember the meaning. Dina said, “He is good at explaining things.” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “She listens carefully to others.” A friend replied, “My manager is very organized.” Dina said, “My sister is creative and curious.” A friend replied, “My brother is quieter than I am.” They paused to remember the meaning. Dina said, “We have very different personalities.” A friend replied, “He's a little shy at first.” Dina said, “She becomes talkative around friends.” A friend replied, “I admire her sense of humor.” They paused to remember the meaning. Dina said, “He always keeps his promises.” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “She's reliable when things get difficult.” A friend replied, “He can be stubborn sometimes.” Dina said, “Nobody is perfect.” A friend replied, “I try not to judge people too quickly.” They paused to remember the meaning. Dina said, “First impressions can be misleading.” A friend replied, “We share the same interests.” Dina said, “I enjoy talking to people from different backgrounds.” A friend replied, “She has a calm way of speaking.” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “He treats everyone with respect.” A friend replied, “I appreciate honest people.” Dina said, “She's always willing to help.” A friend replied, “He pays attention to small details.” They paused to remember the meaning. Dina said, “They make a great team.” A friend replied, “We get along well despite our differences.” Dina said, “I hope to get to know them better.” A friend replied, “Everyone has a unique story.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 149
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "day": 30,
+  "title": "Your first month",
+  "titleAr": "شهرك الأول",
+  "sentences": [
+    {
+      "en": "I've been learning English for thirty days.",
+      "ar": "أتعلم الإنجليزية منذ ثلاثين يومًا.",
+      "id": "day-30-01"
+    },
+    {
+      "en": "I can see how much I've improved.",
+      "ar": "أستطيع أن أرى مدى تحسني.",
+      "id": "day-30-02"
+    },
+    {
+      "en": "At first, I felt unsure of myself.",
+      "ar": "في البداية، كنت غير واثق من نفسي.",
+      "id": "day-30-03"
+    },
+    {
+      "en": "Now I can introduce myself comfortably.",
+      "ar": "الآن أستطيع التعريف بنفسي براحة.",
+      "id": "day-30-04"
+    },
+    {
+      "en": "I know how to ask basic questions.",
+      "ar": "أعرف كيف أطرح أسئلة أساسية.",
+      "id": "day-30-05"
+    },
+    {
+      "en": "I can describe my daily routine.",
+      "ar": "أستطيع وصف روتيني اليومي.",
+      "id": "day-30-06"
+    },
+    {
+      "en": "I can order food at a restaurant.",
+      "ar": "أستطيع طلب الطعام في مطعم.",
+      "id": "day-30-07"
+    },
+    {
+      "en": "I can ask for directions politely.",
+      "ar": "أستطيع السؤال عن الاتجاهات بأدب.",
+      "id": "day-30-08"
+    },
+    {
+      "en": "I can explain what I need.",
+      "ar": "أستطيع شرح ما أحتاج إليه.",
+      "id": "day-30-09"
+    },
+    {
+      "en": "Some conversations are still difficult.",
+      "ar": "ما زالت بعض المحادثات صعبة.",
+      "id": "day-30-10"
+    },
+    {
+      "en": "That's part of the learning process.",
+      "ar": "هذا جزء من عملية التعلم.",
+      "id": "day-30-11"
+    },
+    {
+      "en": "I don't understand every word yet.",
+      "ar": "لا أفهم كل كلمة بعد.",
+      "id": "day-30-12"
+    },
+    {
+      "en": "But I understand the main message.",
+      "ar": "لكنني أفهم الرسالة الأساسية.",
+      "id": "day-30-13"
+    },
+    {
+      "en": "I've learned hundreds of useful sentences.",
+      "ar": "تعلمت مئات الجمل المفيدة.",
+      "id": "day-30-14"
+    },
+    {
+      "en": "Repeating them helps me remember.",
+      "ar": "يساعدني تكرارها على التذكر.",
+      "id": "day-30-15"
+    },
+    {
+      "en": "I practice speaking out loud.",
+      "ar": "أتدرب على التحدث بصوت عالٍ.",
+      "id": "day-30-16"
+    },
+    {
+      "en": "I listen closely to pronunciation.",
+      "ar": "أستمع بعناية إلى النطق.",
+      "id": "day-30-17"
+    },
+    {
+      "en": "I notice new expressions in everyday life.",
+      "ar": "ألاحظ تعبيرات جديدة في الحياة اليومية.",
+      "id": "day-30-18"
+    },
+    {
+      "en": "I sometimes make the same mistake twice.",
+      "ar": "أحيانًا أكرر الخطأ نفسه مرتين.",
+      "id": "day-30-19"
+    },
+    {
+      "en": "I can learn from each mistake.",
+      "ar": "يمكنني التعلم من كل خطأ.",
+      "id": "day-30-20"
+    },
+    {
+      "en": "I've become more patient with myself.",
+      "ar": "أصبحت أكثر صبرًا على نفسي.",
+      "id": "day-30-21"
+    },
+    {
+      "en": "My listening has improved gradually.",
+      "ar": "تحسن استماعي تدريجيًا.",
+      "id": "day-30-22"
+    },
+    {
+      "en": "I can follow a short story more easily.",
+      "ar": "أستطيع متابعة قصة قصيرة بسهولة أكبر.",
+      "id": "day-30-23"
+    },
+    {
+      "en": "I want to keep building my vocabulary.",
+      "ar": "أريد مواصلة توسيع مفرداتي.",
+      "id": "day-30-24"
+    },
+    {
+      "en": "Next month I'll focus on longer conversations.",
+      "ar": "سأركز الشهر المقبل على محادثات أطول.",
+      "id": "day-30-25"
+    },
+    {
+      "en": "I'll also practice writing short paragraphs.",
+      "ar": "سأتدرب أيضًا على كتابة فقرات قصيرة.",
+      "id": "day-30-26"
+    },
+    {
+      "en": "I plan to review older lessons regularly.",
+      "ar": "أنوي مراجعة الدروس السابقة بانتظام.",
+      "id": "day-30-27"
+    },
+    {
+      "en": "It's useful to track my progress.",
+      "ar": "من المفيد متابعة تقدمي.",
+      "id": "day-30-28"
+    },
+    {
+      "en": "I don't need to be perfect today.",
+      "ar": "لست بحاجة إلى أن أكون مثاليًا اليوم.",
+      "id": "day-30-29"
+    },
+    {
+      "en": "I just need to keep going.",
+      "ar": "كل ما أحتاجه هو الاستمرار.",
+      "id": "day-30-30"
+    },
+    {
+      "en": "Consistency is becoming a habit.",
+      "ar": "بدأ الالتزام يصبح عادة.",
+      "id": "day-30-31"
+    },
+    {
+      "en": "I'm proud that I didn't give up.",
+      "ar": "أنا فخور لأنني لم أستسلم.",
+      "id": "day-30-32"
+    },
+    {
+      "en": "This is only the beginning of my journey.",
+      "ar": "هذه مجرد بداية رحلتي.",
+      "id": "day-30-33"
+    },
+    {
+      "en": "I'm ready for the next thirty days.",
+      "ar": "أنا مستعد للثلاثين يومًا القادمة.",
+      "id": "day-30-34"
+    }
+  ],
+  "story": {
+    "title": "Your first month",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring your first month. The aim was to have a clear, natural conversation in English. Dina said, “I've been learning English for thirty days.” A friend replied, “I can see how much I've improved.” Dina said, “At first, I felt unsure of myself.” A friend replied, “Now I can introduce myself comfortably.” They paused to remember the meaning. Dina said, “I know how to ask basic questions.” A friend replied, “I can describe my daily routine.” Dina said, “I can order food at a restaurant.” A friend replied, “I can ask for directions politely.” They paused to remember the meaning. Dina said, “I can explain what I need.” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “Some conversations are still difficult.” A friend replied, “That's part of the learning process.” Dina said, “I don't understand every word yet.” A friend replied, “But I understand the main message.” They paused to remember the meaning. Dina said, “I've learned hundreds of useful sentences.” A friend replied, “Repeating them helps me remember.” Dina said, “I practice speaking out loud.” A friend replied, “I listen closely to pronunciation.” They paused to remember the meaning. Dina said, “I notice new expressions in everyday life.” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “I sometimes make the same mistake twice.” A friend replied, “I can learn from each mistake.” Dina said, “I've become more patient with myself.” A friend replied, “My listening has improved gradually.” They paused to remember the meaning. Dina said, “I can follow a short story more easily.” A friend replied, “I want to keep building my vocabulary.” Dina said, “Next month I'll focus on longer conversations.” A friend replied, “I'll also practice writing short paragraphs.” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “I plan to review older lessons regularly.” A friend replied, “It's useful to track my progress.” Dina said, “I don't need to be perfect today.” A friend replied, “I just need to keep going.” They paused to remember the meaning. Dina said, “Consistency is becoming a habit.” A friend replied, “I'm proud that I didn't give up.” Dina said, “This is only the beginning of my journey.” A friend replied, “I'm ready for the next thirty days.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 159
+  }
+}

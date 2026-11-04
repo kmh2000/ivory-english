@@ -1,0 +1,207 @@
+{
+  "day": 25,
+  "title": "Study and university",
+  "titleAr": "الدراسة والجامعة",
+  "sentences": [
+    {
+      "en": "What are you studying at university?",
+      "ar": "ماذا تدرس في الجامعة؟",
+      "id": "day-25-01"
+    },
+    {
+      "en": "I'm majoring in computer science.",
+      "ar": "أتخصص في علوم الحاسب.",
+      "id": "day-25-02"
+    },
+    {
+      "en": "Which year are you in?",
+      "ar": "في أي سنة دراسية أنت؟",
+      "id": "day-25-03"
+    },
+    {
+      "en": "I'm in my final year.",
+      "ar": "أنا في سنتي الأخيرة.",
+      "id": "day-25-04"
+    },
+    {
+      "en": "I have a lecture at nine.",
+      "ar": "لدي محاضرة الساعة التاسعة.",
+      "id": "day-25-05"
+    },
+    {
+      "en": "The professor explained the topic clearly.",
+      "ar": "شرح الأستاذ الموضوع بوضوح.",
+      "id": "day-25-06"
+    },
+    {
+      "en": "I need to review my notes.",
+      "ar": "أحتاج إلى مراجعة ملاحظاتي.",
+      "id": "day-25-07"
+    },
+    {
+      "en": "We have an assignment due next week.",
+      "ar": "لدينا واجب موعد تسليمه الأسبوع المقبل.",
+      "id": "day-25-08"
+    },
+    {
+      "en": "Have you started working on it?",
+      "ar": "هل بدأت العمل عليه؟",
+      "id": "day-25-09"
+    },
+    {
+      "en": "I've finished the first part.",
+      "ar": "أنهيت الجزء الأول.",
+      "id": "day-25-10"
+    },
+    {
+      "en": "I'm struggling with one question.",
+      "ar": "أواجه صعوبة في سؤال واحد.",
+      "id": "day-25-11"
+    },
+    {
+      "en": "Could we study together?",
+      "ar": "هل يمكننا المذاكرة معًا؟",
+      "id": "day-25-12"
+    },
+    {
+      "en": "The library is a quiet place to study.",
+      "ar": "المكتبة مكان هادئ للمذاكرة.",
+      "id": "day-25-13"
+    },
+    {
+      "en": "I'll reserve a study room.",
+      "ar": "سأحجز غرفة للمذاكرة.",
+      "id": "day-25-14"
+    },
+    {
+      "en": "Let's compare our answers.",
+      "ar": "دعنا نقارن إجاباتنا.",
+      "id": "day-25-15"
+    },
+    {
+      "en": "I want to understand the method, not just memorize it.",
+      "ar": "أريد فهم الطريقة لا حفظها فقط.",
+      "id": "day-25-16"
+    },
+    {
+      "en": "The exam covers five chapters.",
+      "ar": "يشمل الاختبار خمسة فصول.",
+      "id": "day-25-17"
+    },
+    {
+      "en": "I should start preparing early.",
+      "ar": "ينبغي أن أبدأ الاستعداد مبكرًا.",
+      "id": "day-25-18"
+    },
+    {
+      "en": "I made a revision schedule.",
+      "ar": "أعددت جدولًا للمراجعة.",
+      "id": "day-25-19"
+    },
+    {
+      "en": "I take short breaks to stay focused.",
+      "ar": "آخذ استراحات قصيرة للحفاظ على التركيز.",
+      "id": "day-25-20"
+    },
+    {
+      "en": "The deadline has been extended.",
+      "ar": "تم تمديد الموعد النهائي.",
+      "id": "day-25-21"
+    },
+    {
+      "en": "Please upload your work before midnight.",
+      "ar": "يرجى رفع عملك قبل منتصف الليل.",
+      "id": "day-25-22"
+    },
+    {
+      "en": "Our group has four students.",
+      "ar": "تضم مجموعتنا أربعة طلاب.",
+      "id": "day-25-23"
+    },
+    {
+      "en": "We divided the tasks fairly.",
+      "ar": "قسّمنا المهام بعدل.",
+      "id": "day-25-24"
+    },
+    {
+      "en": "I'm responsible for the presentation.",
+      "ar": "أنا مسؤول عن العرض التقديمي.",
+      "id": "day-25-25"
+    },
+    {
+      "en": "Could you check my slides?",
+      "ar": "هل يمكنك مراجعة شرائحي؟",
+      "id": "day-25-26"
+    },
+    {
+      "en": "I need to cite my sources properly.",
+      "ar": "أحتاج إلى توثيق مصادري بشكل صحيح.",
+      "id": "day-25-27"
+    },
+    {
+      "en": "I learned a lot from this project.",
+      "ar": "تعلمت كثيرًا من هذا المشروع.",
+      "id": "day-25-28"
+    },
+    {
+      "en": "The feedback was encouraging.",
+      "ar": "كانت الملاحظات مشجعة.",
+      "id": "day-25-29"
+    },
+    {
+      "en": "I might apply for an internship.",
+      "ar": "قد أتقدم للحصول على تدريب.",
+      "id": "day-25-30"
+    },
+    {
+      "en": "Practical experience is valuable.",
+      "ar": "الخبرة العملية قيّمة.",
+      "id": "day-25-31"
+    },
+    {
+      "en": "I hope to graduate next year.",
+      "ar": "آمل أن أتخرج العام المقبل.",
+      "id": "day-25-32"
+    },
+    {
+      "en": "I'm proud of how far I've come.",
+      "ar": "أنا فخور بما وصلت إليه.",
+      "id": "day-25-33"
+    },
+    {
+      "en": "Learning doesn't stop after graduation.",
+      "ar": "التعلم لا يتوقف بعد التخرج.",
+      "id": "day-25-34"
+    }
+  ],
+  "story": {
+    "title": "Study and university",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring study and university. The aim was to have a clear, natural conversation in English. Dina said, “What are you studying at university?” A friend replied, “I'm majoring in computer science.” Dina said, “Which year are you in?” A friend replied, “I'm in my final year.” They paused to remember the meaning. Dina said, “I have a lecture at nine.” A friend replied, “The professor explained the topic clearly.” Dina said, “I need to review my notes.” A friend replied, “We have an assignment due next week.” They paused to remember the meaning. Dina said, “Have you started working on it?” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “I've finished the first part.” A friend replied, “I'm struggling with one question.” Dina said, “Could we study together?” A friend replied, “The library is a quiet place to study.” They paused to remember the meaning. Dina said, “I'll reserve a study room.” A friend replied, “Let's compare our answers.” Dina said, “I want to understand the method, not just memorize it.” A friend replied, “The exam covers five chapters.” They paused to remember the meaning. Dina said, “I should start preparing early.” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “I made a revision schedule.” A friend replied, “I take short breaks to stay focused.” Dina said, “The deadline has been extended.” A friend replied, “Please upload your work before midnight.” They paused to remember the meaning. Dina said, “Our group has four students.” A friend replied, “We divided the tasks fairly.” Dina said, “I'm responsible for the presentation.” A friend replied, “Could you check my slides?” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “I need to cite my sources properly.” A friend replied, “I learned a lot from this project.” Dina said, “The feedback was encouraging.” A friend replied, “I might apply for an internship.” They paused to remember the meaning. Dina said, “Practical experience is valuable.” A friend replied, “I hope to graduate next year.” Dina said, “I'm proud of how far I've come.” A friend replied, “Learning doesn't stop after graduation.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 150
+  }
+}

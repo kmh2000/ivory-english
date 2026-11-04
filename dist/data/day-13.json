@@ -1,0 +1,207 @@
+{
+  "day": 13,
+  "title": "Asking for directions",
+  "titleAr": "السؤال عن الاتجاهات",
+  "sentences": [
+    {
+      "en": "Excuse me, can you help me?",
+      "ar": "عذرًا، هل يمكنك مساعدتي؟",
+      "id": "day-13-01"
+    },
+    {
+      "en": "I am trying to find the library.",
+      "ar": "أحاول العثور على المكتبة.",
+      "id": "day-13-02"
+    },
+    {
+      "en": "Is it far from here?",
+      "ar": "هل هي بعيدة عن هنا؟",
+      "id": "day-13-03"
+    },
+    {
+      "en": "It is about ten minutes away.",
+      "ar": "تبعد نحو عشر دقائق.",
+      "id": "day-13-04"
+    },
+    {
+      "en": "Should I walk or take a taxi?",
+      "ar": "هل الأفضل أن أمشي أم أركب سيارة أجرة؟",
+      "id": "day-13-05"
+    },
+    {
+      "en": "Walking is faster at this time.",
+      "ar": "المشي أسرع في هذا الوقت.",
+      "id": "day-13-06"
+    },
+    {
+      "en": "Go straight ahead.",
+      "ar": "امضِ إلى الأمام مباشرة.",
+      "id": "day-13-07"
+    },
+    {
+      "en": "Turn left at the next street.",
+      "ar": "انعطف يسارًا عند الشارع التالي.",
+      "id": "day-13-08"
+    },
+    {
+      "en": "Take the second right.",
+      "ar": "انعطف عند ثاني شارع إلى اليمين.",
+      "id": "day-13-09"
+    },
+    {
+      "en": "Cross at the traffic lights.",
+      "ar": "اعبر عند إشارة المرور.",
+      "id": "day-13-10"
+    },
+    {
+      "en": "The building is on your right.",
+      "ar": "المبنى على يمينك.",
+      "id": "day-13-11"
+    },
+    {
+      "en": "It is next to the pharmacy.",
+      "ar": "إنه بجانب الصيدلية.",
+      "id": "day-13-12"
+    },
+    {
+      "en": "Look for the blue sign.",
+      "ar": "ابحث عن اللافتة الزرقاء.",
+      "id": "day-13-13"
+    },
+    {
+      "en": "You cannot miss the entrance.",
+      "ar": "لن تخطئ في العثور على المدخل.",
+      "id": "day-13-14"
+    },
+    {
+      "en": "Is there a shortcut?",
+      "ar": "هل يوجد طريق مختصر؟",
+      "id": "day-13-15"
+    },
+    {
+      "en": "The shortcut goes through the park.",
+      "ar": "الطريق المختصر يمر عبر الحديقة.",
+      "id": "day-13-16"
+    },
+    {
+      "en": "Be careful at that intersection.",
+      "ar": "انتبه عند ذلك التقاطع.",
+      "id": "day-13-17"
+    },
+    {
+      "en": "Is the station nearby?",
+      "ar": "هل المحطة قريبة؟",
+      "id": "day-13-18"
+    },
+    {
+      "en": "The station is across the road.",
+      "ar": "المحطة على الجانب الآخر من الطريق.",
+      "id": "day-13-19"
+    },
+    {
+      "en": "Could you show me on the map?",
+      "ar": "هل يمكنك أن تريني على الخريطة؟",
+      "id": "day-13-20"
+    },
+    {
+      "en": "My phone has lost the signal.",
+      "ar": "فقد هاتفي الإشارة.",
+      "id": "day-13-21"
+    },
+    {
+      "en": "Let me check the street name.",
+      "ar": "دعني أتحقق من اسم الشارع.",
+      "id": "day-13-22"
+    },
+    {
+      "en": "I think we passed the turn.",
+      "ar": "أظن أننا تجاوزنا المنعطف.",
+      "id": "day-13-23"
+    },
+    {
+      "en": "We need to go back one block.",
+      "ar": "علينا العودة مسافة مربع سكني واحد.",
+      "id": "day-13-24"
+    },
+    {
+      "en": "Is this the correct entrance?",
+      "ar": "هل هذا هو المدخل الصحيح؟",
+      "id": "day-13-25"
+    },
+    {
+      "en": "The main entrance is around the corner.",
+      "ar": "المدخل الرئيسي عند الزاوية.",
+      "id": "day-13-26"
+    },
+    {
+      "en": "How do I get to the parking area?",
+      "ar": "كيف أصل إلى موقف السيارات؟",
+      "id": "day-13-27"
+    },
+    {
+      "en": "Follow the signs downstairs.",
+      "ar": "اتبع اللافتات إلى الطابق السفلي.",
+      "id": "day-13-28"
+    },
+    {
+      "en": "The elevator is behind you.",
+      "ar": "المصعد خلفك.",
+      "id": "day-13-29"
+    },
+    {
+      "en": "Take the stairs to the first floor.",
+      "ar": "اصعد الدرج إلى الطابق الأول.",
+      "id": "day-13-30"
+    },
+    {
+      "en": "Thank you for the clear directions.",
+      "ar": "شكرًا على الإرشادات الواضحة.",
+      "id": "day-13-31"
+    },
+    {
+      "en": "You are very welcome.",
+      "ar": "على الرحب والسعة.",
+      "id": "day-13-32"
+    },
+    {
+      "en": "I found the place easily.",
+      "ar": "وجدت المكان بسهولة.",
+      "id": "day-13-33"
+    },
+    {
+      "en": "Next time I will know the way.",
+      "ar": "في المرة القادمة سأعرف الطريق.",
+      "id": "day-13-34"
+    }
+  ],
+  "story": {
+    "title": "Asking for directions",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle asking for directions in everyday English. The goal was to communicate clearly and politely. Dina practiced “Excuse me, can you help me?” A useful phrase was “I am trying to find the library.” A useful phrase was “Is it far from here?” They repeated it to remember the meaning. Dina practiced “It is about ten minutes away.” A useful phrase was “Should I walk or take a taxi?” A useful phrase was “Walking is faster at this time.” They repeated it to remember the meaning. Dina practiced “Go straight ahead.” A useful phrase was “Turn left at the next street.” A useful phrase was “Take the second right.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “Cross at the traffic lights.” A useful phrase was “The building is on your right.” A useful phrase was “It is next to the pharmacy.” They repeated it to remember the meaning. Dina practiced “Look for the blue sign.” A useful phrase was “You cannot miss the entrance.” A useful phrase was “Is there a shortcut?” They repeated it to remember the meaning. Dina practiced “The shortcut goes through the park.” A useful phrase was “Be careful at that intersection.” A useful phrase was “Is the station nearby?” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “The station is across the road.” A useful phrase was “Could you show me on the map?” A useful phrase was “My phone has lost the signal.” They repeated it to remember the meaning. Dina practiced “Let me check the street name.” A useful phrase was “I think we passed the turn.” A useful phrase was “We need to go back one block.” They repeated it to remember the meaning. Dina practiced “Is this the correct entrance?” A useful phrase was “The main entrance is around the corner.” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “How do I get to the parking area?” A useful phrase was “Follow the signs downstairs.” A useful phrase was “The elevator is behind you.” They repeated it to remember the meaning. Dina practiced “Take the stairs to the first floor.” A useful phrase was “Thank you for the clear directions.” A useful phrase was “You are very welcome.” They repeated it to remember the meaning. Dina practiced “I found the place easily.” A useful phrase was “Next time I will know the way.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 176
+  }
+}

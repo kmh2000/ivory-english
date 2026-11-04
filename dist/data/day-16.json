@@ -1,0 +1,207 @@
+{
+  "day": 16,
+  "title": "Daily habits",
+  "titleAr": "العادات اليومية",
+  "sentences": [
+    {
+      "en": "I usually wake up at six.",
+      "ar": "عادةً أستيقظ الساعة السادسة.",
+      "id": "day-16-01"
+    },
+    {
+      "en": "I make my bed every morning.",
+      "ar": "أرتب سريري كل صباح.",
+      "id": "day-16-02"
+    },
+    {
+      "en": "Then I drink a glass of water.",
+      "ar": "ثم أشرب كوب ماء.",
+      "id": "day-16-03"
+    },
+    {
+      "en": "I try not to check my phone immediately.",
+      "ar": "أحاول ألّا أتفقد هاتفي فورًا.",
+      "id": "day-16-04"
+    },
+    {
+      "en": "Breakfast helps me start the day.",
+      "ar": "يساعدني الإفطار على بدء يومي.",
+      "id": "day-16-05"
+    },
+    {
+      "en": "I leave home at half past seven.",
+      "ar": "أغادر المنزل في السابعة والنصف.",
+      "id": "day-16-06"
+    },
+    {
+      "en": "My commute takes about twenty minutes.",
+      "ar": "يستغرق طريقي إلى العمل نحو عشرين دقيقة.",
+      "id": "day-16-07"
+    },
+    {
+      "en": "I listen to English on the way.",
+      "ar": "أستمع إلى الإنجليزية في الطريق.",
+      "id": "day-16-08"
+    },
+    {
+      "en": "I write down my main tasks.",
+      "ar": "أدوّن مهامي الأساسية.",
+      "id": "day-16-09"
+    },
+    {
+      "en": "I take short breaks while working.",
+      "ar": "آخذ استراحات قصيرة أثناء العمل.",
+      "id": "day-16-10"
+    },
+    {
+      "en": "I always keep a bottle of water nearby.",
+      "ar": "أحتفظ دائمًا بزجاجة ماء بالقرب مني.",
+      "id": "day-16-11"
+    },
+    {
+      "en": "I eat lunch at the same time most days.",
+      "ar": "أتناول الغداء في الوقت نفسه معظم الأيام.",
+      "id": "day-16-12"
+    },
+    {
+      "en": "Sometimes my schedule changes.",
+      "ar": "أحيانًا يتغير جدولي.",
+      "id": "day-16-13"
+    },
+    {
+      "en": "I try to stay flexible.",
+      "ar": "أحاول أن أكون مرنًا.",
+      "id": "day-16-14"
+    },
+    {
+      "en": "I go for a walk after work.",
+      "ar": "أخرج للمشي بعد العمل.",
+      "id": "day-16-15"
+    },
+    {
+      "en": "Walking helps me clear my mind.",
+      "ar": "يساعدني المشي على تصفية ذهني.",
+      "id": "day-16-16"
+    },
+    {
+      "en": "I cook dinner at home.",
+      "ar": "أعد العشاء في المنزل.",
+      "id": "day-16-17"
+    },
+    {
+      "en": "I prefer simple, healthy meals.",
+      "ar": "أفضل الوجبات البسيطة والصحية.",
+      "id": "day-16-18"
+    },
+    {
+      "en": "I clean the kitchen before relaxing.",
+      "ar": "أنظف المطبخ قبل الاسترخاء.",
+      "id": "day-16-19"
+    },
+    {
+      "en": "I call my family in the evening.",
+      "ar": "أتصل بعائلتي في المساء.",
+      "id": "day-16-20"
+    },
+    {
+      "en": "I read a few pages before bed.",
+      "ar": "أقرأ بضع صفحات قبل النوم.",
+      "id": "day-16-21"
+    },
+    {
+      "en": "I set an alarm for tomorrow.",
+      "ar": "أضبط المنبه للغد.",
+      "id": "day-16-22"
+    },
+    {
+      "en": "I try to sleep early.",
+      "ar": "أحاول النوم مبكرًا.",
+      "id": "day-16-23"
+    },
+    {
+      "en": "I do not always follow my routine.",
+      "ar": "لا ألتزم بروتيني دائمًا.",
+      "id": "day-16-24"
+    },
+    {
+      "en": "It is okay to start again.",
+      "ar": "لا بأس أن أبدأ من جديد.",
+      "id": "day-16-25"
+    },
+    {
+      "en": "Small habits make a big difference.",
+      "ar": "العادات الصغيرة تصنع فرقًا كبيرًا.",
+      "id": "day-16-26"
+    },
+    {
+      "en": "I am trying to spend less time online.",
+      "ar": "أحاول تقليل الوقت الذي أقضيه على الإنترنت.",
+      "id": "day-16-27"
+    },
+    {
+      "en": "I want to exercise more regularly.",
+      "ar": "أريد ممارسة الرياضة بانتظام أكثر.",
+      "id": "day-16-28"
+    },
+    {
+      "en": "I keep track of my progress.",
+      "ar": "أتابع تقدمي.",
+      "id": "day-16-29"
+    },
+    {
+      "en": "Consistency matters more than perfection.",
+      "ar": "الاستمرار أهم من الكمال.",
+      "id": "day-16-30"
+    },
+    {
+      "en": "I feel better when I plan ahead.",
+      "ar": "أشعر بتحسن عندما أخطط مسبقًا.",
+      "id": "day-16-31"
+    },
+    {
+      "en": "My weekends are more relaxed.",
+      "ar": "عطلات نهاية الأسبوع عندي أكثر هدوءًا.",
+      "id": "day-16-32"
+    },
+    {
+      "en": "A good routine saves time.",
+      "ar": "الروتين الجيد يوفر الوقت.",
+      "id": "day-16-33"
+    },
+    {
+      "en": "Tomorrow is another chance to improve.",
+      "ar": "غدًا فرصة جديدة للتحسن.",
+      "id": "day-16-34"
+    }
+  ],
+  "story": {
+    "title": "Daily habits",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle daily habits in everyday English. The goal was to communicate clearly and politely. Dina practiced “I usually wake up at six.” A useful phrase was “I make my bed every morning.” A useful phrase was “Then I drink a glass of water.” They repeated it to remember the meaning. Dina practiced “I try not to check my phone immediately.” A useful phrase was “Breakfast helps me start the day.” A useful phrase was “I leave home at half past seven.” They repeated it to remember the meaning. Dina practiced “My commute takes about twenty minutes.” A useful phrase was “I listen to English on the way.” A useful phrase was “I write down my main tasks.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “I take short breaks while working.” A useful phrase was “I always keep a bottle of water nearby.” A useful phrase was “I eat lunch at the same time most days.” They repeated it to remember the meaning. Dina practiced “Sometimes my schedule changes.” A useful phrase was “I try to stay flexible.” A useful phrase was “I go for a walk after work.” They repeated it to remember the meaning. Dina practiced “Walking helps me clear my mind.” A useful phrase was “I cook dinner at home.” A useful phrase was “I prefer simple, healthy meals.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “I clean the kitchen before relaxing.” A useful phrase was “I call my family in the evening.” A useful phrase was “I read a few pages before bed.” They repeated it to remember the meaning. Dina practiced “I set an alarm for tomorrow.” A useful phrase was “I try to sleep early.” A useful phrase was “I do not always follow my routine.” They repeated it to remember the meaning. Dina practiced “It is okay to start again.” A useful phrase was “Small habits make a big difference.” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “I am trying to spend less time online.” A useful phrase was “I want to exercise more regularly.” A useful phrase was “I keep track of my progress.” They repeated it to remember the meaning. Dina practiced “Consistency matters more than perfection.” A useful phrase was “I feel better when I plan ahead.” A useful phrase was “My weekends are more relaxed.” They repeated it to remember the meaning. Dina practiced “A good routine saves time.” A useful phrase was “Tomorrow is another chance to improve.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 183
+  }
+}

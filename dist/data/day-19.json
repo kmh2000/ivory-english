@@ -1,0 +1,207 @@
+{
+  "day": 19,
+  "title": "Well-being",
+  "titleAr": "العناية بالنفس",
+  "sentences": [
+    {
+      "en": "I need a little time to rest.",
+      "ar": "أحتاج إلى بعض الوقت للراحة.",
+      "id": "day-19-01"
+    },
+    {
+      "en": "I have been very busy lately.",
+      "ar": "كنت مشغولًا جدًا مؤخرًا.",
+      "id": "day-19-02"
+    },
+    {
+      "en": "I am learning to slow down.",
+      "ar": "أتعلم أن أهدئ وتيرتي.",
+      "id": "day-19-03"
+    },
+    {
+      "en": "A quiet walk helps me relax.",
+      "ar": "المشي الهادئ يساعدني على الاسترخاء.",
+      "id": "day-19-04"
+    },
+    {
+      "en": "I try to get enough sleep.",
+      "ar": "أحاول الحصول على نوم كافٍ.",
+      "id": "day-19-05"
+    },
+    {
+      "en": "I feel refreshed after a good night.",
+      "ar": "أشعر بالانتعاش بعد ليلة نوم جيدة.",
+      "id": "day-19-06"
+    },
+    {
+      "en": "I take breaks when I need them.",
+      "ar": "آخذ استراحات عندما أحتاج إليها.",
+      "id": "day-19-07"
+    },
+    {
+      "en": "It is important to drink water.",
+      "ar": "من المهم شرب الماء.",
+      "id": "day-19-08"
+    },
+    {
+      "en": "I try to eat regular meals.",
+      "ar": "أحاول تناول وجبات منتظمة.",
+      "id": "day-19-09"
+    },
+    {
+      "en": "Too much screen time makes me tired.",
+      "ar": "كثرة وقت الشاشة تجعلني متعبًا.",
+      "id": "day-19-10"
+    },
+    {
+      "en": "I put my phone away before bed.",
+      "ar": "أبعد هاتفي قبل النوم.",
+      "id": "day-19-11"
+    },
+    {
+      "en": "I like spending time outdoors.",
+      "ar": "أحب قضاء الوقت في الخارج.",
+      "id": "day-19-12"
+    },
+    {
+      "en": "Fresh air improves my mood.",
+      "ar": "الهواء النقي يحسن مزاجي.",
+      "id": "day-19-13"
+    },
+    {
+      "en": "Sometimes I feel overwhelmed.",
+      "ar": "أشعر أحيانًا بأن الأمور تفوق طاقتي.",
+      "id": "day-19-14"
+    },
+    {
+      "en": "I can take one step at a time.",
+      "ar": "يمكنني التعامل مع الأمور خطوة بخطوة.",
+      "id": "day-19-15"
+    },
+    {
+      "en": "Talking to someone I trust helps.",
+      "ar": "التحدث مع شخص أثق به يساعدني.",
+      "id": "day-19-16"
+    },
+    {
+      "en": "I do not have to do everything today.",
+      "ar": "ليس عليّ إنجاز كل شيء اليوم.",
+      "id": "day-19-17"
+    },
+    {
+      "en": "My health deserves attention.",
+      "ar": "صحتي تستحق الاهتمام.",
+      "id": "day-19-18"
+    },
+    {
+      "en": "I am trying to be kinder to myself.",
+      "ar": "أحاول أن أكون ألطف مع نفسي.",
+      "id": "day-19-19"
+    },
+    {
+      "en": "Making mistakes is part of learning.",
+      "ar": "ارتكاب الأخطاء جزء من التعلم.",
+      "id": "day-19-20"
+    },
+    {
+      "en": "I am grateful for small moments.",
+      "ar": "أنا ممتن للحظات الصغيرة.",
+      "id": "day-19-21"
+    },
+    {
+      "en": "I enjoy a quiet cup of tea.",
+      "ar": "أستمتع بكوب شاي هادئ.",
+      "id": "day-19-22"
+    },
+    {
+      "en": "I want a better work-life balance.",
+      "ar": "أريد توازنًا أفضل بين العمل والحياة.",
+      "id": "day-19-23"
+    },
+    {
+      "en": "I can say no when I need to.",
+      "ar": "يمكنني قول لا عندما أحتاج إلى ذلك.",
+      "id": "day-19-24"
+    },
+    {
+      "en": "Rest is not a waste of time.",
+      "ar": "الراحة ليست مضيعة للوقت.",
+      "id": "day-19-25"
+    },
+    {
+      "en": "I will plan something enjoyable this week.",
+      "ar": "سأخطط لشيء ممتع هذا الأسبوع.",
+      "id": "day-19-26"
+    },
+    {
+      "en": "A short break can change my day.",
+      "ar": "قد تغير استراحة قصيرة يومي.",
+      "id": "day-19-27"
+    },
+    {
+      "en": "I am paying attention to my energy.",
+      "ar": "أنتبه إلى مستوى طاقتي.",
+      "id": "day-19-28"
+    },
+    {
+      "en": "Some days are harder than others.",
+      "ar": "بعض الأيام أصعب من غيرها.",
+      "id": "day-19-29"
+    },
+    {
+      "en": "I try not to judge myself too harshly.",
+      "ar": "أحاول ألّا أحكم على نفسي بقسوة.",
+      "id": "day-19-30"
+    },
+    {
+      "en": "A simple routine helps me feel steady.",
+      "ar": "يساعدني الروتين البسيط على الشعور بالاستقرار.",
+      "id": "day-19-31"
+    },
+    {
+      "en": "I will reach out if I need support.",
+      "ar": "سأطلب الدعم إذا احتجت إليه.",
+      "id": "day-19-32"
+    },
+    {
+      "en": "I deserve a moment of calm.",
+      "ar": "أستحق لحظة من الهدوء.",
+      "id": "day-19-33"
+    },
+    {
+      "en": "Tomorrow I can begin again.",
+      "ar": "يمكنني أن أبدأ من جديد غدًا.",
+      "id": "day-19-34"
+    }
+  ],
+  "story": {
+    "title": "Well-being",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle well-being in everyday English. The goal was to communicate clearly and politely. Dina practiced “I need a little time to rest.” A useful phrase was “I have been very busy lately.” A useful phrase was “I am learning to slow down.” They repeated it to remember the meaning. Dina practiced “A quiet walk helps me relax.” A useful phrase was “I try to get enough sleep.” A useful phrase was “I feel refreshed after a good night.” They repeated it to remember the meaning. Dina practiced “I take breaks when I need them.” A useful phrase was “It is important to drink water.” A useful phrase was “I try to eat regular meals.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “Too much screen time makes me tired.” A useful phrase was “I put my phone away before bed.” A useful phrase was “I like spending time outdoors.” They repeated it to remember the meaning. Dina practiced “Fresh air improves my mood.” A useful phrase was “Sometimes I feel overwhelmed.” A useful phrase was “I can take one step at a time.” They repeated it to remember the meaning. Dina practiced “Talking to someone I trust helps.” A useful phrase was “I do not have to do everything today.” A useful phrase was “My health deserves attention.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “I am trying to be kinder to myself.” A useful phrase was “Making mistakes is part of learning.” A useful phrase was “I am grateful for small moments.” They repeated it to remember the meaning. Dina practiced “I enjoy a quiet cup of tea.” A useful phrase was “I want a better work-life balance.” A useful phrase was “I can say no when I need to.” They repeated it to remember the meaning. Dina practiced “Rest is not a waste of time.” A useful phrase was “I will plan something enjoyable this week.” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “A short break can change my day.” A useful phrase was “I am paying attention to my energy.” A useful phrase was “Some days are harder than others.” They repeated it to remember the meaning. Dina practiced “I try not to judge myself too harshly.” A useful phrase was “A simple routine helps me feel steady.” A useful phrase was “I will reach out if I need support.” They repeated it to remember the meaning. Dina practiced “I deserve a moment of calm.” A useful phrase was “Tomorrow I can begin again.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 186
+  }
+}

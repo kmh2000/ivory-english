@@ -1,0 +1,207 @@
+{
+  "day": 14,
+  "title": "Getting around",
+  "titleAr": "التنقل في المدينة",
+  "sentences": [
+    {
+      "en": "What is the best way to get there?",
+      "ar": "ما أفضل وسيلة للوصول إلى هناك؟",
+      "id": "day-14-01"
+    },
+    {
+      "en": "The metro is usually convenient.",
+      "ar": "المترو عادةً وسيلة مريحة.",
+      "id": "day-14-02"
+    },
+    {
+      "en": "Where is the nearest metro station?",
+      "ar": "أين أقرب محطة مترو؟",
+      "id": "day-14-03"
+    },
+    {
+      "en": "I need a ticket for one trip.",
+      "ar": "أحتاج تذكرة لرحلة واحدة.",
+      "id": "day-14-04"
+    },
+    {
+      "en": "Can I pay with my phone?",
+      "ar": "هل يمكنني الدفع بهاتفي؟",
+      "id": "day-14-05"
+    },
+    {
+      "en": "Which line should I take?",
+      "ar": "أي خط يجب أن أستقل؟",
+      "id": "day-14-06"
+    },
+    {
+      "en": "Take the green line north.",
+      "ar": "استقل الخط الأخضر باتجاه الشمال.",
+      "id": "day-14-07"
+    },
+    {
+      "en": "How many stops are left?",
+      "ar": "كم محطة متبقية؟",
+      "id": "day-14-08"
+    },
+    {
+      "en": "We need to change trains.",
+      "ar": "علينا تبديل القطار.",
+      "id": "day-14-09"
+    },
+    {
+      "en": "Get off at the next station.",
+      "ar": "انزل في المحطة التالية.",
+      "id": "day-14-10"
+    },
+    {
+      "en": "The train is running late.",
+      "ar": "القطار متأخر.",
+      "id": "day-14-11"
+    },
+    {
+      "en": "Let us check the timetable.",
+      "ar": "دعنا نتحقق من جدول المواعيد.",
+      "id": "day-14-12"
+    },
+    {
+      "en": "This platform is very crowded.",
+      "ar": "هذه الرصيف مزدحم جدًا.",
+      "id": "day-14-13"
+    },
+    {
+      "en": "Please stand behind the yellow line.",
+      "ar": "يرجى الوقوف خلف الخط الأصفر.",
+      "id": "day-14-14"
+    },
+    {
+      "en": "Is this seat taken?",
+      "ar": "هل هذا المقعد مشغول؟",
+      "id": "day-14-15"
+    },
+    {
+      "en": "You can sit here.",
+      "ar": "يمكنك الجلوس هنا.",
+      "id": "day-14-16"
+    },
+    {
+      "en": "I missed my bus this morning.",
+      "ar": "فاتتني الحافلة هذا الصباح.",
+      "id": "day-14-17"
+    },
+    {
+      "en": "When does the next bus arrive?",
+      "ar": "متى تصل الحافلة التالية؟",
+      "id": "day-14-18"
+    },
+    {
+      "en": "The bus comes every fifteen minutes.",
+      "ar": "تصل الحافلة كل خمس عشرة دقيقة.",
+      "id": "day-14-19"
+    },
+    {
+      "en": "Could you call a taxi for me?",
+      "ar": "هل يمكنك طلب سيارة أجرة لي؟",
+      "id": "day-14-20"
+    },
+    {
+      "en": "Please take me to the city center.",
+      "ar": "أوصلني إلى وسط المدينة من فضلك.",
+      "id": "day-14-21"
+    },
+    {
+      "en": "How long will the journey take?",
+      "ar": "كم ستستغرق الرحلة؟",
+      "id": "day-14-22"
+    },
+    {
+      "en": "There is heavy traffic ahead.",
+      "ar": "هناك ازدحام شديد أمامنا.",
+      "id": "day-14-23"
+    },
+    {
+      "en": "Could you use another route?",
+      "ar": "هل يمكنك سلوك طريق آخر؟",
+      "id": "day-14-24"
+    },
+    {
+      "en": "Please stop near the entrance.",
+      "ar": "توقف قرب المدخل من فضلك.",
+      "id": "day-14-25"
+    },
+    {
+      "en": "I will send you the location.",
+      "ar": "سأرسل لك الموقع.",
+      "id": "day-14-26"
+    },
+    {
+      "en": "The driver is two minutes away.",
+      "ar": "السائق يبعد دقيقتين.",
+      "id": "day-14-27"
+    },
+    {
+      "en": "I am waiting outside the building.",
+      "ar": "أنا أنتظر خارج المبنى.",
+      "id": "day-14-28"
+    },
+    {
+      "en": "The ride was comfortable.",
+      "ar": "كانت الرحلة مريحة.",
+      "id": "day-14-29"
+    },
+    {
+      "en": "Is parking free here?",
+      "ar": "هل مواقف السيارات مجانية هنا؟",
+      "id": "day-14-30"
+    },
+    {
+      "en": "You need to pay at the machine.",
+      "ar": "عليك الدفع في الجهاز.",
+      "id": "day-14-31"
+    },
+    {
+      "en": "I forgot where I parked.",
+      "ar": "نسيت أين أوقفت السيارة.",
+      "id": "day-14-32"
+    },
+    {
+      "en": "Let us take a picture of the level.",
+      "ar": "دعنا نصور رقم الطابق.",
+      "id": "day-14-33"
+    },
+    {
+      "en": "We arrived right on time.",
+      "ar": "وصلنا في الوقت المحدد.",
+      "id": "day-14-34"
+    }
+  ],
+  "story": {
+    "title": "Getting around",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle getting around in everyday English. The goal was to communicate clearly and politely. Dina practiced “What is the best way to get there?” A useful phrase was “The metro is usually convenient.” A useful phrase was “Where is the nearest metro station?” They repeated it to remember the meaning. Dina practiced “I need a ticket for one trip.” A useful phrase was “Can I pay with my phone?” A useful phrase was “Which line should I take?” They repeated it to remember the meaning. Dina practiced “Take the green line north.” A useful phrase was “How many stops are left?” A useful phrase was “We need to change trains.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “Get off at the next station.” A useful phrase was “The train is running late.” A useful phrase was “Let us check the timetable.” They repeated it to remember the meaning. Dina practiced “This platform is very crowded.” A useful phrase was “Please stand behind the yellow line.” A useful phrase was “Is this seat taken?” They repeated it to remember the meaning. Dina practiced “You can sit here.” A useful phrase was “I missed my bus this morning.” A useful phrase was “When does the next bus arrive?” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “The bus comes every fifteen minutes.” A useful phrase was “Could you call a taxi for me?” A useful phrase was “Please take me to the city center.” They repeated it to remember the meaning. Dina practiced “How long will the journey take?” A useful phrase was “There is heavy traffic ahead.” A useful phrase was “Could you use another route?” They repeated it to remember the meaning. Dina practiced “Please stop near the entrance.” A useful phrase was “I will send you the location.” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “The driver is two minutes away.” A useful phrase was “I am waiting outside the building.” A useful phrase was “The ride was comfortable.” They repeated it to remember the meaning. Dina practiced “Is parking free here?” A useful phrase was “You need to pay at the machine.” A useful phrase was “I forgot where I parked.” They repeated it to remember the meaning. Dina practiced “Let us take a picture of the level.” A useful phrase was “We arrived right on time.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 175
+  }
+}

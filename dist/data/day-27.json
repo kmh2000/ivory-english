@@ -1,0 +1,207 @@
+{
+  "day": 27,
+  "title": "Places and spaces",
+  "titleAr": "وصف الأماكن",
+  "sentences": [
+    {
+      "en": "How would you describe your neighborhood?",
+      "ar": "كيف تصف حيّك؟",
+      "id": "day-27-01"
+    },
+    {
+      "en": "It's quiet and close to the city center.",
+      "ar": "هو هادئ وقريب من وسط المدينة.",
+      "id": "day-27-02"
+    },
+    {
+      "en": "There are several parks nearby.",
+      "ar": "توجد عدة حدائق قريبة.",
+      "id": "day-27-03"
+    },
+    {
+      "en": "The streets are wide and clean.",
+      "ar": "الشوارع واسعة ونظيفة.",
+      "id": "day-27-04"
+    },
+    {
+      "en": "Our apartment gets plenty of sunlight.",
+      "ar": "تدخل شقتنا أشعة شمس وفيرة.",
+      "id": "day-27-05"
+    },
+    {
+      "en": "The living room is bright and spacious.",
+      "ar": "غرفة المعيشة مضيئة وواسعة.",
+      "id": "day-27-06"
+    },
+    {
+      "en": "The kitchen is small but practical.",
+      "ar": "المطبخ صغير لكنه عملي.",
+      "id": "day-27-07"
+    },
+    {
+      "en": "There's a balcony overlooking the street.",
+      "ar": "توجد شرفة تطل على الشارع.",
+      "id": "day-27-08"
+    },
+    {
+      "en": "I prefer rooms with natural light.",
+      "ar": "أفضل الغرف ذات الإضاءة الطبيعية.",
+      "id": "day-27-09"
+    },
+    {
+      "en": "The furniture is simple and comfortable.",
+      "ar": "الأثاث بسيط ومريح.",
+      "id": "day-27-10"
+    },
+    {
+      "en": "The building has two entrances.",
+      "ar": "للمبنى مدخلان.",
+      "id": "day-27-11"
+    },
+    {
+      "en": "The elevator is next to the stairs.",
+      "ar": "المصعد بجانب الدرج.",
+      "id": "day-27-12"
+    },
+    {
+      "en": "Is there enough parking space?",
+      "ar": "هل توجد مساحة كافية لوقوف السيارات؟",
+      "id": "day-27-13"
+    },
+    {
+      "en": "The parking area is usually full.",
+      "ar": "عادةً ما يكون موقف السيارات ممتلئًا.",
+      "id": "day-27-14"
+    },
+    {
+      "en": "The office is on the third floor.",
+      "ar": "المكتب في الطابق الثالث.",
+      "id": "day-27-15"
+    },
+    {
+      "en": "There's a reception desk near the door.",
+      "ar": "يوجد مكتب استقبال قرب الباب.",
+      "id": "day-27-16"
+    },
+    {
+      "en": "The meeting room is at the end of the hall.",
+      "ar": "غرفة الاجتماعات في نهاية الممر.",
+      "id": "day-27-17"
+    },
+    {
+      "en": "It has a large table and a screen.",
+      "ar": "فيها طاولة كبيرة وشاشة.",
+      "id": "day-27-18"
+    },
+    {
+      "en": "The room feels a little crowded.",
+      "ar": "تبدو الغرفة مزدحمة قليلًا.",
+      "id": "day-27-19"
+    },
+    {
+      "en": "Could we open a window?",
+      "ar": "هل يمكننا فتح نافذة؟",
+      "id": "day-27-20"
+    },
+    {
+      "en": "The air conditioning is too cold.",
+      "ar": "التكييف بارد جدًا.",
+      "id": "day-27-21"
+    },
+    {
+      "en": "This café has a peaceful atmosphere.",
+      "ar": "يتميز هذا المقهى بأجواء هادئة.",
+      "id": "day-27-22"
+    },
+    {
+      "en": "I like the warm lighting.",
+      "ar": "تعجبني الإضاءة الدافئة.",
+      "id": "day-27-23"
+    },
+    {
+      "en": "The restaurant is decorated beautifully.",
+      "ar": "المطعم مزين بطريقة جميلة.",
+      "id": "day-27-24"
+    },
+    {
+      "en": "The museum is in an old building.",
+      "ar": "يقع المتحف في مبنى قديم.",
+      "id": "day-27-25"
+    },
+    {
+      "en": "The entrance is easy to find.",
+      "ar": "من السهل العثور على المدخل.",
+      "id": "day-27-26"
+    },
+    {
+      "en": "The garden is full of colorful flowers.",
+      "ar": "الحديقة مليئة بالأزهار الملونة.",
+      "id": "day-27-27"
+    },
+    {
+      "en": "There's a walking path around the lake.",
+      "ar": "يوجد مسار للمشي حول البحيرة.",
+      "id": "day-27-28"
+    },
+    {
+      "en": "The view from here is amazing.",
+      "ar": "الإطلالة من هنا رائعة.",
+      "id": "day-27-29"
+    },
+    {
+      "en": "It gets very busy in the evening.",
+      "ar": "يصبح المكان مزدحمًا جدًا مساءً.",
+      "id": "day-27-30"
+    },
+    {
+      "en": "I prefer visiting in the morning.",
+      "ar": "أفضل الزيارة في الصباح.",
+      "id": "day-27-31"
+    },
+    {
+      "en": "This place feels welcoming.",
+      "ar": "هذا المكان يمنح شعورًا بالترحيب.",
+      "id": "day-27-32"
+    },
+    {
+      "en": "I'd love to come back someday.",
+      "ar": "أود العودة إليه يومًا ما.",
+      "id": "day-27-33"
+    },
+    {
+      "en": "Every place has its own character.",
+      "ar": "لكل مكان طابعه الخاص.",
+      "id": "day-27-34"
+    }
+  ],
+  "story": {
+    "title": "Places and spaces",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring places and spaces. The aim was to have a clear, natural conversation in English. Dina said, “How would you describe your neighborhood?” A friend replied, “It's quiet and close to the city center.” Dina said, “There are several parks nearby.” A friend replied, “The streets are wide and clean.” They paused to remember the meaning. Dina said, “Our apartment gets plenty of sunlight.” A friend replied, “The living room is bright and spacious.” Dina said, “The kitchen is small but practical.” A friend replied, “There's a balcony overlooking the street.” They paused to remember the meaning. Dina said, “I prefer rooms with natural light.” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “The furniture is simple and comfortable.” A friend replied, “The building has two entrances.” Dina said, “The elevator is next to the stairs.” A friend replied, “Is there enough parking space?” They paused to remember the meaning. Dina said, “The parking area is usually full.” A friend replied, “The office is on the third floor.” Dina said, “There's a reception desk near the door.” A friend replied, “The meeting room is at the end of the hall.” They paused to remember the meaning. Dina said, “It has a large table and a screen.” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “The room feels a little crowded.” A friend replied, “Could we open a window?” Dina said, “The air conditioning is too cold.” A friend replied, “This café has a peaceful atmosphere.” They paused to remember the meaning. Dina said, “I like the warm lighting.” A friend replied, “The restaurant is decorated beautifully.” Dina said, “The museum is in an old building.” A friend replied, “The entrance is easy to find.” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “The garden is full of colorful flowers.” A friend replied, “There's a walking path around the lake.” Dina said, “The view from here is amazing.” A friend replied, “It gets very busy in the evening.” They paused to remember the meaning. Dina said, “I prefer visiting in the morning.” A friend replied, “This place feels welcoming.” Dina said, “I'd love to come back someday.” A friend replied, “Every place has its own character.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 158
+  }
+}

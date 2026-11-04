@@ -12,3 +12,32 @@
 
 /* Gradual releases preserve the original Ivory visual language. */
 .resume-button{margin-top:24px}.release-note{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:19px 22px;border:1px solid var(--line);background:var(--white);font-size:1rem;line-height:1.8;margin-bottom:26px}.release-note span:last-child{font-size:.875rem;color:var(--muted)}.day-card.unpublished{background:transparent;border-style:dashed;color:var(--muted);box-shadow:none;cursor:default}.day-card.unpublished:hover{transform:none;border-color:var(--line)}.day-card.unpublished .day-number{color:var(--muted)}.day-card.completed .day-card-top{color:var(--ink)}.completion-panel{display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding:24px 0 4px}.completion-panel .btn{font-size:1rem}.day-meta{font-size:.875rem}.speed-option{font-size:.875rem}.sidebar-help{font-size:.875rem}.sentence-play,.repeat-button{min-width:44px;min-height:44px}.story-desc{font-size:1rem}.day-title{line-height:1.45}@media(max-width:600px){.release-note{gap:8px;padding:16px}.release-note span{width:100%}.lesson-end{flex-wrap:wrap}.completion-panel .btn{width:100%}.day-meta{flex-wrap:wrap;gap:7px}}
+
+
+/* Accessible dark appearance: user preference is persistent. */
+:root[data-theme="dark"]{
+  --paper:#10151b;--white:#1a232e;--ink:#f1f3f4;
+  --muted:#b7c1cb;--line:#354352;--accent:#d6b986;--wash:#273443;
+  color-scheme:dark;
+}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:9px 13px;min-height:42px;border:1px solid var(--line);border-radius:24px;background:var(--white);color:var(--ink);font-size:.8125rem;white-space:nowrap;transition:border-color .2s,background .2s}
+.theme-toggle:hover{border-color:var(--accent);background:var(--wash)}
+.theme-symbol{font-size:1.1875rem;line-height:1}
+:root[data-theme="dark"] .day-meta{border-top-color:var(--line)}
+:root[data-theme="dark"] .day-card:hover{box-shadow:0 8px 25px #0005}
+:root[data-theme="dark"] .sentence-ar{color:#d4dae0}
+:root[data-theme="dark"] .btn-primary{background:#d6b986;border-color:#d6b986;color:#161b22}
+:root[data-theme="dark"] .btn-primary:hover{background:#e6cca0;border-color:#e6cca0}
+:root[data-theme="dark"] .speed-option.active{background:#d6b986;border-color:#d6b986;color:#161b22}
+:root[data-theme="dark"] .sentence-card.playing .sentence-play{background:#d6b986;color:#161b22;border-color:#d6b986}
+:root[data-theme="dark"] .story-word.active-word{background:#d6b986;box-shadow:0 0 0 3px #d6b986;color:#161b22}
+:root[data-theme="dark"] .story-fragment.active-fragment{background:#344152}
+:root[data-theme="dark"] .story-word.lesson-word{text-decoration-color:#bd9e6a}
+:root[data-theme="dark"] .toast{background:#d6b986;color:#161b22}
+:root[data-theme="dark"] .skip-link{background:#d6b986;color:#161b22}
+:root[data-theme="dark"] ::selection{background:#786c55;color:#fff}
+:root[data-theme="dark"] .day-card.current{box-shadow:inset 0 0 0 4px var(--white),inset 0 0 0 5px #d6b986}
+:root[data-theme="dark"] select{background:var(--white);color:var(--ink)}
+:root[data-theme="dark"] input{accent-color:#d6b986}
+@media(max-width:620px){.masthead nav{gap:10px}.theme-toggle{padding:7px 9px;min-height:40px;font-size:.75rem}.theme-symbol{font-size:1rem}}
+@media(max-width:380px){.theme-label{display:none}.theme-toggle{min-width:40px}}

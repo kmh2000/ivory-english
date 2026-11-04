@@ -1,0 +1,207 @@
+{
+  "day": 22,
+  "title": "Phone conversations",
+  "titleAr": "المكالمات الهاتفية",
+  "sentences": [
+    {
+      "en": "Hello, this is Dina speaking.",
+      "ar": "مرحبًا، معك دينا.",
+      "id": "day-22-01"
+    },
+    {
+      "en": "May I ask who's calling?",
+      "ar": "هل لي أن أعرف من المتصل؟",
+      "id": "day-22-02"
+    },
+    {
+      "en": "I'm calling about my appointment.",
+      "ar": "أتصل بخصوص موعدي.",
+      "id": "day-22-03"
+    },
+    {
+      "en": "Is now a convenient time to talk?",
+      "ar": "هل الوقت مناسب للتحدث الآن؟",
+      "id": "day-22-04"
+    },
+    {
+      "en": "I'm a little busy at the moment.",
+      "ar": "أنا مشغول قليلًا في الوقت الحالي.",
+      "id": "day-22-05"
+    },
+    {
+      "en": "Could I call you back in ten minutes?",
+      "ar": "هل يمكنني معاودة الاتصال بك بعد عشر دقائق؟",
+      "id": "day-22-06"
+    },
+    {
+      "en": "Of course, take your time.",
+      "ar": "بالتأكيد، خذ وقتك.",
+      "id": "day-22-07"
+    },
+    {
+      "en": "Sorry, I missed your call.",
+      "ar": "عذرًا، فاتتني مكالمتك.",
+      "id": "day-22-08"
+    },
+    {
+      "en": "My phone was on silent.",
+      "ar": "كان هاتفي على الوضع الصامت.",
+      "id": "day-22-09"
+    },
+    {
+      "en": "I didn't recognize the number.",
+      "ar": "لم أتعرف على الرقم.",
+      "id": "day-22-10"
+    },
+    {
+      "en": "Can you hear me clearly?",
+      "ar": "هل تسمعني بوضوح؟",
+      "id": "day-22-11"
+    },
+    {
+      "en": "Your voice is breaking up.",
+      "ar": "صوتك متقطع.",
+      "id": "day-22-12"
+    },
+    {
+      "en": "The connection is not very good.",
+      "ar": "الاتصال ليس جيدًا جدًا.",
+      "id": "day-22-13"
+    },
+    {
+      "en": "Let me move somewhere quieter.",
+      "ar": "دعني أنتقل إلى مكان أكثر هدوءًا.",
+      "id": "day-22-14"
+    },
+    {
+      "en": "Could you repeat the last part?",
+      "ar": "هل يمكنك إعادة الجزء الأخير؟",
+      "id": "day-22-15"
+    },
+    {
+      "en": "I didn't catch the address.",
+      "ar": "لم أسمع العنوان بوضوح.",
+      "id": "day-22-16"
+    },
+    {
+      "en": "I'll send the details by message.",
+      "ar": "سأرسل التفاصيل في رسالة.",
+      "id": "day-22-17"
+    },
+    {
+      "en": "Would you mind speaking more slowly?",
+      "ar": "هل تمانع أن تتحدث ببطء أكثر؟",
+      "id": "day-22-18"
+    },
+    {
+      "en": "Please hold for a moment.",
+      "ar": "يرجى الانتظار لحظة.",
+      "id": "day-22-19"
+    },
+    {
+      "en": "I'll check that information for you.",
+      "ar": "سأتحقق من تلك المعلومات لك.",
+      "id": "day-22-20"
+    },
+    {
+      "en": "Thank you for waiting.",
+      "ar": "شكرًا لانتظارك.",
+      "id": "day-22-21"
+    },
+    {
+      "en": "I'm afraid she's unavailable right now.",
+      "ar": "للأسف، هي غير متاحة الآن.",
+      "id": "day-22-22"
+    },
+    {
+      "en": "Would you like to leave a message?",
+      "ar": "هل تود ترك رسالة؟",
+      "id": "day-22-23"
+    },
+    {
+      "en": "Please tell her I called.",
+      "ar": "أخبرها من فضلك أنني اتصلت.",
+      "id": "day-22-24"
+    },
+    {
+      "en": "When would be a good time to reach her?",
+      "ar": "ما الوقت المناسب للتواصل معها؟",
+      "id": "day-22-25"
+    },
+    {
+      "en": "I can try again this afternoon.",
+      "ar": "يمكنني المحاولة مرة أخرى بعد الظهر.",
+      "id": "day-22-26"
+    },
+    {
+      "en": "I think we got disconnected.",
+      "ar": "أعتقد أن الاتصال انقطع.",
+      "id": "day-22-27"
+    },
+    {
+      "en": "I was just about to call you.",
+      "ar": "كنت على وشك الاتصال بك.",
+      "id": "day-22-28"
+    },
+    {
+      "en": "Can we switch to a video call?",
+      "ar": "هل يمكننا الانتقال إلى مكالمة فيديو؟",
+      "id": "day-22-29"
+    },
+    {
+      "en": "Let me turn on my microphone.",
+      "ar": "دعني أشغّل الميكروفون.",
+      "id": "day-22-30"
+    },
+    {
+      "en": "The camera is not working.",
+      "ar": "الكاميرا لا تعمل.",
+      "id": "day-22-31"
+    },
+    {
+      "en": "We've covered everything I needed.",
+      "ar": "ناقشنا كل ما أحتاج إليه.",
+      "id": "day-22-32"
+    },
+    {
+      "en": "Thanks for taking my call.",
+      "ar": "شكرًا على الرد على مكالمتي.",
+      "id": "day-22-33"
+    },
+    {
+      "en": "Have a lovely rest of your day.",
+      "ar": "أتمنى لك بقية يوم جميلة.",
+      "id": "day-22-34"
+    }
+  ],
+  "story": {
+    "title": "Phone conversations",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring phone conversations. The aim was to have a clear, natural conversation in English. Dina said, “Hello, this is Dina speaking.” A friend replied, “May I ask who's calling?” Dina said, “I'm calling about my appointment.” A friend replied, “Is now a convenient time to talk?” They paused to remember the meaning. Dina said, “I'm a little busy at the moment.” A friend replied, “Could I call you back in ten minutes?” Dina said, “Of course, take your time.” A friend replied, “Sorry, I missed your call.” They paused to remember the meaning. Dina said, “My phone was on silent.” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “I didn't recognize the number.” A friend replied, “Can you hear me clearly?” Dina said, “Your voice is breaking up.” A friend replied, “The connection is not very good.” They paused to remember the meaning. Dina said, “Let me move somewhere quieter.” A friend replied, “Could you repeat the last part?” Dina said, “I didn't catch the address.” A friend replied, “I'll send the details by message.” They paused to remember the meaning. Dina said, “Would you mind speaking more slowly?” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “Please hold for a moment.” A friend replied, “I'll check that information for you.” Dina said, “Thank you for waiting.” A friend replied, “I'm afraid she's unavailable right now.” They paused to remember the meaning. Dina said, “Would you like to leave a message?” A friend replied, “Please tell her I called.” Dina said, “When would be a good time to reach her?” A friend replied, “I can try again this afternoon.” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “I think we got disconnected.” A friend replied, “I was just about to call you.” Dina said, “Can we switch to a video call?” A friend replied, “Let me turn on my microphone.” They paused to remember the meaning. Dina said, “The camera is not working.” A friend replied, “We've covered everything I needed.” Dina said, “Thanks for taking my call.” A friend replied, “Have a lovely rest of your day.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 151
+  }
+}

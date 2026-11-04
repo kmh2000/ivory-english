@@ -1,0 +1,207 @@
+{
+  "day": 29,
+  "title": "Likes and preferences",
+  "titleAr": "الإعجاب والتفضيلات",
+  "sentences": [
+    {
+      "en": "What do you like doing on weekends?",
+      "ar": "ماذا تحب أن تفعل في عطلة نهاية الأسبوع؟",
+      "id": "day-29-01"
+    },
+    {
+      "en": "I prefer quiet mornings.",
+      "ar": "أفضل الصباحات الهادئة.",
+      "id": "day-29-02"
+    },
+    {
+      "en": "I'd rather stay home tonight.",
+      "ar": "أفضل البقاء في المنزل الليلة.",
+      "id": "day-29-03"
+    },
+    {
+      "en": "I enjoy trying new restaurants.",
+      "ar": "أستمتع بتجربة مطاعم جديدة.",
+      "id": "day-29-04"
+    },
+    {
+      "en": "I'm not a big fan of crowded places.",
+      "ar": "لا أحب الأماكن المزدحمة كثيرًا.",
+      "id": "day-29-05"
+    },
+    {
+      "en": "I like coffee more than tea.",
+      "ar": "أحب القهوة أكثر من الشاي.",
+      "id": "day-29-06"
+    },
+    {
+      "en": "I prefer my coffee without sugar.",
+      "ar": "أفضل قهوتي دون سكر.",
+      "id": "day-29-07"
+    },
+    {
+      "en": "Which option do you prefer?",
+      "ar": "أي خيار تفضل؟",
+      "id": "day-29-08"
+    },
+    {
+      "en": "Both options sound interesting.",
+      "ar": "يبدو الخياران مثيرين للاهتمام.",
+      "id": "day-29-09"
+    },
+    {
+      "en": "I'm leaning toward the first one.",
+      "ar": "أميل إلى الخيار الأول.",
+      "id": "day-29-10"
+    },
+    {
+      "en": "What makes you prefer that one?",
+      "ar": "ما الذي يجعلك تفضل ذلك الخيار؟",
+      "id": "day-29-11"
+    },
+    {
+      "en": "It's more practical for my needs.",
+      "ar": "إنه أكثر ملاءمة لاحتياجاتي.",
+      "id": "day-29-12"
+    },
+    {
+      "en": "I usually choose comfort over style.",
+      "ar": "عادةً أختار الراحة على المظهر.",
+      "id": "day-29-13"
+    },
+    {
+      "en": "I value quality more than quantity.",
+      "ar": "أقدّر الجودة أكثر من الكمية.",
+      "id": "day-29-14"
+    },
+    {
+      "en": "I don't mind waiting a little longer.",
+      "ar": "لا أمانع الانتظار مدة أطول قليلًا.",
+      "id": "day-29-15"
+    },
+    {
+      "en": "I'd rather avoid unnecessary spending.",
+      "ar": "أفضل تجنب الإنفاق غير الضروري.",
+      "id": "day-29-16"
+    },
+    {
+      "en": "I'm interested in learning new skills.",
+      "ar": "أنا مهتم بتعلم مهارات جديدة.",
+      "id": "day-29-17"
+    },
+    {
+      "en": "I particularly enjoy listening practice.",
+      "ar": "أستمتع خصوصًا بتمارين الاستماع.",
+      "id": "day-29-18"
+    },
+    {
+      "en": "I find long lectures less engaging.",
+      "ar": "أجد المحاضرات الطويلة أقل تشويقًا.",
+      "id": "day-29-19"
+    },
+    {
+      "en": "I like learning through real examples.",
+      "ar": "أحب التعلم من خلال أمثلة واقعية.",
+      "id": "day-29-20"
+    },
+    {
+      "en": "I'm open to other suggestions.",
+      "ar": "أنا منفتح على اقتراحات أخرى.",
+      "id": "day-29-21"
+    },
+    {
+      "en": "That's not really my taste.",
+      "ar": "هذا ليس على ذوقي تمامًا.",
+      "id": "day-29-22"
+    },
+    {
+      "en": "I can see why you like it.",
+      "ar": "أفهم لماذا يعجبك.",
+      "id": "day-29-23"
+    },
+    {
+      "en": "We don't have to agree on everything.",
+      "ar": "ليس علينا الاتفاق في كل شيء.",
+      "id": "day-29-24"
+    },
+    {
+      "en": "I respect your preference.",
+      "ar": "أحترم تفضيلك.",
+      "id": "day-29-25"
+    },
+    {
+      "en": "Let's choose something we both enjoy.",
+      "ar": "لنختر شيئًا نستمتع به معًا.",
+      "id": "day-29-26"
+    },
+    {
+      "en": "I prefer planning ahead.",
+      "ar": "أفضل التخطيط مسبقًا.",
+      "id": "day-29-27"
+    },
+    {
+      "en": "Sometimes I enjoy being spontaneous.",
+      "ar": "أحيانًا أستمتع بالعفوية.",
+      "id": "day-29-28"
+    },
+    {
+      "en": "Would you rather walk or drive?",
+      "ar": "هل تفضل المشي أم القيادة؟",
+      "id": "day-29-29"
+    },
+    {
+      "en": "I'd choose walking if the weather is nice.",
+      "ar": "سأختار المشي إذا كان الطقس جميلًا.",
+      "id": "day-29-30"
+    },
+    {
+      "en": "My preferences have changed over time.",
+      "ar": "تغيرت تفضيلاتي مع مرور الوقت.",
+      "id": "day-29-31"
+    },
+    {
+      "en": "I'm willing to try something different.",
+      "ar": "أنا مستعد لتجربة شيء مختلف.",
+      "id": "day-29-32"
+    },
+    {
+      "en": "This seems like the best choice for us.",
+      "ar": "يبدو هذا الخيار الأفضل لنا.",
+      "id": "day-29-33"
+    },
+    {
+      "en": "Different tastes make life interesting.",
+      "ar": "اختلاف الأذواق يجعل الحياة ممتعة.",
+      "id": "day-29-34"
+    }
+  ],
+  "story": {
+    "title": "Likes and preferences",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring likes and preferences. The aim was to have a clear, natural conversation in English. Dina said, “What do you like doing on weekends?” A friend replied, “I prefer quiet mornings.” Dina said, “I'd rather stay home tonight.” A friend replied, “I enjoy trying new restaurants.” They paused to remember the meaning. Dina said, “I'm not a big fan of crowded places.” A friend replied, “I like coffee more than tea.” Dina said, “I prefer my coffee without sugar.” A friend replied, “Which option do you prefer?” They paused to remember the meaning. Dina said, “Both options sound interesting.” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “I'm leaning toward the first one.” A friend replied, “What makes you prefer that one?” Dina said, “It's more practical for my needs.” A friend replied, “I usually choose comfort over style.” They paused to remember the meaning. Dina said, “I value quality more than quantity.” A friend replied, “I don't mind waiting a little longer.” Dina said, “I'd rather avoid unnecessary spending.” A friend replied, “I'm interested in learning new skills.” They paused to remember the meaning. Dina said, “I particularly enjoy listening practice.” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “I find long lectures less engaging.” A friend replied, “I like learning through real examples.” Dina said, “I'm open to other suggestions.” A friend replied, “That's not really my taste.” They paused to remember the meaning. Dina said, “I can see why you like it.” A friend replied, “We don't have to agree on everything.” Dina said, “I respect your preference.” A friend replied, “Let's choose something we both enjoy.” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “I prefer planning ahead.” A friend replied, “Sometimes I enjoy being spontaneous.” Dina said, “Would you rather walk or drive?” A friend replied, “I'd choose walking if the weather is nice.” They paused to remember the meaning. Dina said, “My preferences have changed over time.” A friend replied, “I'm willing to try something different.” Dina said, “This seems like the best choice for us.” A friend replied, “Different tastes make life interesting.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 152
+  }
+}

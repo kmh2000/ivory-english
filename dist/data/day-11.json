@@ -1,0 +1,207 @@
+{
+  "day": 11,
+  "title": "Clothes and sizes",
+  "titleAr": "الملابس والمقاسات",
+  "sentences": [
+    {
+      "en": "I am looking for a new jacket.",
+      "ar": "أبحث عن سترة جديدة.",
+      "id": "day-11-01"
+    },
+    {
+      "en": "What size do you usually wear?",
+      "ar": "ما المقاس الذي ترتديه عادة؟",
+      "id": "day-11-02"
+    },
+    {
+      "en": "I normally wear a medium.",
+      "ar": "عادةً أرتدي المقاس المتوسط.",
+      "id": "day-11-03"
+    },
+    {
+      "en": "Do you have this in a larger size?",
+      "ar": "هل يتوفر هذا بمقاس أكبر؟",
+      "id": "day-11-04"
+    },
+    {
+      "en": "Can I try it on?",
+      "ar": "هل يمكنني تجربته؟",
+      "id": "day-11-05"
+    },
+    {
+      "en": "The fitting rooms are over there.",
+      "ar": "غرف القياس هناك.",
+      "id": "day-11-06"
+    },
+    {
+      "en": "This shirt feels too tight.",
+      "ar": "هذا القميص ضيق جدًا.",
+      "id": "day-11-07"
+    },
+    {
+      "en": "The sleeves are a little long.",
+      "ar": "الأكمام طويلة قليلًا.",
+      "id": "day-11-08"
+    },
+    {
+      "en": "I prefer a loose fit.",
+      "ar": "أفضل الملابس الواسعة قليلًا.",
+      "id": "day-11-09"
+    },
+    {
+      "en": "Does this come in black?",
+      "ar": "هل يتوفر هذا باللون الأسود؟",
+      "id": "day-11-10"
+    },
+    {
+      "en": "I like the blue one better.",
+      "ar": "أعجبني الأزرق أكثر.",
+      "id": "day-11-11"
+    },
+    {
+      "en": "The fabric is soft and comfortable.",
+      "ar": "القماش ناعم ومريح.",
+      "id": "day-11-12"
+    },
+    {
+      "en": "Is this made of cotton?",
+      "ar": "هل هذا مصنوع من القطن؟",
+      "id": "day-11-13"
+    },
+    {
+      "en": "It is perfect for warm weather.",
+      "ar": "إنه مناسب تمامًا للطقس الحار.",
+      "id": "day-11-14"
+    },
+    {
+      "en": "I need something for a formal event.",
+      "ar": "أحتاج شيئًا لمناسبة رسمية.",
+      "id": "day-11-15"
+    },
+    {
+      "en": "These trousers match the jacket.",
+      "ar": "هذا البنطال يناسب السترة.",
+      "id": "day-11-16"
+    },
+    {
+      "en": "The shoes are too small.",
+      "ar": "الحذاء صغير جدًا.",
+      "id": "day-11-17"
+    },
+    {
+      "en": "Could I try the next size up?",
+      "ar": "هل يمكنني تجربة المقاس الأكبر؟",
+      "id": "day-11-18"
+    },
+    {
+      "en": "These shoes fit perfectly.",
+      "ar": "هذا الحذاء على مقاسي تمامًا.",
+      "id": "day-11-19"
+    },
+    {
+      "en": "Is this item available online?",
+      "ar": "هل هذا المنتج متوفر عبر الإنترنت؟",
+      "id": "day-11-20"
+    },
+    {
+      "en": "How much does this sweater cost?",
+      "ar": "كم سعر هذه السترة الصوفية؟",
+      "id": "day-11-21"
+    },
+    {
+      "en": "It is a little over my budget.",
+      "ar": "سعرها أعلى من ميزانيتي قليلًا.",
+      "id": "day-11-22"
+    },
+    {
+      "en": "Are there any discounts today?",
+      "ar": "هل توجد تخفيضات اليوم؟",
+      "id": "day-11-23"
+    },
+    {
+      "en": "This one is on the clearance rack.",
+      "ar": "هذه القطعة في قسم التخفيضات النهائية.",
+      "id": "day-11-24"
+    },
+    {
+      "en": "I will take the grey shirt.",
+      "ar": "سآخذ القميص الرمادي.",
+      "id": "day-11-25"
+    },
+    {
+      "en": "Could you remove the security tag?",
+      "ar": "هل يمكنك إزالة ملصق الحماية؟",
+      "id": "day-11-26"
+    },
+    {
+      "en": "Can I return it if it does not fit?",
+      "ar": "هل أستطيع إرجاعه إذا لم يناسبني؟",
+      "id": "day-11-27"
+    },
+    {
+      "en": "Keep the receipt just in case.",
+      "ar": "احتفظ بالإيصال احتياطًا.",
+      "id": "day-11-28"
+    },
+    {
+      "en": "Do you offer gift wrapping?",
+      "ar": "هل تقدمون خدمة تغليف الهدايا؟",
+      "id": "day-11-29"
+    },
+    {
+      "en": "I am buying this as a gift.",
+      "ar": "أشتري هذه القطعة هدية.",
+      "id": "day-11-30"
+    },
+    {
+      "en": "What color would you recommend?",
+      "ar": "ما اللون الذي تنصح به؟",
+      "id": "day-11-31"
+    },
+    {
+      "en": "This style looks great on you.",
+      "ar": "هذا التصميم يبدو رائعًا عليك.",
+      "id": "day-11-32"
+    },
+    {
+      "en": "I am happy with my choice.",
+      "ar": "أنا راضٍ عن اختياري.",
+      "id": "day-11-33"
+    },
+    {
+      "en": "Thank you for your help today.",
+      "ar": "شكرًا لمساعدتك اليوم.",
+      "id": "day-11-34"
+    }
+  ],
+  "story": {
+    "title": "Clothes and sizes",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle clothes and sizes in everyday English. The goal was to communicate clearly and politely. Dina practiced “I am looking for a new jacket.” A useful phrase was “What size do you usually wear?” A useful phrase was “I normally wear a medium.” They repeated it to remember the meaning. Dina practiced “Do you have this in a larger size?” A useful phrase was “Can I try it on?” A useful phrase was “The fitting rooms are over there.” They repeated it to remember the meaning. Dina practiced “This shirt feels too tight.” A useful phrase was “The sleeves are a little long.” A useful phrase was “I prefer a loose fit.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “Does this come in black?” A useful phrase was “I like the blue one better.” A useful phrase was “The fabric is soft and comfortable.” They repeated it to remember the meaning. Dina practiced “Is this made of cotton?” A useful phrase was “It is perfect for warm weather.” A useful phrase was “I need something for a formal event.” They repeated it to remember the meaning. Dina practiced “These trousers match the jacket.” A useful phrase was “The shoes are too small.” A useful phrase was “Could I try the next size up?” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “These shoes fit perfectly.” A useful phrase was “Is this item available online?” A useful phrase was “How much does this sweater cost?” They repeated it to remember the meaning. Dina practiced “It is a little over my budget.” A useful phrase was “Are there any discounts today?” A useful phrase was “This one is on the clearance rack.” They repeated it to remember the meaning. Dina practiced “I will take the grey shirt.” A useful phrase was “Could you remove the security tag?” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “Can I return it if it does not fit?” A useful phrase was “Keep the receipt just in case.” A useful phrase was “Do you offer gift wrapping?” They repeated it to remember the meaning. Dina practiced “I am buying this as a gift.” A useful phrase was “What color would you recommend?” A useful phrase was “This style looks great on you.” They repeated it to remember the meaning. Dina practiced “I am happy with my choice.” A useful phrase was “Thank you for your help today.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 179
+  }
+}

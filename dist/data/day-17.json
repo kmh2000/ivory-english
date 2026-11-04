@@ -1,0 +1,207 @@
+{
+  "day": 17,
+  "title": "Hobbies and interests",
+  "titleAr": "الهوايات والاهتمامات",
+  "sentences": [
+    {
+      "en": "What do you enjoy doing in your free time?",
+      "ar": "ماذا تستمتع بفعله في وقت فراغك؟",
+      "id": "day-17-01"
+    },
+    {
+      "en": "I like reading and photography.",
+      "ar": "أحب القراءة والتصوير.",
+      "id": "day-17-02"
+    },
+    {
+      "en": "I recently started learning to draw.",
+      "ar": "بدأت مؤخرًا تعلم الرسم.",
+      "id": "day-17-03"
+    },
+    {
+      "en": "My favorite hobby is cycling.",
+      "ar": "هوايتي المفضلة ركوب الدراجة.",
+      "id": "day-17-04"
+    },
+    {
+      "en": "I usually ride in the evening.",
+      "ar": "عادةً أركب الدراجة في المساء.",
+      "id": "day-17-05"
+    },
+    {
+      "en": "How did you get interested in that?",
+      "ar": "كيف بدأت تهتم بذلك؟",
+      "id": "day-17-06"
+    },
+    {
+      "en": "A friend introduced me to it.",
+      "ar": "عرّفني أحد الأصدقاء عليه.",
+      "id": "day-17-07"
+    },
+    {
+      "en": "I enjoy trying new activities.",
+      "ar": "أستمتع بتجربة أنشطة جديدة.",
+      "id": "day-17-08"
+    },
+    {
+      "en": "I am not very good at it yet.",
+      "ar": "لست جيدًا فيه بعد.",
+      "id": "day-17-09"
+    },
+    {
+      "en": "Practice makes it easier.",
+      "ar": "الممارسة تجعله أسهل.",
+      "id": "day-17-10"
+    },
+    {
+      "en": "Do you prefer indoor or outdoor hobbies?",
+      "ar": "هل تفضل الهوايات المنزلية أم الخارجية؟",
+      "id": "day-17-11"
+    },
+    {
+      "en": "I like being outdoors when the weather is nice.",
+      "ar": "أحب الخروج عندما يكون الطقس جميلًا.",
+      "id": "day-17-12"
+    },
+    {
+      "en": "I sometimes play board games.",
+      "ar": "ألعب ألعاب الطاولة أحيانًا.",
+      "id": "day-17-13"
+    },
+    {
+      "en": "We meet once a week.",
+      "ar": "نلتقي مرة كل أسبوع.",
+      "id": "day-17-14"
+    },
+    {
+      "en": "Music helps me relax.",
+      "ar": "تساعدني الموسيقى على الاسترخاء.",
+      "id": "day-17-15"
+    },
+    {
+      "en": "I listen to many different genres.",
+      "ar": "أستمع إلى أنواع موسيقية مختلفة.",
+      "id": "day-17-16"
+    },
+    {
+      "en": "Have you ever tried pottery?",
+      "ar": "هل جربت صناعة الفخار من قبل؟",
+      "id": "day-17-17"
+    },
+    {
+      "en": "No, but I would love to.",
+      "ar": "لا، لكنني أرغب في تجربتها.",
+      "id": "day-17-18"
+    },
+    {
+      "en": "I watched a tutorial online.",
+      "ar": "شاهدت درسًا تعليميًا عبر الإنترنت.",
+      "id": "day-17-19"
+    },
+    {
+      "en": "It looked easier than it was.",
+      "ar": "بدا أسهل مما كان عليه.",
+      "id": "day-17-20"
+    },
+    {
+      "en": "I learned something new today.",
+      "ar": "تعلمت شيئًا جديدًا اليوم.",
+      "id": "day-17-21"
+    },
+    {
+      "en": "This hobby requires patience.",
+      "ar": "تتطلب هذه الهواية الصبر.",
+      "id": "day-17-22"
+    },
+    {
+      "en": "I am collecting ideas for a project.",
+      "ar": "أجمع أفكارًا لمشروع.",
+      "id": "day-17-23"
+    },
+    {
+      "en": "Do you have any recommendations?",
+      "ar": "هل لديك أي اقتراحات؟",
+      "id": "day-17-24"
+    },
+    {
+      "en": "There is a workshop this weekend.",
+      "ar": "توجد ورشة عمل نهاية الأسبوع.",
+      "id": "day-17-25"
+    },
+    {
+      "en": "We could go together.",
+      "ar": "يمكننا الذهاب معًا.",
+      "id": "day-17-26"
+    },
+    {
+      "en": "I need to buy a few supplies.",
+      "ar": "أحتاج إلى شراء بعض الأدوات.",
+      "id": "day-17-27"
+    },
+    {
+      "en": "You can borrow mine.",
+      "ar": "يمكنك استعارة أدواتي.",
+      "id": "day-17-28"
+    },
+    {
+      "en": "That would be very helpful.",
+      "ar": "سيكون ذلك مفيدًا جدًا.",
+      "id": "day-17-29"
+    },
+    {
+      "en": "I like hobbies that challenge me.",
+      "ar": "أحب الهوايات التي تتحدى قدراتي.",
+      "id": "day-17-30"
+    },
+    {
+      "en": "It is fun to learn at my own pace.",
+      "ar": "من الممتع التعلم بالوتيرة التي تناسبني.",
+      "id": "day-17-31"
+    },
+    {
+      "en": "I do not want to turn it into a job.",
+      "ar": "لا أريد تحويلها إلى عمل.",
+      "id": "day-17-32"
+    },
+    {
+      "en": "Sometimes I just need time for myself.",
+      "ar": "أحيانًا أحتاج إلى وقت لنفسي.",
+      "id": "day-17-33"
+    },
+    {
+      "en": "Having a hobby brings balance to life.",
+      "ar": "وجود هواية يحقق التوازن في الحياة.",
+      "id": "day-17-34"
+    }
+  ],
+  "story": {
+    "title": "Hobbies and interests",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle hobbies and interests in everyday English. The goal was to communicate clearly and politely. Dina practiced “What do you enjoy doing in your free time?” A useful phrase was “I like reading and photography.” A useful phrase was “I recently started learning to draw.” They repeated it to remember the meaning. Dina practiced “My favorite hobby is cycling.” A useful phrase was “I usually ride in the evening.” A useful phrase was “How did you get interested in that?” They repeated it to remember the meaning. Dina practiced “A friend introduced me to it.” A useful phrase was “I enjoy trying new activities.” A useful phrase was “I am not very good at it yet.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “Practice makes it easier.” A useful phrase was “Do you prefer indoor or outdoor hobbies?” A useful phrase was “I like being outdoors when the weather is nice.” They repeated it to remember the meaning. Dina practiced “I sometimes play board games.” A useful phrase was “We meet once a week.” A useful phrase was “Music helps me relax.” They repeated it to remember the meaning. Dina practiced “I listen to many different genres.” A useful phrase was “Have you ever tried pottery?” A useful phrase was “No, but I would love to.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “I watched a tutorial online.” A useful phrase was “It looked easier than it was.” A useful phrase was “I learned something new today.” They repeated it to remember the meaning. Dina practiced “This hobby requires patience.” A useful phrase was “I am collecting ideas for a project.” A useful phrase was “Do you have any recommendations?” They repeated it to remember the meaning. Dina practiced “There is a workshop this weekend.” A useful phrase was “We could go together.” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “I need to buy a few supplies.” A useful phrase was “You can borrow mine.” A useful phrase was “That would be very helpful.” They repeated it to remember the meaning. Dina practiced “I like hobbies that challenge me.” A useful phrase was “It is fun to learn at my own pace.” A useful phrase was “I do not want to turn it into a job.” They repeated it to remember the meaning. Dina practiced “Sometimes I just need time for myself.” A useful phrase was “Having a hobby brings balance to life.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 181
+  }
+}

@@ -10,6 +10,26 @@ const clock=(seconds)=>{const s=Math.max(0,Math.round(seconds||0));return `${Mat
 const paths={play:'<path d="m9 5 11 7-11 7Z"/>',pause:'<path d="M9 5v14M15 5v14"/>',stop:'<rect x="6" y="6" width="12" height="12" rx="1"/>',arrow:'<path d="M5 12h14m-5-5 5 5-5 5"/>',back:'<path d="M19 12H5m5-5-5 5 5 5"/>',headphones:'<path d="M4 14v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="12" width="4" height="8" rx="2"/><rect x="17" y="12" width="4" height="8" rx="2"/>',book:'<path d="M12 5v15M3 4c4-1 6 0 9 2 3-2 5-3 9-2v15c-3-1-6 0-9 2-3-2-6-3-9-2Z"/>',repeat:'<path d="M19 8a8 8 0 0 0-13-2L3 9m0-5v5h5m-3 7a8 8 0 0 0 13 2l3-3m0 5v-5h-5"/>',check:'<path d="m5 12 4 4L19 6"/>',volume:'<path d="M11 5 6 9H3v6h3l5 4Zm4 3a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',download:'<path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/>'};
 const icon=(name)=>`<svg viewBox="0 0 24 24" aria-hidden="true">${paths[name]||paths.play}</svg>`;
 const main=$('#main');
+function setupTheme(){
+  const toggle=$('#theme-toggle');
+  if(!toggle)return;
+  const paint=()=>{
+    const dark=document.documentElement.dataset.theme==='dark';
+    toggle.setAttribute('aria-pressed',String(dark));
+    toggle.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
+    $('.theme-label',toggle).textContent=dark?'Light mode':'Dark mode';
+    $('.theme-symbol',toggle).textContent=dark?'☀':'☾';
+    const meta=$('meta[name="theme-color"]');if(meta)meta.content=dark?'#10151b':'#f8f7f3';
+  };
+  paint();
+  toggle.addEventListener('click',()=>{
+    const next=document.documentElement.dataset.theme==='dark'?'light':'dark';
+    document.documentElement.dataset.theme=next;
+    try{localStorage.setItem('ivory.theme.v1',next);}catch{}
+    paint();
+  });
+}
+setupTheme();
 let indexData=null,currentLesson=null,routeVersion=0,routeAbort=null,toastTimer=null;
 let storyTokens=[],storyPieces=[],storyText='',seen=new Set();
 let voices=[],audioMode='recorded';
@@ -207,7 +227,7 @@ function renderHome(){
   ${chapters.map(([roman,title,ar,start,end])=>`<section class="chapter" aria-label="${esc(title)}"><div class="chapter-heading"><span class="chapter-numeral">${roman}.</span><h2>${title}</h2><span class="chapter-ar" lang="ar" dir="rtl">${ar}</span><span class="chapter-range">DAYS ${pad(start)}—${pad(end)}</span></div><div class="day-grid">${indexData.days.filter(d=>d.day>=start&&d.day<=end).map(d=>{
     const available=d.available!==false,done=progress.completed.includes(d.day);
     const tag=available?'a':'div';
-    return `<${tag} class="day-card ${available?(d.day===resume?'current':''):'unpublished'} ${done?'completed':''}" ${available?`href="#day/${d.day}" aria-label="Day ${d.day}: ${esc(d.title)}. 34 sentences and a story.${done?' Completed.':''}"`:'aria-label="Available in a later update"'}><div class="day-card-top"><span>DAY</span>${done?icon('check'):available&&d.day===resume?icon('arrow'):''}</div><div class="day-number">${pad(d.day)}</div><div class="day-title">${esc(d.title)}</div><div class="day-meta">${available?`<span>${done?'Completed':'34 sentences'}</span><span>${icon('headphones')} 20 min</span>`:'<span lang="ar" dir="rtl">تُضاف لاحقًا</span>'}</div></${tag}>`;
+    return `<${tag} class="day-card ${available?(d.day===resume?'current':''):'unpublished'} ${done?'completed':''}" ${available?`href="#day/${d.day}" aria-label="Day ${d.day}: ${esc(d.title)}. 34 sentences and a story.${done?' Completed.':''}"`:'aria-label="Available in a later update"'}><div class="day-card-top"><span>DAY</span>${done?icon('check'):available&&d.day===resume?icon('arrow'):''}</div><div class="day-number">${pad(d.day)}</div><div class="day-title">${esc(d.title)}</div><div class="day-meta">${available?`<span>${done?'Completed':'34 sentences'}</span><span>${icon('headphones')} ≈ ${Math.max(1,Math.round((d.estimatedSeconds||180)/60))} min</span>`:'<span lang="ar" dir="rtl">تُضاف لاحقًا</span>'}</div></${tag}>`;
   }).join('')}</div></section>`).join('')}
   <section class="bonus-panel"><span class="bonus-mark">+4</span><div><h2>A little extra confidence</h2><p lang="ar" dir="rtl">أربع جمل إضافية تساعدك إذا توقفت المحادثة.</p></div><a class="btn" href="#bonus">The final four ${icon('arrow')}</a></section>`;
   const footer=$('.site-footer');if(footer)footer.children[1].textContent=`${count} of 90 days available · One day at a time.`;

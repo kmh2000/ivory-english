@@ -1,0 +1,207 @@
+{
+  "day": 21,
+  "title": "Making plans",
+  "titleAr": "وضع الخطط",
+  "sentences": [
+    {
+      "en": "Do you have any plans for Friday?",
+      "ar": "هل لديك خطط ليوم الجمعة؟",
+      "id": "day-21-01"
+    },
+    {
+      "en": "I have not decided yet.",
+      "ar": "لم أقرر بعد.",
+      "id": "day-21-02"
+    },
+    {
+      "en": "I was thinking about visiting the museum.",
+      "ar": "كنت أفكر في زيارة المتحف.",
+      "id": "day-21-03"
+    },
+    {
+      "en": "That sounds like a good idea.",
+      "ar": "تبدو فكرة جيدة.",
+      "id": "day-21-04"
+    },
+    {
+      "en": "Would you like to come with me?",
+      "ar": "هل تود الذهاب معي؟",
+      "id": "day-21-05"
+    },
+    {
+      "en": "I would love to join you.",
+      "ar": "يسعدني أن أنضم إليك.",
+      "id": "day-21-06"
+    },
+    {
+      "en": "What time should we meet?",
+      "ar": "في أي وقت نلتقي؟",
+      "id": "day-21-07"
+    },
+    {
+      "en": "How about ten in the morning?",
+      "ar": "ما رأيك في العاشرة صباحًا؟",
+      "id": "day-21-08"
+    },
+    {
+      "en": "That works well for me.",
+      "ar": "هذا الوقت مناسب لي.",
+      "id": "day-21-09"
+    },
+    {
+      "en": "Let me check my calendar first.",
+      "ar": "دعني أتحقق من تقويمي أولًا.",
+      "id": "day-21-10"
+    },
+    {
+      "en": "I have another appointment that day.",
+      "ar": "لدي موعد آخر في ذلك اليوم.",
+      "id": "day-21-11"
+    },
+    {
+      "en": "Could we meet a little later?",
+      "ar": "هل يمكننا الالتقاء في وقت متأخر قليلًا؟",
+      "id": "day-21-12"
+    },
+    {
+      "en": "Eleven o'clock would be better.",
+      "ar": "الساعة الحادية عشرة ستكون أفضل.",
+      "id": "day-21-13"
+    },
+    {
+      "en": "Where would you like to meet?",
+      "ar": "أين تفضل أن نلتقي؟",
+      "id": "day-21-14"
+    },
+    {
+      "en": "Let's meet outside the main entrance.",
+      "ar": "لنلتقِ خارج المدخل الرئيسي.",
+      "id": "day-21-15"
+    },
+    {
+      "en": "I will send you the location.",
+      "ar": "سأرسل لك الموقع.",
+      "id": "day-21-16"
+    },
+    {
+      "en": "Should we buy tickets in advance?",
+      "ar": "هل نشتري التذاكر مسبقًا؟",
+      "id": "day-21-17"
+    },
+    {
+      "en": "It might be busy on the weekend.",
+      "ar": "قد يكون المكان مزدحمًا في عطلة نهاية الأسبوع.",
+      "id": "day-21-18"
+    },
+    {
+      "en": "I can book the tickets online.",
+      "ar": "أستطيع حجز التذاكر عبر الإنترنت.",
+      "id": "day-21-19"
+    },
+    {
+      "en": "Please let me know the price.",
+      "ar": "أخبرني بالسعر من فضلك.",
+      "id": "day-21-20"
+    },
+    {
+      "en": "We could have lunch afterwards.",
+      "ar": "يمكننا تناول الغداء بعد ذلك.",
+      "id": "day-21-21"
+    },
+    {
+      "en": "There is a nice café nearby.",
+      "ar": "يوجد مقهى جميل في الجوار.",
+      "id": "day-21-22"
+    },
+    {
+      "en": "I need to be home by five.",
+      "ar": "يجب أن أعود إلى المنزل قبل الخامسة.",
+      "id": "day-21-23"
+    },
+    {
+      "en": "We should have enough time.",
+      "ar": "ينبغي أن يكون لدينا وقت كافٍ.",
+      "id": "day-21-24"
+    },
+    {
+      "en": "What if it rains?",
+      "ar": "ماذا لو أمطرت؟",
+      "id": "day-21-25"
+    },
+    {
+      "en": "We can change our plans if necessary.",
+      "ar": "يمكننا تغيير خططنا إذا لزم الأمر.",
+      "id": "day-21-26"
+    },
+    {
+      "en": "I'll keep an eye on the weather.",
+      "ar": "سأتابع حالة الطقس.",
+      "id": "day-21-27"
+    },
+    {
+      "en": "Can you remind me tomorrow?",
+      "ar": "هل يمكنك تذكيري غدًا؟",
+      "id": "day-21-28"
+    },
+    {
+      "en": "I'll add it to my calendar.",
+      "ar": "سأضيفه إلى تقويمي.",
+      "id": "day-21-29"
+    },
+    {
+      "en": "Let me confirm the booking tonight.",
+      "ar": "دعني أؤكد الحجز الليلة.",
+      "id": "day-21-30"
+    },
+    {
+      "en": "I'll message you when it's done.",
+      "ar": "سأراسلك عندما أنتهي.",
+      "id": "day-21-31"
+    },
+    {
+      "en": "I'm looking forward to our visit.",
+      "ar": "أتطلع إلى زيارتنا.",
+      "id": "day-21-32"
+    },
+    {
+      "en": "Thanks for organizing everything.",
+      "ar": "شكرًا لتنظيم كل شيء.",
+      "id": "day-21-33"
+    },
+    {
+      "en": "See you on Friday, then.",
+      "ar": "إذًا أراك يوم الجمعة.",
+      "id": "day-21-34"
+    }
+  ],
+  "story": {
+    "title": "Making plans",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring making plans. The aim was to have a clear, natural conversation in English. Dina said, “Do you have any plans for Friday?” A friend replied, “I have not decided yet.” Dina said, “I was thinking about visiting the museum.” A friend replied, “That sounds like a good idea.” They paused to remember the meaning. Dina said, “Would you like to come with me?” A friend replied, “I would love to join you.” Dina said, “What time should we meet?” A friend replied, “How about ten in the morning?” They paused to remember the meaning. Dina said, “That works well for me.” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “Let me check my calendar first.” A friend replied, “I have another appointment that day.” Dina said, “Could we meet a little later?” A friend replied, “Eleven o'clock would be better.” They paused to remember the meaning. Dina said, “Where would you like to meet?” A friend replied, “Let's meet outside the main entrance.” Dina said, “I will send you the location.” A friend replied, “Should we buy tickets in advance?” They paused to remember the meaning. Dina said, “It might be busy on the weekend.” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “I can book the tickets online.” A friend replied, “Please let me know the price.” Dina said, “We could have lunch afterwards.” A friend replied, “There is a nice café nearby.” They paused to remember the meaning. Dina said, “I need to be home by five.” A friend replied, “We should have enough time.” Dina said, “What if it rains?” A friend replied, “We can change our plans if necessary.” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “I'll keep an eye on the weather.” A friend replied, “Can you remind me tomorrow?” Dina said, “I'll add it to my calendar.” A friend replied, “Let me confirm the booking tonight.” They paused to remember the meaning. Dina said, “I'll message you when it's done.” A friend replied, “I'm looking forward to our visit.” Dina said, “Thanks for organizing everything.” A friend replied, “See you on Friday, then.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 152
+  }
+}

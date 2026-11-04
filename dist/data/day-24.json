@@ -1,0 +1,207 @@
+{
+  "day": 24,
+  "title": "Learning English",
+  "titleAr": "تعلم الإنجليزية",
+  "sentences": [
+    {
+      "en": "I'm learning English a little every day.",
+      "ar": "أتعلم الإنجليزية قليلًا كل يوم.",
+      "id": "day-24-01"
+    },
+    {
+      "en": "My goal is to speak more confidently.",
+      "ar": "هدفي أن أتحدث بثقة أكبر.",
+      "id": "day-24-02"
+    },
+    {
+      "en": "I understand more than I can say.",
+      "ar": "أفهم أكثر مما أستطيع التعبير عنه.",
+      "id": "day-24-03"
+    },
+    {
+      "en": "I sometimes forget the right word.",
+      "ar": "أنسى أحيانًا الكلمة المناسبة.",
+      "id": "day-24-04"
+    },
+    {
+      "en": "Could you explain that in simpler English?",
+      "ar": "هل يمكنك شرح ذلك بإنجليزية أبسط؟",
+      "id": "day-24-05"
+    },
+    {
+      "en": "Let me try to say it another way.",
+      "ar": "دعني أحاول قولها بطريقة أخرى.",
+      "id": "day-24-06"
+    },
+    {
+      "en": "What does this expression mean?",
+      "ar": "ماذا يعني هذا التعبير؟",
+      "id": "day-24-07"
+    },
+    {
+      "en": "Could you give me an example?",
+      "ar": "هل يمكنك إعطائي مثالًا؟",
+      "id": "day-24-08"
+    },
+    {
+      "en": "I'll write the new word down.",
+      "ar": "سأدوّن الكلمة الجديدة.",
+      "id": "day-24-09"
+    },
+    {
+      "en": "I want to use it in a sentence.",
+      "ar": "أريد استخدامها في جملة.",
+      "id": "day-24-10"
+    },
+    {
+      "en": "Pronunciation is challenging for me.",
+      "ar": "النطق يمثل تحديًا بالنسبة لي.",
+      "id": "day-24-11"
+    },
+    {
+      "en": "Can you say it more slowly?",
+      "ar": "هل يمكنك نطقها ببطء أكثر؟",
+      "id": "day-24-12"
+    },
+    {
+      "en": "I will repeat it after you.",
+      "ar": "سأكررها بعدك.",
+      "id": "day-24-13"
+    },
+    {
+      "en": "That word has a silent letter.",
+      "ar": "تحتوي هذه الكلمة على حرف لا يُنطق.",
+      "id": "day-24-14"
+    },
+    {
+      "en": "I need to practice listening more often.",
+      "ar": "أحتاج إلى ممارسة الاستماع باستمرار أكبر.",
+      "id": "day-24-15"
+    },
+    {
+      "en": "Short conversations help me learn.",
+      "ar": "المحادثات القصيرة تساعدني على التعلم.",
+      "id": "day-24-16"
+    },
+    {
+      "en": "I try to think in English sometimes.",
+      "ar": "أحاول أحيانًا التفكير بالإنجليزية.",
+      "id": "day-24-17"
+    },
+    {
+      "en": "Making mistakes is normal.",
+      "ar": "ارتكاب الأخطاء أمر طبيعي.",
+      "id": "day-24-18"
+    },
+    {
+      "en": "Please correct me when I'm wrong.",
+      "ar": "صحح لي من فضلك عندما أخطئ.",
+      "id": "day-24-19"
+    },
+    {
+      "en": "I appreciate your feedback.",
+      "ar": "أقدر ملاحظاتك.",
+      "id": "day-24-20"
+    },
+    {
+      "en": "I learned five new phrases today.",
+      "ar": "تعلمت خمس عبارات جديدة اليوم.",
+      "id": "day-24-21"
+    },
+    {
+      "en": "I'll review them tomorrow.",
+      "ar": "سأراجعها غدًا.",
+      "id": "day-24-22"
+    },
+    {
+      "en": "I can understand the main idea.",
+      "ar": "أستطيع فهم الفكرة الرئيسية.",
+      "id": "day-24-23"
+    },
+    {
+      "en": "I don't need to translate every word.",
+      "ar": "لا أحتاج إلى ترجمة كل كلمة.",
+      "id": "day-24-24"
+    },
+    {
+      "en": "Context helps me guess the meaning.",
+      "ar": "يساعدني السياق على تخمين المعنى.",
+      "id": "day-24-25"
+    },
+    {
+      "en": "This sentence sounds more natural.",
+      "ar": "تبدو هذه الجملة أكثر طبيعية.",
+      "id": "day-24-26"
+    },
+    {
+      "en": "What's the difference between these words?",
+      "ar": "ما الفرق بين هاتين الكلمتين؟",
+      "id": "day-24-27"
+    },
+    {
+      "en": "One is formal and the other is casual.",
+      "ar": "إحداهما رسمية والأخرى عامية.",
+      "id": "day-24-28"
+    },
+    {
+      "en": "I want to improve my writing too.",
+      "ar": "أريد تحسين كتابتي أيضًا.",
+      "id": "day-24-29"
+    },
+    {
+      "en": "Reading aloud builds my confidence.",
+      "ar": "القراءة بصوت عالٍ تعزز ثقتي.",
+      "id": "day-24-30"
+    },
+    {
+      "en": "I'm making steady progress.",
+      "ar": "أحرز تقدمًا ثابتًا.",
+      "id": "day-24-31"
+    },
+    {
+      "en": "I can speak longer than before.",
+      "ar": "أستطيع التحدث مدة أطول من قبل.",
+      "id": "day-24-32"
+    },
+    {
+      "en": "I'll keep practicing even when it's hard.",
+      "ar": "سأواصل التدريب حتى عندما يكون صعبًا.",
+      "id": "day-24-33"
+    },
+    {
+      "en": "Every conversation is an opportunity to learn.",
+      "ar": "كل محادثة فرصة للتعلم.",
+      "id": "day-24-34"
+    }
+  ],
+  "story": {
+    "title": "Learning English",
+    "sections": [
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Dina was exploring learning english. The aim was to have a clear, natural conversation in English. Dina said, “I'm learning English a little every day.” A friend replied, “My goal is to speak more confidently.” Dina said, “I understand more than I can say.” A friend replied, “I sometimes forget the right word.” They paused to remember the meaning. Dina said, “Could you explain that in simpler English?” A friend replied, “Let me try to say it another way.” Dina said, “What does this expression mean?” A friend replied, “Could you give me an example?” They paused to remember the meaning. Dina said, “I'll write the new word down.” "
+        ]
+      },
+      {
+        "heading": "In conversation",
+        "paragraphs": [
+          "The conversation continued, and Dina practiced listening and responding with care. Dina said, “I want to use it in a sentence.” A friend replied, “Pronunciation is challenging for me.” Dina said, “Can you say it more slowly?” A friend replied, “I will repeat it after you.” They paused to remember the meaning. Dina said, “That word has a silent letter.” A friend replied, “I need to practice listening more often.” Dina said, “Short conversations help me learn.” A friend replied, “I try to think in English sometimes.” They paused to remember the meaning. Dina said, “Making mistakes is normal.” "
+        ]
+      },
+      {
+        "heading": "Practicing details",
+        "paragraphs": [
+          "Next, Dina practiced phrases that could help with common problems and decisions. Dina said, “Please correct me when I'm wrong.” A friend replied, “I appreciate your feedback.” Dina said, “I learned five new phrases today.” A friend replied, “I'll review them tomorrow.” They paused to remember the meaning. Dina said, “I can understand the main idea.” A friend replied, “I don't need to translate every word.” Dina said, “Context helps me guess the meaning.” A friend replied, “This sentence sounds more natural.” They paused to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Putting it together",
+        "paragraphs": [
+          "Before finishing, Dina reviewed more useful sentences and noticed real improvement. Dina said, “What's the difference between these words?” A friend replied, “One is formal and the other is casual.” Dina said, “I want to improve my writing too.” A friend replied, “Reading aloud builds my confidence.” They paused to remember the meaning. Dina said, “I'm making steady progress.” A friend replied, “I can speak longer than before.” Dina said, “I'll keep practicing even when it's hard.” A friend replied, “Every conversation is an opportunity to learn.” They paused to remember the meaning. "
+        ]
+      }
+    ],
+    "estimatedSeconds": 156
+  }
+}

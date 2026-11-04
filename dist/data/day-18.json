@@ -1,0 +1,207 @@
+{
+  "day": 18,
+  "title": "Exercise and the gym",
+  "titleAr": "التمرين والنادي",
+  "sentences": [
+    {
+      "en": "I want to become more active.",
+      "ar": "أريد أن أكون أكثر نشاطًا.",
+      "id": "day-18-01"
+    },
+    {
+      "en": "I joined a gym near my home.",
+      "ar": "اشتركت في نادٍ رياضي قرب منزلي.",
+      "id": "day-18-02"
+    },
+    {
+      "en": "Today is my first workout.",
+      "ar": "اليوم أول تمرين لي.",
+      "id": "day-18-03"
+    },
+    {
+      "en": "I will start with a warm-up.",
+      "ar": "سأبدأ بالإحماء.",
+      "id": "day-18-04"
+    },
+    {
+      "en": "The treadmill is available now.",
+      "ar": "جهاز المشي متاح الآن.",
+      "id": "day-18-05"
+    },
+    {
+      "en": "I prefer cycling to running.",
+      "ar": "أفضل ركوب الدراجة على الجري.",
+      "id": "day-18-06"
+    },
+    {
+      "en": "How long should I warm up?",
+      "ar": "كم مدة الإحماء المناسبة؟",
+      "id": "day-18-07"
+    },
+    {
+      "en": "I am following a simple plan.",
+      "ar": "أتبع خطة بسيطة.",
+      "id": "day-18-08"
+    },
+    {
+      "en": "I train three times a week.",
+      "ar": "أتدرب ثلاث مرات أسبوعيًا.",
+      "id": "day-18-09"
+    },
+    {
+      "en": "I need to improve my stamina.",
+      "ar": "أحتاج إلى تحسين قدرتي على التحمل.",
+      "id": "day-18-10"
+    },
+    {
+      "en": "I will increase the intensity gradually.",
+      "ar": "سأزيد الشدة تدريجيًا.",
+      "id": "day-18-11"
+    },
+    {
+      "en": "Can you show me how to use this machine?",
+      "ar": "هل يمكنك أن تريني طريقة استخدام هذا الجهاز؟",
+      "id": "day-18-12"
+    },
+    {
+      "en": "Make sure your back stays straight.",
+      "ar": "احرص على إبقاء ظهرك مستقيمًا.",
+      "id": "day-18-13"
+    },
+    {
+      "en": "Start with a lighter weight.",
+      "ar": "ابدأ بوزن أخف.",
+      "id": "day-18-14"
+    },
+    {
+      "en": "I can do ten repetitions.",
+      "ar": "أستطيع أداء عشر تكرارات.",
+      "id": "day-18-15"
+    },
+    {
+      "en": "I need a short rest between sets.",
+      "ar": "أحتاج إلى راحة قصيرة بين المجموعات.",
+      "id": "day-18-16"
+    },
+    {
+      "en": "My legs feel tired today.",
+      "ar": "أشعر بتعب في ساقي اليوم.",
+      "id": "day-18-17"
+    },
+    {
+      "en": "I am working on my technique.",
+      "ar": "أعمل على تحسين أدائي للحركة.",
+      "id": "day-18-18"
+    },
+    {
+      "en": "Good form is more important than speed.",
+      "ar": "الأداء الصحيح أهم من السرعة.",
+      "id": "day-18-19"
+    },
+    {
+      "en": "I will ask the trainer for advice.",
+      "ar": "سأطلب نصيحة المدرب.",
+      "id": "day-18-20"
+    },
+    {
+      "en": "Do not forget to breathe normally.",
+      "ar": "لا تنس التنفس بشكل طبيعي.",
+      "id": "day-18-21"
+    },
+    {
+      "en": "I brought water and a towel.",
+      "ar": "أحضرت ماءً ومنشفة.",
+      "id": "day-18-22"
+    },
+    {
+      "en": "I feel stronger than last month.",
+      "ar": "أشعر أنني أقوى من الشهر الماضي.",
+      "id": "day-18-23"
+    },
+    {
+      "en": "Recovery is part of training.",
+      "ar": "التعافي جزء من التدريب.",
+      "id": "day-18-24"
+    },
+    {
+      "en": "I will stretch after my workout.",
+      "ar": "سأقوم بتمارين الإطالة بعد التمرين.",
+      "id": "day-18-25"
+    },
+    {
+      "en": "My muscles are a little sore.",
+      "ar": "عضلاتي تؤلمني قليلًا.",
+      "id": "day-18-26"
+    },
+    {
+      "en": "I need enough sleep to recover.",
+      "ar": "أحتاج إلى نوم كافٍ للتعافي.",
+      "id": "day-18-27"
+    },
+    {
+      "en": "Healthy meals support my training.",
+      "ar": "الوجبات الصحية تدعم تدريبي.",
+      "id": "day-18-28"
+    },
+    {
+      "en": "I am not comparing myself to others.",
+      "ar": "لا أقارن نفسي بالآخرين.",
+      "id": "day-18-29"
+    },
+    {
+      "en": "Everyone starts somewhere.",
+      "ar": "الجميع يبدأ من نقطة ما.",
+      "id": "day-18-30"
+    },
+    {
+      "en": "I am proud of showing up today.",
+      "ar": "أنا فخور بأنني حضرت اليوم.",
+      "id": "day-18-31"
+    },
+    {
+      "en": "Tomorrow will be a rest day.",
+      "ar": "سيكون الغد يوم راحة.",
+      "id": "day-18-32"
+    },
+    {
+      "en": "I want to build a sustainable habit.",
+      "ar": "أريد بناء عادة أستطيع الاستمرار عليها.",
+      "id": "day-18-33"
+    },
+    {
+      "en": "One workout at a time.",
+      "ar": "تمرين واحد في كل مرة.",
+      "id": "day-18-34"
+    }
+  ],
+  "story": {
+    "title": "Exercise and the gym",
+    "sections": [
+      {
+        "heading": "A new situation",
+        "paragraphs": [
+          "Dina was learning how to handle exercise and the gym in everyday English. The goal was to communicate clearly and politely. Dina practiced “I want to become more active.” A useful phrase was “I joined a gym near my home.” A useful phrase was “Today is my first workout.” They repeated it to remember the meaning. Dina practiced “I will start with a warm-up.” A useful phrase was “The treadmill is available now.” A useful phrase was “I prefer cycling to running.” They repeated it to remember the meaning. Dina practiced “How long should I warm up?” A useful phrase was “I am following a simple plan.” A useful phrase was “I train three times a week.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Finding the right words",
+        "paragraphs": [
+          "As the situation developed, Dina listened carefully and tried more useful expressions. Dina practiced “I need to improve my stamina.” A useful phrase was “I will increase the intensity gradually.” A useful phrase was “Can you show me how to use this machine?” They repeated it to remember the meaning. Dina practiced “Make sure your back stays straight.” A useful phrase was “Start with a lighter weight.” A useful phrase was “I can do ten repetitions.” They repeated it to remember the meaning. Dina practiced “I need a short rest between sets.” A useful phrase was “My legs feel tired today.” A useful phrase was “I am working on my technique.” They repeated it to remember the meaning. "
+        ]
+      },
+      {
+        "heading": "Making a choice",
+        "paragraphs": [
+          "There were more details to understand, so Dina slowed down and chose the next words thoughtfully. Dina practiced “Good form is more important than speed.” A useful phrase was “I will ask the trainer for advice.” A useful phrase was “Do not forget to breathe normally.” They repeated it to remember the meaning. Dina practiced “I brought water and a towel.” A useful phrase was “I feel stronger than last month.” A useful phrase was “Recovery is part of training.” They repeated it to remember the meaning. Dina practiced “I will stretch after my workout.” A useful phrase was “My muscles are a little sore.” "
+        ]
+      },
+      {
+        "heading": "A confident finish",
+        "paragraphs": [
+          "At the end of the activity, Dina reviewed the final expressions and felt more comfortable speaking. Dina practiced “I need enough sleep to recover.” A useful phrase was “Healthy meals support my training.” A useful phrase was “I am not comparing myself to others.” They repeated it to remember the meaning. Dina practiced “Everyone starts somewhere.” A useful phrase was “I am proud of showing up today.” A useful phrase was “Tomorrow will be a rest day.” They repeated it to remember the meaning. Dina practiced “I want to build a sustainable habit.” A useful phrase was “One workout at a time.” "
+        ]
+      }
+    ],
+    "estimatedSeconds": 180
+  }
+}

@@ -97,200 +97,180 @@
       "title": "Clothes and sizes",
       "titleAr": "الملابس والمقاسات",
       "sentenceCount": 34,
-      "storyWords": 3165,
-      "estimatedSeconds": 1225,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 447,
+      "estimatedSeconds": 179,
+      "available": true
     },
     {
       "day": 12,
       "title": "Money and payment",
       "titleAr": "النقود والدفع",
       "sentenceCount": 34,
-      "storyWords": 3133,
-      "estimatedSeconds": 1213,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 433,
+      "estimatedSeconds": 174,
+      "available": true
     },
     {
       "day": 13,
       "title": "Asking for directions",
       "titleAr": "السؤال عن الاتجاهات",
       "sentenceCount": 34,
-      "storyWords": 3163,
-      "estimatedSeconds": 1224,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 438,
+      "estimatedSeconds": 176,
+      "available": true
     },
     {
       "day": 14,
       "title": "Getting around",
       "titleAr": "التنقل في المدينة",
       "sentenceCount": 34,
-      "storyWords": 3160,
-      "estimatedSeconds": 1223,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 436,
+      "estimatedSeconds": 175,
+      "available": true
     },
     {
       "day": 15,
       "title": "Weather and seasons",
       "titleAr": "الطقس والفصول",
       "sentenceCount": 34,
-      "storyWords": 3165,
-      "estimatedSeconds": 1225,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 437,
+      "estimatedSeconds": 175,
+      "available": true
     },
     {
       "day": 16,
       "title": "Daily habits",
       "titleAr": "العادات اليومية",
       "sentenceCount": 34,
-      "storyWords": 3165,
-      "estimatedSeconds": 1225,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 457,
+      "estimatedSeconds": 183,
+      "available": true
     },
     {
       "day": 17,
       "title": "Hobbies and interests",
       "titleAr": "الهوايات والاهتمامات",
       "sentenceCount": 34,
-      "storyWords": 3160,
-      "estimatedSeconds": 1223,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 451,
+      "estimatedSeconds": 181,
+      "available": true
     },
     {
       "day": 18,
       "title": "Exercise and the gym",
       "titleAr": "التمرين والنادي",
       "sentenceCount": 34,
-      "storyWords": 3178,
-      "estimatedSeconds": 1230,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 449,
+      "estimatedSeconds": 180,
+      "available": true
     },
     {
       "day": 19,
       "title": "Well-being",
       "titleAr": "العناية بالنفس",
       "sentenceCount": 34,
-      "storyWords": 3186,
-      "estimatedSeconds": 1233,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 464,
+      "estimatedSeconds": 186,
+      "available": true
     },
     {
       "day": 20,
       "title": "At the clinic",
       "titleAr": "في العيادة",
       "sentenceCount": 34,
-      "storyWords": 3178,
-      "estimatedSeconds": 1230,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 442,
+      "estimatedSeconds": 177,
+      "available": true
     },
     {
       "day": 21,
       "title": "Making plans",
       "titleAr": "وضع الخطط",
       "sentenceCount": 34,
-      "storyWords": 3156,
-      "estimatedSeconds": 1222,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 381,
+      "estimatedSeconds": 152,
+      "available": true
     },
     {
       "day": 22,
       "title": "Phone conversations",
       "titleAr": "المكالمات الهاتفية",
       "sentenceCount": 34,
-      "storyWords": 3167,
-      "estimatedSeconds": 1226,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 378,
+      "estimatedSeconds": 151,
+      "available": true
     },
     {
       "day": 23,
       "title": "Messages and email",
       "titleAr": "الرسائل والبريد",
       "sentenceCount": 34,
-      "storyWords": 3160,
-      "estimatedSeconds": 1223,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 390,
+      "estimatedSeconds": 156,
+      "available": true
     },
     {
       "day": 24,
       "title": "Learning English",
       "titleAr": "تعلم الإنجليزية",
       "sentenceCount": 34,
-      "storyWords": 3173,
-      "estimatedSeconds": 1228,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 389,
+      "estimatedSeconds": 156,
+      "available": true
     },
     {
       "day": 25,
       "title": "Study and university",
       "titleAr": "الدراسة والجامعة",
       "sentenceCount": 34,
-      "storyWords": 3168,
-      "estimatedSeconds": 1226,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 375,
+      "estimatedSeconds": 150,
+      "available": true
     },
     {
       "day": 26,
       "title": "People and descriptions",
       "titleAr": "وصف الأشخاص",
       "sentenceCount": 34,
-      "storyWords": 3173,
-      "estimatedSeconds": 1228,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 372,
+      "estimatedSeconds": 149,
+      "available": true
     },
     {
       "day": 27,
       "title": "Places and spaces",
       "titleAr": "وصف الأماكن",
       "sentenceCount": 34,
-      "storyWords": 3196,
-      "estimatedSeconds": 1237,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 395,
+      "estimatedSeconds": 158,
+      "available": true
     },
     {
       "day": 28,
       "title": "Feelings and moods",
       "titleAr": "المشاعر والمزاج",
       "sentenceCount": 34,
-      "storyWords": 3189,
-      "estimatedSeconds": 1234,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 384,
+      "estimatedSeconds": 154,
+      "available": true
     },
     {
       "day": 29,
       "title": "Likes and preferences",
       "titleAr": "الإعجاب والتفضيلات",
       "sentenceCount": 34,
-      "storyWords": 3182,
-      "estimatedSeconds": 1232,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 380,
+      "estimatedSeconds": 152,
+      "available": true
     },
     {
       "day": 30,
       "title": "Your first month",
       "titleAr": "شهرك الأول",
       "sentenceCount": 34,
-      "storyWords": 3187,
-      "estimatedSeconds": 1234,
-      "audioDuration": 1200.048,
-      "available": false
+      "storyWords": 398,
+      "estimatedSeconds": 159,
+      "available": true
     },
     {
       "day": 31,
@@ -916,8 +896,8 @@
     }
   ],
   "sentenceCount": 3064,
-  "publishedDays": 10,
+  "publishedDays": 30,
   "totalDays": 90,
-  "release": "text-batch-1",
+  "release": "text-batch-3",
   "delivery": "browser-speech"
 }

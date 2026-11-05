@@ -9,7 +9,14 @@ const BACKUP_NAME='warehouse-pending-update';
 const secret=(new URLSearchParams(location.hash.slice(1)).get('k')||'');
 const hexBytes=(text)=>Uint8Array.from(text.match(/../g).map(h=>parseInt(h,16)));
 const bytes=hexBytes(secret);
-const dataKey=crypto.subtle.importKey('raw',bytes,'AES-GCM',false,['encrypt','decrypt']);
+// Derive a separate key for saved records and uploaded photos (not the page loader key).
+const dataKey=(async()=>{
+ const label=new TextEncoder().encode('warehouse-github-records-v1');
+ const material=new Uint8Array(bytes.length+label.length);
+ material.set(bytes);material.set(label,bytes.length);
+ const digest=new Uint8Array(await crypto.subtle.digest('SHA-256',material));
+ return crypto.subtle.importKey('raw',digest.slice(0,16),'AES-GCM',false,['encrypt','decrypt']);
+})();
 let currentToken=sessionStorage.getItem(TOKEN_NAME)||'';
 const imageCache=new Map();
 const utf8=new TextEncoder();

@@ -28,6 +28,22 @@ h1{font-size:1.5rem;margin:0 0 10px}p{line-height:1.9;color:#49665b} .spinner{ma
     const key=await crypto.subtle.importKey('raw',bytes(secret),{name:'AES-CTR'},false,['decrypt']);
     const clear=await crypto.subtle.decrypt({name:'AES-CTR',counter:bytes('722698a771228a33100d6c3d57627365'),length:64},key,encrypted);
     let html=new TextDecoder('utf-8',{fatal:true}).decode(clear);
+    // Original small product photos are kept encrypted separately from the page.
+    const legacyResponse=await fetch('legacy-images.b64',{cache:'force-cache'});
+    if(legacyResponse.ok){
+      const legacyEncoded=(await legacyResponse.text()).trim();
+      const legacyBytes=Uint8Array.from(atob(legacyEncoded),c=>c.charCodeAt(0));
+      const legacyPlain=await crypto.subtle.decrypt({name:'AES-CTR',counter:bytes('ce64b7c78d09e45e3da3b2ff7a60c085'),length:64},key,legacyBytes);
+      const legacyPhotos=JSON.parse(new TextDecoder().decode(legacyPlain));
+      for(const [id,b64] of Object.entries(legacyPhotos)){
+        const at=html.indexOf("id:'"+id+"',");
+        if(at<0)continue;
+        const end=html.indexOf('\n',at);
+        const row=html.slice(at,end<0?html.length:end);
+        if(!row.includes("image:''"))continue;
+        html=html.slice(0,at)+row.replace("image:''","image:'data:image/webp;base64,"+b64+"'")+html.slice(at+row.length);
+      }
+    }
     const edits=[["<script>(() => {\n  'use strict';","<script src=\"admin-bridge.js\"></script>\n<script>(() => {\n  'use strict';"],["if(!path.startsWith('local:'))return path;","if(path.startsWith('uploads/'))return window.WAREHOUSE_SHARED.image(path);if(!path.startsWith('local:'))return path;"],["  function openForm(item){","  function openForm(item){if(!window.WAREHOUSE_SHARED.isAdmin()){window.WAREHOUSE_SHARED.openLogin();return;}"],["      saveLocal();warehouse=value.warehouse;","      const updatedAt=await window.WAREHOUSE_SHARED.save(records,notes,assetGet);window.lastSharedUpdate=updatedAt;$('#syncStatus').innerHTML='<span class=\"status-dot\"></span> تم الحفظ · جاري النشر';warehouse=value.warehouse;"],["    if(config.mode==='preview'){$('#previewBanner').hidden=false;$('#syncStatus').innerHTML='<span class=\"status-dot\"></span> نسخة معاينة';loadLocal()}\n    else{loadLocal();$('#previewBanner').hidden=false;$('#previewBanner').textContent='يلزم إكمال إعداد Supabase لتمكين البيانات المشتركة. هذه نسخة معاينة على الجهاز فقط.'}","    const shared=await window.WAREHOUSE_SHARED.load();\n    records=shared?.items||clone(seed.items);notes=shared?.notes||clone(seed.notes);\n    window.lastSharedUpdate=shared?.updatedAt||0;\n    $('#previewBanner').hidden=true;\n    $('#syncStatus').innerHTML='<span class=\"status-dot\"></span> الموقع متصل';\n    window.WAREHOUSE_SHARED.setup();"],["    bindEvents();render();","    bindEvents();render();\n    setInterval(async()=>{if(document.hidden||document.getElementById('formModal')?.open)return;\n      const newest=await window.WAREHOUSE_SHARED.load();\n      if(newest&&newest.updatedAt>(window.lastSharedUpdate||0)){\n        records=newest.items;notes=newest.notes;window.lastSharedUpdate=newest.updatedAt;render();\n        $('#syncStatus').innerHTML='<span class=\"status-dot\"></span> تم تحديث البيانات';\n      }\n    },120000);"],["  init();\n})();","  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();\n})();"]];
     for(const [needle,replacement] of edits){
       if(!html.includes(needle))throw Error('الرابط');

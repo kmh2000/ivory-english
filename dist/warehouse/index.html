@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#215a46">
+<title>حصر المستودعات | BTC & Armada</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f6f8f6;color:#173d31;font-family:Tahoma,Arial,sans-serif;display:grid;place-items:center}
+main{text-align:center;background:white;border:1px solid #dce5dd;border-radius:16px;box-shadow:0 15px 65px #153c3010;padding:36px 28px;max-width:500px;margin:20px}
+h1{font-size:1.5rem;margin:0 0 10px}p{line-height:1.9;color:#49665b} .spinner{margin:0 auto 20px;width:32px;height:32px;border:3px solid #dee9e1;border-top-color:#215a46;border-radius:50%;animation:turn .7s linear infinite}@keyframes turn{to{transform:rotate(360deg)}}.error .spinner{display:none}
+</style>
+</head>
+<body><main id="loading"><div class="spinner" aria-hidden="true"></div><h1>حصر المستودعات</h1><p id="status">جاري فتح رابط المشاركة الآمن…</p></main>
+<script>
+(async()=>{
+  const status=document.getElementById('status'),box=document.getElementById('loading');
+  function fail(message){status.textContent=message;box.classList.add('error')}
+  const secret=new URLSearchParams(location.hash.substring(1)).get('k');
+  if(!secret||!/^[0-9a-f]{32}$/i.test(secret)){fail('الرابط غير مكتمل. اطلب رابط المشاركة الكامل من مسؤول المستودعات.');return}
+  const bytes=hex=>Uint8Array.from(hex.match(/../g).map(pair=>parseInt(pair,16)));
+  try{
+    const response=await fetch('payload.b64',{cache:'force-cache'});
+    if(!response.ok)throw new Error('تحميل');
+    const encoded=(await response.text()).trim();
+    const binary=atob(encoded);
+    const encrypted=Uint8Array.from(binary,c=>c.charCodeAt(0));
+    const key=await crypto.subtle.importKey('raw',bytes(secret),{name:'AES-CTR'},false,['decrypt']);
+    const clear=await crypto.subtle.decrypt({name:'AES-CTR',counter:bytes('722698a771228a33100d6c3d57627365'),length:64},key,encrypted);
+    const html=new TextDecoder('utf-8',{fatal:true}).decode(clear);
+    if(!html.startsWith('<!doctype html>')||!html.includes('window.WAREHOUSE_SEED')||!html.includes('id="productList"'))throw new Error('الرابط');
+    document.open();document.write(html);document.close();
+  }catch(error){
+    fail(error?.message==='الرابط'?'مفتاح رابط المشاركة غير صحيح.':'تعذر فتح الموقع حاليًا. تأكد من اتصال الإنترنت والرابط ثم حاول مرة ثانية.');
+  }
+})();
+</script></body></html>

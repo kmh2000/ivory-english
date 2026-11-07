@@ -51,35 +51,3 @@
 .voice-preview{margin-top:12px;width:100%;justify-content:center}
 .accent-help{margin:10px 0 15px;min-height:3rem}
 @media(max-width:620px){.accent-option{font-size:.8125rem;padding:10px 4px}.voice-preview{font-size:.8125rem}}
-
-
-/* Day 90 reuses the existing lesson layout; only Arabic reading direction and text sizes differ. */
-.exam-review .sentence-en{
-  font-family:var(--arabic);font-size:1.04rem;line-height:2.07;
-  text-align:right;letter-spacing:0;font-weight:500
-}
-.exam-review .sentence-ar{
-  font-family:var(--arabic);font-size:.875rem;font-weight:700;
-  color:var(--accent);min-height:0;margin:0 0 9px;text-align:right
-}
-.exam-review .sentence-player{margin-left:0;margin-right:40px}
-.exam-review .sentence-card.playing{box-shadow:inset -3px 0 0 var(--accent)}
-.exam-review .story-text{
-  font-family:var(--arabic);font-size:1.08rem;line-height:2.15;
-  direction:rtl;text-align:right
-}
-.exam-review .story-text h4{
-  font-family:var(--arabic);font-size:1rem;letter-spacing:0;
-  text-transform:none
-}
-.exam-review .story-text p{padding-bottom:16px;border-bottom:1px solid var(--line)}
-.exam-review .lesson-intro h1,.exam-review .story h3{
-  font-family:var(--arabic);font-size:clamp(1.45rem,2.9vw,2.2rem);
-  font-weight:600;letter-spacing:0;line-height:1.7
-}
-.exam-review .story-word{word-break:normal}
-.exam-review .lesson-sidebar select{font-family:var(--arabic),sans-serif}
-@media(max-width:620px){
-  .exam-review .sentence-en{font-size:1rem}
-  .exam-review .story-text{font-size:1rem}
-}

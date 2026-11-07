@@ -60,7 +60,7 @@ header{max-width:1240px;margin:auto;padding:19px 24px;display:flex;align-items:c
 <script>
 (function(){
 "use strict";
-var BANK=[],ALL=[],activeId=null,view="all",category="",search="",modeKey="tarbawi.200.theme.v1",storage="tarbawi.200.progress.v1";
+var BANK=[],ALL=[],activeId=null,justAnswered=null,view="all",category="",search="",modeKey="tarbawi.200.theme.v1",storage="tarbawi.200.progress.v1";
 var state={answers:{},saved:{}};
 try{var old=JSON.parse(localStorage.getItem(storage)||"{}");if(old&&typeof old==="object"){state.answers=old.answers||{};state.saved=old.saved||{}}}catch(e){}
 var $=function(s,root){return (root||document).querySelector(s)};
@@ -122,6 +122,7 @@ function render(){
  stats();
  $$(".filter").forEach(function(b){b.classList.toggle("active",b.dataset.view===view)});
  var arr=visible();
+ if(justAnswered===activeId&&!arr.some(function(q){return q.id===activeId})){var pinned=BANK.find(function(q){return q.id===activeId});if(pinned)arr=[pinned].concat(arr)}
  $("#resultsCount").textContent="الأسئلة المعروضة: "+num(arr.length)+" / "+num(BANK.length);
  var target=$("#questionbox");
  if(!arr.length){
@@ -136,10 +137,10 @@ function render(){
  $("#sourcefoot").textContent="مصدر السؤال: تجميعات التربوي العام · نوفمبر ٢٠٢٥ · السؤال "+num(q.id)+" · صفحة "+num(q.sourcePage)+" من ملف التجميعات. قد توجد أخطاء في مفاتيح الملفات غير الرسمية.";
  $$(".answer",target).forEach(function(b){b.onclick=function(){
    if(has(q))return;
-   state.answers[q.id]=Number(b.dataset.answer);store();render();
+   state.answers[q.id]=Number(b.dataset.answer);justAnswered=q.id;store();render();
  }});
  $("#bookmark").onclick=function(){if(saved(q))delete state.saved[q.id];else state.saved[q.id]=true;store();render()};
- $("#retry").onclick=function(){delete state.answers[q.id];store();render()};
+ $("#retry").onclick=function(){delete state.answers[q.id];justAnswered=q.id;store();render()};
  $("#next").onclick=function(){move(1)};
  $("#previous").onclick=function(){move(-1)};
  renderMap();

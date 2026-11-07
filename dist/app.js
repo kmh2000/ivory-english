@@ -48,6 +48,7 @@ if(!prefs.voiceByAccent||typeof prefs.voiceByAccent!=='object'||Array.isArray(pr
 if(typeof prefs.volume!=='number'||prefs.volume<0||prefs.volume>1)prefs.volume=1;
 prefs.repeat=[3,50].includes(prefs.repeat)?50:1;
 const savePrefs=()=>{try{localStorage.setItem('ivory.preferences.v1',JSON.stringify(prefs));}catch{}};
+let examRepeat=false;try{examRepeat=localStorage.getItem('ivory.exam.repeat.v1')==='true'}catch{}
 function toast(message){clearTimeout(toastTimer);const t=$('#toast');t.textContent=message;t.hidden=false;toastTimer=setTimeout(()=>t.hidden=true,4500);}
 function wordCount(s){return (s.match(/\S+/g)||[]).length;}
 
@@ -122,7 +123,7 @@ class LearningPlayer{
   async playSentence(n,all=false,repeats=null){
     const list=currentLesson?.sentences||indexData?.bonus;
     if(!list||!list[n])return;
-    this.stop();this.kind='sentence';this.position=n;this.all=all;this.repeatIndex=0;this.repeatCount=repeats||prefs.repeat;
+    this.stop();this.kind='sentence';this.position=n;this.all=all;this.repeatIndex=0;this.repeatCount=repeats||(currentLesson?.day===90?(examRepeat?50:1):prefs.repeat);
     this.file=audioMode==='recorded'&&!!currentLesson?.audio?.sentences;
     this.playing=true;
     if(this.file){const data=currentLesson.audio.sentences;this.clip=data.clips[n];this.setFile(this.clip.url||data.url,this.clip.start);await this.startFile();}
@@ -340,8 +341,12 @@ function renderLesson(data){
   <div class="story-player"><div class="story-controls"><button class="btn btn-primary" id="story-play">${icon('play')} Play story</button><button class="icon-btn" id="story-restart" aria-label="Restart story">${icon('repeat')}</button><button class="icon-btn" id="story-stop" aria-label="Stop story">${icon('stop')}</button><span id="story-time" class="time">0:00 / ${clock((actual||data.story.estimatedSeconds)/prefs.speed)}${actual?'':' ≈'}</span></div><input id="story-seek" class="story-position" type="range" min="0" max="1000" step="1" value="0" aria-label="Story position"><label class="check-label" for="follow-story"><span>Follow the words <span lang="ar">· تتبع القراءة</span></span><input id="follow-story" type="checkbox" checked></label><label class="sr-only" for="story-chapter-select" style="font-size:.75rem;color:var(--muted)">Jump to a chapter</label><select id="story-chapter-select" aria-label="Jump to a story chapter">${data.story.sections.map((s,i)=>`<option value="${i}">${i+1}. ${esc(s.heading)}</option>`).join('')}</select><p id="story-status" class="story-status" lang="ar" dir="rtl"></p></div><div class="story-text" lang="en">${story}</div>${data.audio?.story?`<a class="btn btn-subtle" href="${esc(assetURL(data.audio.story.url))}" download>${icon('download')} Download story · MP3</a>`:''}</article><div class="completion-panel"><button class="btn btn-primary" id="complete-day" aria-pressed="${progress.completed.includes(data.day)}">${icon('check')} ${progress.completed.includes(data.day)?'Day completed · مكتمل':'Mark day complete · أنهيت اليوم'}</button><span class="small-note" lang="ar" dir="rtl">تقدّمك محفوظ في هذا المتصفح.</span></div><div class="lesson-end">${data.day>1?`<a class="btn btn-subtle" href="#day/${data.day-1}">${icon('back')} Day ${pad(data.day-1)}</a>`:'<a class="btn btn-subtle" href="#days">All days</a>'}${isPublished(data.day+1)?`<a class="btn btn-primary" href="#day/${data.day+1}">Day ${pad(data.day+1)} ${icon('arrow')}</a>`:'<a class="btn btn-primary" href="#bonus">The final four '+icon('arrow')+'</a>'}</div></div>${sidebarMarkup()}</div>`;
   audioMode=data.audio?.sentences?'recorded':'device';
   if(data.day===90)configureExamLesson();
-  $('#complete-day').onclick=()=>{const done=progress.completed.includes(data.day);progress.completed=done?progress.completed.filter(n=>n!==data.day):[...progress.completed,data.day];saveProgress();const button=$('#complete-day');button.setAttribute('aria-pressed',String(!done));button.innerHTML=icon('check')+' '+(!done?'Day completed · مكتمل':'Mark day complete · أنهيت اليوم');};
+  $('#complete-day').onclick=()=>{const done=progress.completed.includes(data.day);progress.completed=done?progress.completed.filter(n=>n!==data.day):[...progress.completed,data.day];saveProgress();const button=$('#complete-day');button.setAttribute('aria-pressed',String(!done));button.innerHTML=icon('check')+' '+(data.day===90?(!done?'أنهيت المراجعة':'حدد المراجعة كمكتملة'):(!done?'Day completed · مكتمل':'Mark day complete · أنهيت اليوم'));};
   attachSentenceEvents();attachSettings();populateVoices();
+  if(data.day===90){
+    const box=$('#repeat');
+    if(box){box.checked=examRepeat;box.onchange=e=>{examRepeat=e.target.checked;try{localStorage.setItem('ivory.exam.repeat.v1',String(examRepeat))}catch{}};}
+  }
   $('#play-all').onclick=()=>{if(player.kind==='sentence'&&player.all)player.toggle();else player.playSentence(0,true);};
   $('#stop-all').onclick=()=>player.stop();
   $('#story-play').onclick=()=>{if(player.kind==='story')player.toggle();else player.playStory();};

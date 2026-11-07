@@ -74,7 +74,7 @@ function buildStory(story){
       const matches=[...p.matchAll(/\S+/g)];
       const targets=(currentLesson?.sentences||[]).flatMap(s=>{const start=p.indexOf(s.en);return start<0?[]:[{start,end:start+s.en.length}];});
       const words=matches.map((m)=>{const t={word:m[0],start:offset+m.index,end:offset+m.index+m[0].length,index:wordId++};storyTokens.push(t);const learned=targets.some(r=>m.index+m[0].length>r.start&&m.index<r.end);return `<span class="story-word${learned?' lesson-word':''}" data-word="${t.index}">${esc(m[0])}</span>`;});
-      const segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter('en',{granularity:'sentence'}):null;
+      const segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter(currentLesson?.day===90?'ar':'en',{granularity:'sentence'}):null;
       const segments=segmenter?[...segmenter.segment(p)].map(s=>({text:s.segment,index:s.index})):Array.from(p.matchAll(/[^.!?]+[.!?]+[”"']*\s*|[^.!?]+$/g),m=>({text:m[0],index:m.index}));
       for(const segment of segments){
         const text=segment.text.trim();if(!text)continue;
@@ -111,7 +111,14 @@ class LearningPlayer{
     this.updateUI();
   }
   clearHighlights(){for(const e of $$('.active-word,.active-fragment'))e.classList.remove('active-word','active-fragment');}
-  get selectedVoice(){return voices.find(v=>v.voiceURI===prefs.voice&&accentMatches(v,prefs.accent))||preferredAccentVoice(prefs.accent)||null;}
+  get selectedVoice(){
+    if(currentLesson?.day===90){
+      const arVoices=('speechSynthesis' in window?window.speechSynthesis.getVoices():[]).filter(v=>/^ar(?:[-_]|$)/i.test(v.lang));
+      const stored=localStorage.getItem('ivory.exam.arabicVoice.v1')||'';
+      return arVoices.find(v=>v.voiceURI===stored)||arVoices.find(v=>/^ar[-_]SA$/i.test(v.lang))||arVoices[0]||null;
+    }
+    return voices.find(v=>v.voiceURI===prefs.voice&&accentMatches(v,prefs.accent))||preferredAccentVoice(prefs.accent)||null;
+  }
   async playSentence(n,all=false,repeats=null){
     const list=currentLesson?.sentences||indexData?.bonus;
     if(!list||!list[n])return;
@@ -142,7 +149,7 @@ class LearningPlayer{
       this.timer=setTimeout(()=>{if(token!==this.token)return;this.playing=true;if(this.file){this.audio.currentTime=this.clip.start;this.startFile();}else this.speak(list[index].en,0,()=>this.finishSentence());this.updateUI();},delay);
     }else if(all&&index<list.length-1){
       this.timer=setTimeout(()=>{if(token!==this.token)return;this.playSentence(index+1,true);},delay);
-    }else{this.timer=setTimeout(()=>{if(token!==this.token)return;this.stop();if(all)toast('أكملت الاستماع للجمل. تقدر تبدأ القصة الآن.');},prefs.shadow?delay:50);}
+    }else{this.timer=setTimeout(()=>{if(token!==this.token)return;this.stop();if(all)toast(currentLesson?.day===90?'أكملت المعلومات؛ تقدر تسمع الأسئلة والإجابات الآن.':'أكملت الاستماع للجمل. تقدر تبدأ القصة الآن.');},prefs.shadow?delay:50);}
   }
   async playStory(word=0){
     if(!currentLesson?.story||!storyTokens.length)return;
@@ -155,7 +162,7 @@ class LearningPlayer{
   speakStoryPiece(){
     if(this.kind!=='story')return;
     let piece=storyPieces.find(p=>p.end>this.nativePosition);
-    if(!piece){this.stop();toast('انتهت القصة. أحسنت الاستماع.');return;}
+    if(!piece){this.stop();toast(currentLesson?.day===90?'انتهى الاستماع للأسئلة والإجابات.':'انتهت القصة. أحسنت الاستماع.');return;}
     const start=Math.max(piece.start,this.nativePosition);
     this.nativePosition=start;
     const text=storyText.slice(start,piece.end);
@@ -164,6 +171,7 @@ class LearningPlayer{
   speak(text,start,onend){
     if(!('speechSynthesis'in window)||typeof SpeechSynthesisUtterance==='undefined'){this.stop();toast('جهازك لا يدعم النطق المباشر. اختر الملف الصوتي إذا كان متاحًا.');return;}
     const version=this.token,utterance=new SpeechSynthesisUtterance(text);
+    if(currentLesson?.day===90){this.speakArabic(text,start,onend);return;}
     this.utterance=utterance;utterance.lang=prefs.accent;utterance.voice=this.selectedVoice;utterance.rate=prefs.speed;utterance.volume=prefs.volume;
     this.boundaries=false;this.startedAt=Date.now();
     utterance.onstart=()=>{if(version!==this.token)return;this.playing=true;this.paused=false;if(this.kind==='story')this.highlightFragment(start,start+text.length);this.updateUI();};
@@ -171,6 +179,54 @@ class LearningPlayer{
     utterance.onend=()=>{if(version!==this.token)return;this.utterance=null;onend();};
     utterance.onerror=(e)=>{if(version!==this.token||e.error==='canceled'||e.error==='interrupted')return;this.stop();toast('تعذر تشغيل هذا الصوت. جرّب صوتًا إنجليزيًا آخر أو الملف الصوتي.');};
     window.speechSynthesis.speak(utterance);
+  }
+
+  speakArabic(text,start,onend){
+    // Short queued utterances are more reliable for longer Arabic study passages on iOS.
+    if(!('speechSynthesis' in window)||typeof SpeechSynthesisUtterance==='undefined'){
+      this.stop();toast('هذا المتصفح لا يدعم النطق. جرّب تفعيل أصوات العربية على جهازك.');return;
+    }
+    const token=this.token,parts=[];let at=0;
+    while(at<text.length){
+      let end=Math.min(at+165,text.length);
+      if(end<text.length){const gap=text.lastIndexOf(' ',end);if(gap>at+65)end=gap+1;}
+      parts.push({text:text.slice(at,end),index:at});at=end;
+    }
+    let part=0;
+    const advance=()=>{
+      if(token!==this.token)return;
+      if(part>=parts.length){this.utterance=null;onend();return;}
+      const piece=parts[part++];
+      const utterance=new SpeechSynthesisUtterance(piece.text);
+      utterance.lang='ar-SA';utterance.voice=this.selectedVoice;
+      utterance.rate=prefs.speed;utterance.volume=prefs.volume;
+      this.utterance=utterance;this.startedAt=Date.now();
+      utterance.onstart=()=>{
+        if(token!==this.token)return;
+        this.playing=true;this.paused=false;
+        if(this.kind==='story')this.highlightFragment(start+piece.index,start+piece.index+piece.text.length);
+        this.updateUI();
+      };
+      utterance.onboundary=e=>{
+        if(token!==this.token||!this.playing||e.name==='sentence')return;
+        this.boundaries=true;
+        if(this.kind==='story'){
+          this.nativePosition=start+piece.index+e.charIndex;
+          this.highlight(closestToken(this.nativePosition));
+        }else{
+          const bar=$(`[data-sentence="${this.position}"] .audio-line span`);
+          if(bar)bar.style.width=`${Math.min(99,(piece.index+e.charIndex+1)/Math.max(1,text.length)*100)}%`;
+        }
+        this.updateProgress();
+      };
+      utterance.onend=advance;
+      utterance.onerror=e=>{
+        if(token!==this.token||e.error==='canceled'||e.error==='interrupted')return;
+        this.stop();toast('تعذر تشغيل الصوت العربي. اختر صوتًا عربيًا مثبتًا على جهازك.');
+      };
+      window.speechSynthesis.speak(utterance);
+    };
+    advance();
   }
   async toggle(){
     if(!this.kind)return;
@@ -228,10 +284,10 @@ class LearningPlayer{
   }
   updateUI(){
     for(const card of $$('.sentence-card')){const active=this.kind==='sentence'&&Number(card.dataset.sentence)===this.position;card.classList.toggle('playing',active);const b=$('.sentence-play',card);if(b){b.innerHTML=icon(active&&this.playing?'pause':'play');b.setAttribute('aria-label',`${active&&this.playing?'Pause':'Play'} sentence ${Number(card.dataset.sentence)+1}`);}}
-    const storyPlay=$('#story-play');if(storyPlay){const p=this.kind==='story'&&this.playing;storyPlay.innerHTML=`${icon(p?'pause':'play')} ${p?'Pause story':'Play story'}`;storyPlay.setAttribute('aria-label',p?'Pause story':'Play story');}
-    const playAll=$('#play-all');if(playAll){const p=this.kind==='sentence'&&this.all&&this.playing;playAll.innerHTML=`${icon(p?'pause':'play')} ${p?'Pause listening':'Listen to all 34'}`;}
-    const count=$('#listened-count');if(count)count.textContent=`${seen.size} / ${currentLesson?.sentences.length||4} listened`;
-    const status=$('#play-status');if(status)status.textContent=this.kind==='sentence'&&this.playing?`الجملة ${this.position+1} من ${currentLesson?.sentences.length||4}${this.repeatCount>1?' · التكرار '+(this.repeatIndex+1)+' من '+this.repeatCount:''}`:this.paused?'متوقف مؤقتًا. اضغط التشغيل للمتابعة.':'';
+    const storyPlay=$('#story-play');if(storyPlay){const p=this.kind==='story'&&this.playing;storyPlay.innerHTML=`${icon(p?'pause':'play')} ${currentLesson?.day===90?(p?'إيقاف مؤقت':'استمع للأسئلة والإجابات'):(p?'Pause story':'Play story')}`;storyPlay.setAttribute('aria-label',currentLesson?.day===90?'تشغيل الأسئلة مع الإجابات':p?'Pause story':'Play story');}
+    const playAll=$('#play-all');if(playAll){const p=this.kind==='sentence'&&this.all&&this.playing;playAll.innerHTML=`${icon(p?'pause':'play')} ${currentLesson?.day===90?(p?'إيقاف مؤقت':'استمع للمعلومات الـ٣٤'):(p?'Pause listening':'Listen to all 34')}`;}
+    const count=$('#listened-count');if(count)count.textContent=currentLesson?.day===90?`${seen.size} / 34 مقطعًا مسموعًا`:`${seen.size} / ${currentLesson?.sentences.length||4} listened`;
+    const status=$('#play-status');if(status)status.textContent=this.kind==='sentence'&&this.playing?`${currentLesson?.day===90?'المعلومة':'الجملة'} ${this.position+1} من ${currentLesson?.sentences.length||4}${this.repeatCount>1?' · التكرار '+(this.repeatIndex+1)+' من '+this.repeatCount:''}`:this.paused?'متوقف مؤقتًا. اضغط التشغيل للمتابعة.':'';
     this.updateProgress();
   }
 }
@@ -254,7 +310,7 @@ function renderHome(){
   if(day90Card){
     const review=document.createElement('a');
     review.className='day-card exam-day-card';
-    review.href=assetURL('day-90.html');
+    review.href='#day/90';
     review.setAttribute('aria-label','اليوم 90: المراجعة المكثفة للرخصة المهنية باللغة العربية');
     review.style.cssText='border-color:var(--accent);background:var(--wash);box-shadow:inset 0 0 0 1px var(--accent)';
     review.innerHTML='<div class="day-card-top"><span>DAY · SPECIAL</span>'+icon('book')+'</div><div class="day-number">90</div><div class="day-title" lang="ar" dir="rtl">مراجعة الرخصة المهنية — التربوي العام</div><div class="day-meta" lang="ar" dir="rtl"><span>ملخص عربي + ٣٠ سؤالًا</span><span>مؤقت</span></div>';
@@ -268,10 +324,14 @@ function renderUnpublished(day){
 }
 function sentenceMarkup(s,n){
   const seconds=currentLesson?.audio?.sentences?.clips[n]?currentLesson.audio.sentences.clips[n].end-currentLesson.audio.sentences.clips[n].start:wordCount(s.en)/2.6;
+  if(currentLesson?.day===90){
+    return `<article class="sentence-card" data-sentence="${n}"><div class="sentence-top"><span class="sentence-index">${pad(n+1)}</span><div class="sentence-body"><p class="sentence-ar" lang="ar" dir="rtl">${esc(s.ar)}</p><p class="sentence-en" lang="ar" dir="rtl">${esc(s.en)}</p></div></div><div class="sentence-player"><button type="button" class="sentence-play" aria-label="استمع للمعلومة ${n+1}">${icon('play')}</button><div class="audio-line" aria-hidden="true"><span></span></div><span class="audio-time">≈ ${clock(seconds/prefs.speed)}</span><button type="button" class="repeat-button" aria-label="كرر المعلومة ${n+1} خمسين مرة" title="كرر المعلومة 50 مرة">${icon('repeat')}</button></div></article>`;
+  }
   return `<article class="sentence-card" data-sentence="${n}"><div class="sentence-top"><span class="sentence-index">${pad(n+1)}</span><div class="sentence-body"><p class="sentence-en" lang="en">${esc(s.en)}</p><p class="sentence-ar" lang="ar" dir="rtl" ${prefs.hideArabic?'hidden':''}>${esc(s.ar)}</p>${prefs.hideArabic?'<button class="translation-reveal" type="button" lang="ar">إظهار الترجمة</button>':''}</div></div><div class="sentence-player"><button type="button" class="sentence-play" aria-label="Play sentence ${n+1}">${icon('play')}</button><div class="audio-line" aria-hidden="true"><span></span></div><span class="audio-time">${currentLesson?.audio?.sentences?'':'≈ '}${clock(seconds/prefs.speed)}</span><button type="button" class="repeat-button" aria-label="Repeat sentence ${n+1} 50 times" title="Repeat 50 times">${icon('repeat')}</button>${currentLesson?.audio?.sentences?.clips[n]?.url?`<a class="repeat-button" href="${esc(assetURL(currentLesson.audio.sentences.clips[n].url))}" download aria-label="Download sentence ${n+1} audio" title="Download MP3">${icon('download')}</a>`:''}</div></article>`;
 }
 function sidebarMarkup(){return `<aside class="lesson-sidebar" aria-label="Listening settings"><h2 class="sidebar-heading">Make it your pace.</h2><div class="sidebar-group"><span class="control-label" id="accent-label">English accent <span lang="ar">اللهجة</span></span><div class="accent-options" role="group" aria-labelledby="accent-label"><button type="button" data-accent="en-US" class="accent-option ${prefs.accent==='en-US'?'active':''}" aria-pressed="${prefs.accent==='en-US'}">🇺🇸 American</button><button type="button" data-accent="en-GB" class="accent-option ${prefs.accent==='en-GB'?'active':''}" aria-pressed="${prefs.accent==='en-GB'}">🇬🇧 British</button></div><label class="control-label" for="voice-select">Available voices <span lang="ar">الصوت</span></label><select id="voice-select" aria-label="Voice for the chosen English accent"></select><button class="btn btn-subtle voice-preview" type="button" id="voice-preview">${icon('volume')} Listen to a sample</button><p class="sidebar-help accent-help" id="voice-status" lang="ar" dir="rtl" role="status"></p><p class="control-label"><span>Playback speed</span><strong id="speed-value">${prefs.speed}×</strong></p><div class="speed-options" aria-label="Playback speed">${[.5,.75,1,1.25,1.5,1.75,2,2.5].map(s=>`<button class="speed-option ${prefs.speed===s?'active':''}" data-speed="${s}" aria-pressed="${prefs.speed===s}">${s}×</button>`).join('')}</div><label class="control-label" for="volume">Volume <span id="volume-value">${Math.round(prefs.volume*100)}%</span></label><input id="volume" class="range" type="range" min="0" max="100" step="1" value="${Math.round(prefs.volume*100)}" aria-label="Volume"></div><div class="sidebar-group"><div class="sidebar-divider"></div><label class="check-label" for="hide-arabic"><span>Recall the meaning</span><input id="hide-arabic" type="checkbox" ${prefs.hideArabic?'checked':''}></label><p class="sidebar-help" lang="ar" dir="rtl">أخفِ الترجمة، حاول تتذكر المعنى، ثم اكشفها للتأكد.</p><label class="check-label" for="shadow"><span>Listen & repeat</span><input id="shadow" type="checkbox" ${prefs.shadow?'checked':''}></label><p class="sidebar-help" lang="ar" dir="rtl">وقفة بعد كل جملة تعطيك وقت تكررها بصوتك.</p><label class="check-label" for="repeat"><span>Repeat each line 50×</span><input id="repeat" type="checkbox" ${prefs.repeat===50?'checked':''}></label><div class="sidebar-divider"></div><a class="btn btn-subtle" style="width:100%" href="#daily-story">Today's story ${icon('book')}</a></div><p class="sidebar-help" lang="ar" dir="rtl">إعداداتك محفوظة على هذا الجهاز. أمثلة التعريف بالنفس للتدرب؛ غيّر تفاصيلها لتناسبك.</p></aside>`;}
 function renderLesson(data){
+  main.classList.remove('exam-review');
   currentLesson=data;seen=new Set((Array.isArray(progress.listened[data.day])?progress.listened[data.day]:[]).filter(n=>Number.isInteger(n)&&n>=0&&n<34));progress.lastDay=data.day;saveProgress();const story=buildStory(data.story);const actual=data.audio?.story?.duration;
   main.innerHTML=`<div class="breadcrumb"><a class="btn-text" href="#days">${icon('back')} The 90-day plan</a><span class="small-note">DAY ${pad(data.day)} OF 90</span></div>
   <section class="lesson-intro"><span class="lesson-number">${pad(data.day)}</span><div><p class="eyebrow">YOUR DAILY ENGLISH PRACTICE</p><h1>${esc(data.title)}</h1><p class="small-note" lang="ar" dir="rtl">${esc(data.titleAr)} · 34 جملة وقصة اليوم</p></div><span class="lesson-pill">${data.day<=30?'FOUNDATIONS':data.day<=60?'EVERYDAY CONFIDENCE':'BEYOND THE BASICS'}</span></section>
@@ -279,6 +339,7 @@ function renderLesson(data){
   <div class="section-caption"><h2>Words become a story.</h2><span>THE DAILY READER</span></div><article class="story" id="daily-story"><p class="eyebrow">THE IVORY HOUSE COLLECTION · DAY ${pad(data.day)}</p><h3>${esc(data.story.title)}</h3><p class="story-desc" lang="ar" dir="rtl">قصة تدريبية قصيرة تستخدم جمل اليوم الـ34. يمكنك قراءتها أو تشغيلها بصوت المتصفح الإنجليزي.</p>
   <div class="story-player"><div class="story-controls"><button class="btn btn-primary" id="story-play">${icon('play')} Play story</button><button class="icon-btn" id="story-restart" aria-label="Restart story">${icon('repeat')}</button><button class="icon-btn" id="story-stop" aria-label="Stop story">${icon('stop')}</button><span id="story-time" class="time">0:00 / ${clock((actual||data.story.estimatedSeconds)/prefs.speed)}${actual?'':' ≈'}</span></div><input id="story-seek" class="story-position" type="range" min="0" max="1000" step="1" value="0" aria-label="Story position"><label class="check-label" for="follow-story"><span>Follow the words <span lang="ar">· تتبع القراءة</span></span><input id="follow-story" type="checkbox" checked></label><label class="sr-only" for="story-chapter-select" style="font-size:.75rem;color:var(--muted)">Jump to a chapter</label><select id="story-chapter-select" aria-label="Jump to a story chapter">${data.story.sections.map((s,i)=>`<option value="${i}">${i+1}. ${esc(s.heading)}</option>`).join('')}</select><p id="story-status" class="story-status" lang="ar" dir="rtl"></p></div><div class="story-text" lang="en">${story}</div>${data.audio?.story?`<a class="btn btn-subtle" href="${esc(assetURL(data.audio.story.url))}" download>${icon('download')} Download story · MP3</a>`:''}</article><div class="completion-panel"><button class="btn btn-primary" id="complete-day" aria-pressed="${progress.completed.includes(data.day)}">${icon('check')} ${progress.completed.includes(data.day)?'Day completed · مكتمل':'Mark day complete · أنهيت اليوم'}</button><span class="small-note" lang="ar" dir="rtl">تقدّمك محفوظ في هذا المتصفح.</span></div><div class="lesson-end">${data.day>1?`<a class="btn btn-subtle" href="#day/${data.day-1}">${icon('back')} Day ${pad(data.day-1)}</a>`:'<a class="btn btn-subtle" href="#days">All days</a>'}${isPublished(data.day+1)?`<a class="btn btn-primary" href="#day/${data.day+1}">Day ${pad(data.day+1)} ${icon('arrow')}</a>`:'<a class="btn btn-primary" href="#bonus">The final four '+icon('arrow')+'</a>'}</div></div>${sidebarMarkup()}</div>`;
   audioMode=data.audio?.sentences?'recorded':'device';
+  if(data.day===90)configureExamLesson();
   $('#complete-day').onclick=()=>{const done=progress.completed.includes(data.day);progress.completed=done?progress.completed.filter(n=>n!==data.day):[...progress.completed,data.day];saveProgress();const button=$('#complete-day');button.setAttribute('aria-pressed',String(!done));button.innerHTML=icon('check')+' '+(!done?'Day completed · مكتمل':'Mark day complete · أنهيت اليوم');};
   attachSentenceEvents();attachSettings();populateVoices();
   $('#play-all').onclick=()=>{if(player.kind==='sentence'&&player.all)player.toggle();else player.playSentence(0,true);};
@@ -297,6 +358,7 @@ function attachSentenceEvents(){
 }
 function populateVoices(){
   const select=$('#voice-select');if(!select)return;
+  if(currentLesson?.day===90){populateArabicVoices();return;}
   voices=('speechSynthesis'in window?window.speechSynthesis.getVoices():[]).filter(v=>/^en(?:[-_]|$)/i.test(v.lang));
   const matching=voices.filter(v=>accentMatches(v,prefs.accent));
   select.innerHTML=(currentLesson?.audio?.sentences?'<option value="recorded">Lesson recording</option>':'')+
@@ -347,6 +409,83 @@ function populateVoices(){
     window.speechSynthesis.speak(utterance);
   };
 }
+
+function populateArabicVoices(){
+  const select=$('#voice-select');if(!select||currentLesson?.day!==90)return;
+  const ar=('speechSynthesis' in window?window.speechSynthesis.getVoices():[]).filter(v=>/^ar(?:[-_]|$)/i.test(v.lang));
+  let stored='';try{stored=localStorage.getItem('ivory.exam.arabicVoice.v1')||''}catch{}
+  const preferred=ar.find(v=>v.voiceURI===stored);
+  select.innerHTML='<option value="auto">اختيار الصوت العربي تلقائيًا</option>'+ar.map(v=>'<option value="'+esc(v.voiceURI)+'">'+esc(v.name)+' · '+esc(v.lang)+'</option>').join('');
+  select.value=preferred?preferred.voiceURI:'auto';
+  const status=$('#voice-status');
+  if(status)status.textContent=ar.length
+    ?'اختر الصوت العربي المناسب من الأصوات المتوفرة على جهازك؛ يمكن تعديل السرعة والتكرار مثل أيام الإنجليزي.'
+    :'لا يظهر صوت عربي مثبت في جهازك. قد يستخدم المتصفح صوتًا افتراضيًا؛ لتحسين النطق فعّل صوتًا عربيًا من إعدادات النطق في الجهاز.';
+  select.onchange=()=>{
+    const was=player.playing,kind=player.kind,n=player.position,w=player.storyWord,all=player.all;
+    player.stop();
+    try{localStorage.setItem('ivory.exam.arabicVoice.v1',select.value==='auto'?'':select.value)}catch{}
+    if(was){if(kind==='story')player.playStory(Math.max(0,w));else if(kind==='sentence')player.playSentence(n,all);}
+  };
+  const preview=$('#voice-preview');
+  if(preview)preview.onclick=()=>{
+    if(!('speechSynthesis' in window)||typeof SpeechSynthesisUtterance==='undefined'){toast('المتصفح لا يدعم الصوت.');return;}
+    player.stop();
+    const test=new SpeechSynthesisUtterance('أهلًا بك في مراجعة الرخصة المهنية. استمع إلى شرح كل معلومة ثم راجع الأسئلة مع إجاباتها.');
+    test.lang='ar-SA';test.voice=player.selectedVoice;test.rate=prefs.speed;test.volume=prefs.volume;
+    test.onerror=()=>toast('تعذر تشغيل عينة الصوت العربي.');
+    window.speechSynthesis.speak(test);
+  };
+}
+function configureExamLesson(){
+  main.classList.add('exam-review');
+  const exam=currentLesson;
+  $('.lesson-intro .eyebrow').textContent='DAY 90 · REVIEW';
+  $('.lesson-intro .small-note').textContent='٣٤ معلومة مشروحة بالصوت + ٣٠ سؤالًا مع الإجابات والتفسير';
+  $('.lesson-pill').textContent='التربوي العام';
+  $('.lesson-intro h1').setAttribute('lang','ar');
+  $('.lesson-intro h1').setAttribute('dir','rtl');
+  $('#sentences').setAttribute('aria-label','المعلومات الأساسية لاختبار التربوي العام');
+  $('.section-caption h2').textContent='الأسئلة مع إجاباتها.';
+  $('.section-caption span').textContent='٣٠ سؤالًا · استمع وراجع';
+  $('.story .eyebrow').textContent='مراجعة تفاعلية بالعربية · اليوم ٩٠';
+  $('.story h3').setAttribute('lang','ar');
+  $('.story h3').setAttribute('dir','rtl');
+  $('.story-desc').textContent='اضغط التشغيل لسماع السؤال ثم إجابته الصحيحة ثم سبب الإجابة. يمكنك اختيار مجموعة من القائمة أو الضغط على كلمة لاستئناف الاستماع منها.';
+  $('.story-text').setAttribute('lang','ar');$('.story-text').setAttribute('dir','rtl');
+  $('#story-chapter-select').setAttribute('aria-label','اختر مجموعة أسئلة');
+  $('#follow-story').parentElement.querySelector('span').textContent='تتبع الكلمات أثناء الاستماع';
+  $('.sidebar-heading').textContent='استمع على راحتك.';
+  $('#accent-label').textContent='اللغة: العربية';
+  $('.accent-options').hidden=true;
+  const voiceLabel=$('label[for="voice-select"]');
+  if(voiceLabel)voiceLabel.textContent='أصوات العربية المتوفرة';
+  $('#voice-preview').innerHTML=icon('volume')+' جرّب الصوت العربي';
+  $('#voice-select').setAttribute('aria-label','اختيار الصوت العربي');
+  const speed=$('#speed-value');
+  if(speed?.parentElement) speed.parentElement.querySelector('span').textContent='سرعة الصوت';
+  const hide=$('#hide-arabic');
+  if(hide){
+    const label=hide.closest('label');
+    if(label){const help=label.nextElementSibling;label.hidden=true;if(help&&help.classList.contains('sidebar-help'))help.hidden=true;}
+  }
+  const repeat=$('#repeat');
+  if(repeat)repeat.closest('label').querySelector('span').textContent='تكرار المعلومة ٥٠ مرة';
+  const shadow=$('#shadow');
+  if(shadow)shadow.closest('label').querySelector('span').textContent='استمع ثم كرّر';
+  const storyNav=$('a[href="#daily-story"]');
+  if(storyNav)storyNav.innerHTML='الأسئلة مع الإجابات '+icon('book');
+  const help=$('.lesson-sidebar>.sidebar-help');
+  if(help)help.textContent='هذا اليوم للمراجعة العربية مؤقتًا. باقي أيام الإنجليزية وإعداداتها محفوظة كما هي. الصوت يعتمد على دعم المتصفح والأصوات المثبتة.';
+  const end=$('.lesson-end');
+  if(end)end.innerHTML='<a class="btn btn-subtle" href="#days">'+icon('back')+' كل الأيام</a><a class="btn btn-primary" href="#daily-story">'+icon('book')+' الأسئلة والإجابات</a>';
+  const back=$('.breadcrumb .btn-text');
+  if(back)back.innerHTML=icon('back')+' العودة للأيام';
+  const complete=$('#complete-day');
+  if(complete)complete.innerHTML=icon('check')+' '+(progress.completed.includes(90)?'أنهيت المراجعة':'حدد المراجعة كمكتملة');
+  // Keep standard English settings untouched; show Arabic review only here.
+}
+
 function setSpeed(speed){
   if(![.5,.75,1,1.25,1.5,1.75,2,2.5].includes(speed))throw Error('Unsupported speed');
   prefs.speed=speed;savePrefs();
@@ -372,7 +511,6 @@ async function navigate(){
   if(location.hash==='#daily-story'&&currentLesson?.story){$('#daily-story')?.scrollIntoView();return;}
   const version=++routeVersion;routeAbort?.abort();routeAbort=new AbortController();player.stop();currentLesson=null;storyTokens=[];storyPieces=[];storyText='';seen=new Set();
   const hash=location.hash||'#days';window.scrollTo(0,0);
-  if(hash==='#day/90'){window.location.assign(assetURL('day-90.html'));return;}
   try{
     if(!indexData)indexData=await readJSON('/data/index.json',routeAbort.signal);
     if(version!==routeVersion)return;
@@ -380,7 +518,7 @@ async function navigate(){
     else if(hash==='#bonus'){renderBonus();document.title='The final four · Ivory English';}
     else if(/^#day\/(?:[1-9]|[1-8][0-9]|90)$/.test(hash)){
       main.innerHTML='<div class="loading" role="status">Opening your lesson…<span lang="ar">جاري تحميل درس اليوم</span></div>';
-      const day=Number(hash.split('/')[1]);if(!isPublished(day)){renderUnpublished(day);main.focus({preventScroll:true});return;}const data=await readJSON(`/data/day-${pad(day)}.json`,routeAbort.signal);
+      const day=Number(hash.split('/')[1]);if(day!==90&&!isPublished(day)){renderUnpublished(day);main.focus({preventScroll:true});return;}const data=await readJSON(`/data/day-${pad(day)}.json`,routeAbort.signal);
       if(version!==routeVersion)return;renderLesson(data);document.title=`Day ${pad(day)} · ${data.title} · Ivory English`;
     }else{renderHome();history.replaceState(null,'','#days');}
     main.focus({preventScroll:true});

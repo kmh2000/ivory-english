@@ -249,6 +249,17 @@ function renderHome(){
     return `<${tag} class="day-card ${available?(d.day===resume?'current':''):'unpublished'} ${done?'completed':''}" ${available?`href="#day/${d.day}" aria-label="Day ${d.day}: ${esc(d.title)}. 34 sentences and a story.${done?' Completed.':''}"`:'aria-label="Available in a later update"'}><div class="day-card-top"><span>DAY</span>${done?icon('check'):available&&d.day===resume?icon('arrow'):''}</div><div class="day-number">${pad(d.day)}</div><div class="day-title">${esc(d.title)}</div><div class="day-meta">${available?`<span>${done?'Completed':'34 sentences'}</span><span>${icon('headphones')} ≈ ${Math.max(1,Math.round((d.estimatedSeconds||180)/60))} min</span>`:'<span lang="ar" dir="rtl">تُضاف لاحقًا</span>'}</div></${tag}>`;
   }).join('')}</div></section>`).join('')}
   <section class="bonus-panel"><span class="bonus-mark">+4</span><div><h2>A little extra confidence</h2><p lang="ar" dir="rtl">أربع جمل إضافية تساعدك إذا توقفت المحادثة.</p></div><a class="btn" href="#bonus">The final four ${icon('arrow')}</a></section>`;
+  // Temporary Arabic teacher-license review inside Day 90; preserve English lessons.
+  const day90Card=Array.from(main.querySelectorAll('.day-card')).find(card=>card.querySelector('.day-number')?.textContent.trim()==='90');
+  if(day90Card){
+    const review=document.createElement('a');
+    review.className='day-card exam-day-card';
+    review.href=assetURL('day-90.html');
+    review.setAttribute('aria-label','اليوم 90: المراجعة المكثفة للرخصة المهنية باللغة العربية');
+    review.style.cssText='border-color:var(--accent);background:var(--wash);box-shadow:inset 0 0 0 1px var(--accent)';
+    review.innerHTML='<div class="day-card-top"><span>DAY · SPECIAL</span>'+icon('book')+'</div><div class="day-number">90</div><div class="day-title" lang="ar" dir="rtl">مراجعة الرخصة المهنية — التربوي العام</div><div class="day-meta" lang="ar" dir="rtl"><span>ملخص عربي + ٣٠ سؤالًا</span><span>مؤقت</span></div>';
+    day90Card.replaceWith(review);
+  }
   const footer=$('.site-footer');if(footer)footer.children[1].textContent=`${count} of 90 days available · One day at a time.`;
 }
 function renderUnpublished(day){
@@ -361,6 +372,7 @@ async function navigate(){
   if(location.hash==='#daily-story'&&currentLesson?.story){$('#daily-story')?.scrollIntoView();return;}
   const version=++routeVersion;routeAbort?.abort();routeAbort=new AbortController();player.stop();currentLesson=null;storyTokens=[];storyPieces=[];storyText='';seen=new Set();
   const hash=location.hash||'#days';window.scrollTo(0,0);
+  if(hash==='#day/90'){window.location.assign(assetURL('day-90.html'));return;}
   try{
     if(!indexData)indexData=await readJSON('/data/index.json',routeAbort.signal);
     if(version!==routeVersion)return;

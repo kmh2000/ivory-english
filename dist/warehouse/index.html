@@ -1,58 +1,65 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
-<head>
+<html lang="ar" dir="rtl"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
-<meta name="theme-color" content="#215a46">
-<title>حصر المستودعات | BTC & Armada</title>
+<meta name="theme-color" content="#102c46"><title>حصر المستودعات | BTC وأرمادا</title>
 <style>
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f6f8f6;color:#173d31;font-family:Tahoma,Arial,sans-serif;display:grid;place-items:center}
-main{text-align:center;background:white;border:1px solid #dce5dd;border-radius:16px;box-shadow:0 15px 65px #153c3010;padding:36px 28px;max-width:500px;margin:20px}
-h1{font-size:1.5rem;margin:0 0 10px}p{line-height:1.9;color:#49665b} .spinner{margin:0 auto 20px;width:32px;height:32px;border:3px solid #dee9e1;border-top-color:#215a46;border-radius:50%;animation:turn .7s linear infinite}@keyframes turn{to{transform:rotate(360deg)}}.error .spinner{display:none}
-</style>
-</head>
-<body><main id="loading"><div class="spinner" aria-hidden="true"></div><h1>حصر المستودعات</h1><p id="status">جاري فتح رابط المشاركة الآمن…</p></main>
-<script>
-(async()=>{
-  const status=document.getElementById('status'),box=document.getElementById('loading');
-  function fail(message){status.textContent=message;box.classList.add('error')}
-  const secret=new URLSearchParams(location.hash.substring(1)).get('k');
-  if(!secret||!/^[0-9a-f]{32}$/i.test(secret)){fail('الرابط غير مكتمل. اطلب رابط المشاركة الكامل من مسؤول المستودعات.');return}
-  const bytes=hex=>Uint8Array.from(hex.match(/../g).map(pair=>parseInt(pair,16)));
-  try{
-    const response=await fetch('payload.b64',{cache:'force-cache'});
-    if(!response.ok)throw new Error('تحميل');
-    const encoded=(await response.text()).trim();
-    const binary=atob(encoded);
-    const encrypted=Uint8Array.from(binary,c=>c.charCodeAt(0));
-    const key=await crypto.subtle.importKey('raw',bytes(secret),{name:'AES-CTR'},false,['decrypt']);
-    const clear=await crypto.subtle.decrypt({name:'AES-CTR',counter:bytes('722698a771228a33100d6c3d57627365'),length:64},key,encrypted);
-    let html=new TextDecoder('utf-8',{fatal:true}).decode(clear);
-    // Original small product photos are kept encrypted separately from the page.
-    const legacyResponse=await fetch('legacy-images.b64',{cache:'force-cache'});
-    if(legacyResponse.ok){
-      const legacyEncoded=(await legacyResponse.text()).trim();
-      const legacyBytes=Uint8Array.from(atob(legacyEncoded),c=>c.charCodeAt(0));
-      const legacyPlain=await crypto.subtle.decrypt({name:'AES-CTR',counter:bytes('ce64b7c78d09e45e3da3b2ff7a60c085'),length:64},key,legacyBytes);
-      const legacyPhotos=JSON.parse(new TextDecoder().decode(legacyPlain));
-      for(const [id,b64] of Object.entries(legacyPhotos)){
-        const at=html.indexOf("id:'"+id+"',");
-        if(at<0)continue;
-        const end=html.indexOf('\n',at);
-        const row=html.slice(at,end<0?html.length:end);
-        if(!row.includes("image:''"))continue;
-        html=html.slice(0,at)+row.replace("image:''","image:'data:image/webp;base64,"+b64+"'")+html.slice(at+row.length);
-      }
-    }
-    const edits=[["<script>(() => {\n  'use strict';","<script src=\"admin-bridge.js\"></script>\n<script>(() => {\n  'use strict';"],["if(!path.startsWith('local:'))return path;","if(path.startsWith('uploads/'))return window.WAREHOUSE_SHARED.image(path);if(!path.startsWith('local:'))return path;"],["  function openForm(item){","  function openForm(item){if(!window.WAREHOUSE_SHARED.isAdmin()){window.WAREHOUSE_SHARED.openLogin();return;}"],["      saveLocal();warehouse=value.warehouse;","      const updatedAt=await window.WAREHOUSE_SHARED.save(records,notes,assetGet);window.lastSharedUpdate=updatedAt;$('#syncStatus').innerHTML='<span class=\"status-dot\"></span> تم الحفظ · جاري النشر';warehouse=value.warehouse;"],["    if(config.mode==='preview'){$('#previewBanner').hidden=false;$('#syncStatus').innerHTML='<span class=\"status-dot\"></span> نسخة معاينة';loadLocal()}\n    else{loadLocal();$('#previewBanner').hidden=false;$('#previewBanner').textContent='يلزم إكمال إعداد Supabase لتمكين البيانات المشتركة. هذه نسخة معاينة على الجهاز فقط.'}","    const shared=await window.WAREHOUSE_SHARED.load();\n    records=shared?.items||clone(seed.items);notes=shared?.notes||clone(seed.notes);\n    window.lastSharedUpdate=shared?.updatedAt||0;\n    $('#previewBanner').hidden=true;\n    $('#syncStatus').innerHTML='<span class=\"status-dot\"></span> الموقع متصل';\n    window.WAREHOUSE_SHARED.setup();"],["    bindEvents();render();","    bindEvents();render();\n    setInterval(async()=>{if(document.hidden||document.getElementById('formModal')?.open)return;\n      const newest=await window.WAREHOUSE_SHARED.load();\n      if(newest&&newest.updatedAt>(window.lastSharedUpdate||0)){\n        records=newest.items;notes=newest.notes;window.lastSharedUpdate=newest.updatedAt;render();\n        $('#syncStatus').innerHTML='<span class=\"status-dot\"></span> تم تحديث البيانات';\n      }\n    },120000);"],["  init();\n})();","  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();\n})();"]];
-    for(const [needle,replacement] of edits){
-      if(!html.includes(needle))throw Error('الرابط');
-      html=html.replace(needle,replacement);
-    }
-    if(!html.startsWith('<!doctype html>')||!html.includes('window.WAREHOUSE_SEED')||!html.includes('id="productList"'))throw new Error('الرابط');
-    document.open();document.write(html);document.close();
-  }catch(error){
-    fail(error?.message==='الرابط'?'مفتاح رابط المشاركة غير صحيح.':'تعذر فتح الموقع حاليًا. تأكد من اتصال الإنترنت والرابط ثم حاول مرة ثانية.');
-  }
+:root{font-family:system-ui,-apple-system,Tahoma,Arial,sans-serif;background:#f3f6fb;color:#142b40}*{box-sizing:border-box}body{margin:0}header{background:linear-gradient(125deg,#102942,#205579);color:white;padding:28px 0 49px;border-radius:0 0 25px 25px}
+.wrap{max-width:1080px;margin:auto;padding:0 17px}.eyebrow{color:#acd1ed;font-size:12px;letter-spacing:.5px;font-weight:bold}h1{font-size:clamp(27px,5vw,37px);margin:5px 0 8px}header p{margin:0;color:#d6e4ef;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:-30px;position:relative}
+.stat{background:white;border:1px solid #e5ebf1;border-radius:17px;padding:18px 20px;box-shadow:0 10px 24px #193e5d0b}
+.stat strong{font-size:29px;display:block}.stat small{color:#718396;font-size:12px}
+.controls{background:white;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px;border:1px solid #e4eaf0;border-radius:17px;margin-top:20px}
+.tabs{display:flex;gap:7px;flex-wrap:wrap}button{font:inherit;cursor:pointer;padding:11px 15px;border-radius:12px;background:#fff;color:#31526d;border:1px solid #dce6ef;font-weight:700;font-size:14px}button.active{color:#fff;background:#173d5d;border-color:#173d5d}
+input{font:inherit;border:1px solid #dce6ef;background:#f7f9fc;border-radius:12px;padding:12px 14px;min-width:180px;flex:1;outline:none}
+input:focus{background:#fff;border-color:#518db7}.rowhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:28px 0 14px}.rowhead h2{margin:0;font-size:20px}.rowhead span{color:#7b8b9b;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{display:flex;flex-direction:column;min-height:184px;padding:20px;border:1px solid #e3ebf2;border-radius:17px;background:#fff;box-shadow:0 4px 16px #0e324909}
+.cardtop,.bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}.tag{background:#eaf4fe;color:#236c99;font-weight:800;border-radius:8px;padding:6px 9px;font-size:12px}.tag.armada{background:#eaf8ef;color:#247749}
+.date{font-size:12px;color:#8498a8}.card h3{margin:14px 0 5px;font-size:17px;line-height:1.5}.card p{margin:0 0 14px;color:#697d90;font-size:13px;min-height:19px;line-height:1.6}
+.bottom{margin-top:auto;border-top:1px solid #edf1f5;padding-top:13px}.label{font-size:12px;color:#7d8d9f}.qty{font-size:26px;font-weight:850;color:#183851}.unit{font-size:12px;color:#7d8d9f}.empty{grid-column:1/-1;background:white;border:1px dashed #d1dce7;border-radius:15px;padding:55px 15px;text-align:center;color:#657f94}
+#gate{margin:24px auto;max-width:640px;background:#fff;border:1px solid #dbe6ef;padding:25px;border-radius:18px;color:#4d667c}#gate h2{margin-top:0;color:#163c59}#gate[hidden],#site[hidden]{display:none}
+footer{text-align:center;color:#798b9e;font-size:12px;padding:26px 0 40px}
+@media(max-width:820px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:550px){header{padding:25px 0 45px}.stats{gap:7px}.stat{padding:12px}.stat strong{font-size:23px}.stat small{font-size:11px}.controls{padding:12px}input{min-width:100%}.grid{grid-template-columns:1fr}.card{min-height:164px}.rowhead{margin-top:22px}}
+</style></head><body>
+<header><div class="wrap"><div class="eyebrow">WAREHOUSE INVENTORY</div><h1>حصر المستودعات</h1><p>عرض أصناف وكميات مستودعي BTC وأرمادا</p></div></header>
+<main class="wrap">
+<div id="gate"><h2>جاري فتح حصر المستودعات...</h2><p id="message">يتم التحقق من رابط المشاركة.</p></div>
+<div id="site" hidden>
+<section class="stats"><div class="stat"><strong id="total">—</strong><small>إجمالي الأصناف</small></div><div class="stat"><strong id="btcTotal">—</strong><small>مستودع BTC</small></div><div class="stat"><strong id="armadaTotal">—</strong><small>مستودع أرمادا</small></div></section>
+<div class="controls"><nav class="tabs"><button class="active" data-filter="all">جميع الأصناف</button><button data-filter="btc">BTC</button><button data-filter="armada">أرمادا</button></nav><input id="search" type="search" placeholder="ابحث عن اسم الصنف أو المقاس..." aria-label="بحث"></div>
+<div class="rowhead"><h2 id="title">جميع الأصناف</h2><span id="count"></span></div><div class="grid" id="cards"></div>
+<footer>عرض فقط · بدون Excel أو صور أو قاعدة بيانات · البيانات بحسب آخر حصر بتاريخ 05-11-2026</footer>
+</div>
+</main><script>
+(async function(){
+const payload="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";
+const params=new URLSearchParams(location.hash.slice(1));const secret=params.get("k");
+const message=document.getElementById("message");
+if(!secret||!/^[a-f0-9]{64}$/i.test(secret)){document.querySelector("#gate h2").textContent="رابط المشاركة غير مكتمل";message.textContent="افتح الرابط الكامل المرسل إليك للوصول إلى حصر المستودعات.";return}
+try{
+const bytes=hex=>Uint8Array.from(hex.match(/.{2}/g),p=>parseInt(p,16));
+const ciphertext=Uint8Array.from(atob(payload),c=>c.charCodeAt(0));
+const key=await crypto.subtle.importKey("raw",bytes(secret),"AES-GCM",false,["decrypt"]);
+const plaintext=await crypto.subtle.decrypt({name:"AES-GCM",iv:ciphertext.slice(0,12),additionalData:new TextEncoder().encode("warehouse-v1")},key,ciphertext.slice(12));
+const data=JSON.parse(new TextDecoder().decode(plaintext));
+if(!Array.isArray(data)||data.length!==19)throw new Error("Data length incorrect");
+const safe=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const filterButtons=[...document.querySelectorAll("[data-filter]")];let active="all";
+document.getElementById("total").textContent=data.length;
+document.getElementById("btcTotal").textContent=data.filter(x=>x.warehouse==="btc").length;
+document.getElementById("armadaTotal").textContent=data.filter(x=>x.warehouse==="armada").length;
+const sorted=[...data].sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
+function render(){
+const q=document.querySelector("#search").value.trim().toLocaleLowerCase("ar");
+const rows=sorted.filter(x=>(active==="all"||x.warehouse===active)&&[x.name,x.spec,x.unit].join(" ").toLocaleLowerCase("ar").includes(q));
+document.querySelector("#title").textContent=active==="btc"?"مستودع BTC":active==="armada"?"مستودع أرمادا":"جميع الأصناف";
+document.querySelector("#count").textContent=rows.length+" صنف";
+document.querySelector("#cards").innerHTML=rows.length?rows.map(x=>'<article class="card"><div class="cardtop"><span class="tag '+(x.warehouse==="armada"?"armada":"")+'">'+(x.warehouse==="btc"?"BTC":"أرمادا")+'</span><span class="date">'+(x.date?x.date.split("-").reverse().join("-"):"")+'</span></div><h3>'+safe(x.name)+'</h3><p>'+safe(x.spec||"—")+'</p><div class="bottom"><div><div class="label">الكمية المتبقية</div><span class="qty">'+safe(x.remaining)+'</span> <span class="unit">'+safe(x.unit==="غير محددة"?"":x.unit)+'</span></div></div></article>').join(""):'<div class="empty">ما فيه أصناف تطابق البحث.</div>';
+}
+filterButtons.forEach(btn=>btn.addEventListener("click",()=>{active=btn.dataset.filter;filterButtons.forEach(b=>b.classList.toggle("active",b===btn));render()}));
+document.querySelector("#search").addEventListener("input",render);
+document.getElementById("gate").hidden=true;document.getElementById("site").hidden=false;render();
+}catch(e){document.querySelector("#gate h2").textContent="تعذر فتح البيانات";message.textContent="رابط المشاركة غير صحيح أو غير مكتمل. تأكد من نسخ الرابط كاملًا."}
 })();
 </script></body></html>

@@ -226,7 +226,7 @@ if(reader)updatePages();
 findOne('#tabReader').onclick=()=>switchTo('reader');
 findOne('#tabQuiz').onclick=()=>switchTo('quiz');
 try{current=localStorage.getItem('ivory.verbal.openTab.v1')||'reader'}catch(e){}
-switchTo(current==='quiz'?'quiz':'reader');
+if(current==='quiz'||current==='reader')switchTo(current);
 })();
 </script>
 <script src="./training.js?v=20261121-level1"></script>

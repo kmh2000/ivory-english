@@ -79,6 +79,8 @@ def main():
         matches.append(digest == expected)
         print(f"PDF source verification page {page_number}: " + ("match" if digest == expected else f"DIFF ({digest})"))
     if not all(matches):
+        for p in (247, 269, 279, 290, 338):
+            print("REMOTE-PREVIEW", p, repr(doc[p - 1].get_text()[:450]), flush=True)
         raise ValueError("Public PDF does not match the specific uploaded source; refusing to substitute different questions")
     manifest = []
     for page_number in range(247, 339):

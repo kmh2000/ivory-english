@@ -65,6 +65,20 @@ jobs:
           name: pages-${{ github.run_id }}-${{ github.run_attempt }}
           # Publish index.html from the actual site directory
           path: './dist'
+      - name: Wait for GitHub Pages artifact indexing
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_NAME: pages-${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          for i in $(seq 1 20); do
+            if gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" --jq '.artifacts[].name' | grep -Fxq "$ARTIFACT_NAME"; then
+              sleep 10
+              exit 0
+            fi
+            sleep 3
+          done
+          echo "Pages artifact not indexed yet" >&2
+          exit 1
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5

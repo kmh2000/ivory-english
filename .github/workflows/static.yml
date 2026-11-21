@@ -12,6 +12,7 @@ on:
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -19,7 +20,7 @@ permissions:
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   # Single deploy job since we're just deploying
@@ -33,10 +34,29 @@ jobs:
         uses: actions/checkout@v4
       - name: Validate published lessons
         run: python scripts/check_text.py
-      - name: Build the full verbal question pages
+      - name: Restore original verbal page cache
+        id: verbalcache
+        uses: actions/cache@v4
+        with:
+          path: |
+            dist/verbal/pages
+            dist/verbal/reader-manifest.json
+          key: ivory-english-verbal-pages-92-v1
+      - name: Download last verified verbal page archive
+        if: steps.verbalcache.outputs.cache-hit != 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: pages-44881531024-1
+          run-id: 44881531024
+          github-token: ${{ github.token }}
+          path: ./tmp-verbal-pages
+      - name: Restore original source pages
+        if: steps.verbalcache.outputs.cache-hit != 'true'
+        run: python scripts/restore_verbal_pages.py tmp-verbal-pages/artifact.tar
+      - name: Verify original source pages
         run: |
-          python -m pip install --quiet pymupdf pillow
-          python scripts/build_verbal_pages.py
+          test -s dist/verbal/reader-manifest.json
+          test "$(find dist/verbal/pages -name '*.webp' | wc -l)" -eq 92
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

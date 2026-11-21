@@ -76,7 +76,7 @@ def main():
         raise ValueError(f"Expected 338 source pages, got {len(doc)}")
     matches = []
     for page_number, expected in CHECKS.items():
-        digest = hashlib.sha256(re.sub(r"\\s+", "", doc[page_number - 1].get_text()).encode()).hexdigest()[:12]
+        digest = hashlib.sha256("".join(doc[page_number - 1].get_text().split()).encode()).hexdigest()[:12]
         matches.append(digest == expected)
         print(f"PDF source verification page {page_number}: " + ("match" if digest == expected else f"DIFF ({digest})"))
     if not all(matches):

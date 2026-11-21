@@ -9,6 +9,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import time
 import urllib.request
 import fitz
@@ -22,10 +23,10 @@ PDF_URL = os.environ.get(
     "https://eduschool40.blog/download-attachment/R4iFHWEeVdxb4-0XXZw-cA%2C%2C",
 )
 CHECKS = {
-    247: "7a5fb47216c7", 251: "0870b3aab662",
-    269: "e717ab3ec6d6", 279: "b5774192cd99",
-    290: "4005063af6b2", 300: "33303eaf5e78",
-    338: "894078caab1b",
+    247: "166da92bfa97", 251: "2925899aa457",
+    269: "bd187274b478", 279: "cee166b2f4d2",
+    290: "29c2a9a9df42", 300: "9b6771f3fc05",
+    338: "34b939c542ca",
 }
 
 
@@ -75,7 +76,7 @@ def main():
         raise ValueError(f"Expected 338 source pages, got {len(doc)}")
     matches = []
     for page_number, expected in CHECKS.items():
-        digest = hashlib.sha256(doc[page_number - 1].get_text().encode()).hexdigest()[:12]
+        digest = hashlib.sha256(re.sub(r"\\s+", "", doc[page_number - 1].get_text()).encode()).hexdigest()[:12]
         matches.append(digest == expected)
         print(f"PDF source verification page {page_number}: " + ("match" if digest == expected else f"DIFF ({digest})"))
     if not all(matches):

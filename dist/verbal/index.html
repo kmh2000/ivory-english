@@ -174,7 +174,7 @@ render();
 <script>
 (function(){
 "use strict";
-const $=s=>document.querySelector(s),$=s=>Array.from(document.querySelectorAll(s));
+const findOne=s=>document.querySelector(s),findAll=s=>Array.from(document.querySelectorAll(s));
 const PDF="https://eduschool40.blog/download-attachment/R4iFHWEeVdxb4-0XXZw-cA%2C%2C";
 const sourcePages=Array.from({length:92},(_,i)=>247+i);
 const part=p=>p<=268?"تناظر لفظي":p<=278?"خطأ سياقي":p<=289?"إكمال الجمل":"استيعاب المقروء";
@@ -187,44 +187,44 @@ const displayPages=()=>sourcePages.filter(p=>(!section||part(p)===section)&&(!sa
 function updatePages(){
 const list=displayPages();
 if(!list.includes(selected))selected=list[0]||null;
-$('#readerSummary').textContent=num(Object.keys(state.done).filter(p=>state.done[p]).length)+' / '+num(sourcePages.length)+' صفحة تمت مراجعتها';
-$('#readerMeter').style.width=(100*Object.keys(state.done).filter(p=>state.done[p]).length/sourcePages.length)+'%';
-$('#pageGrid').innerHTML=list.map(p=>'<button class="page-mini '+(p===selected?'selected':'')+' '+(state.done[p]?'done':'')+'" data-page="'+p+'" title="'+part(p)+'">'+(state.done[p]?'✓ ':'')+num(p)+'</button>').join('');
-$('[data-page]').forEach(b=>b.onclick=()=>{selected=Number(b.dataset.page);updatePages();$('#readerPaper').scrollIntoView({behavior:'smooth',block:'start'})});
-if(!selected){$('#readerPaper').hidden=true;return}
-$('#readerPaper').hidden=false;
+findOne('#readerSummary').textContent=num(Object.keys(state.done).filter(p=>state.done[p]).length)+' / '+num(sourcePages.length)+' صفحة تمت مراجعتها';
+findOne('#readerMeter').style.width=(100*Object.keys(state.done).filter(p=>state.done[p]).length/sourcePages.length)+'%';
+findOne('#pageGrid').innerHTML=list.map(p=>'<button class="page-mini '+(p===selected?'selected':'')+' '+(state.done[p]?'done':'')+'" data-page="'+p+'" title="'+part(p)+'">'+(state.done[p]?'✓ ':'')+num(p)+'</button>').join('');
+findAll('[data-page]').forEach(b=>b.onclick=()=>{selected=Number(b.dataset.page);updatePages();findOne('#readerPaper').scrollIntoView({behavior:'smooth',block:'start'})});
+if(!selected){findOne('#readerPaper').hidden=true;return}
+findOne('#readerPaper').hidden=false;
 let index=list.indexOf(selected);
-$('#pageHeading').textContent='صفحة '+num(selected);
-$('#pageSection').textContent=part(selected);
-$('#readerPrev').disabled=index<=0;$('#readerNext').disabled=index===list.length-1;
-$('#readerBookmark').textContent=state.saved[selected]?'★ محفوظة':'☆ حفظ الصفحة';
-$('#readerMark').textContent=state.done[selected]?'✓ تمت مراجعتها':'○ علّم كمراجعة';
-$('#readerMark').classList.toggle('reader-done',!!state.done[selected]);
-$('#readerZoom').textContent=$('#pageImageWrap').classList.contains('zoom')?'تصغير':'تكبير';
-$('#pageError').hidden=true;$('#pageImageWrap').hidden=false;
-const img=$('#pageImage');img.onload=()=>{$('#pageError').hidden=true;$('#pageImageWrap').hidden=false};
-img.onerror=()=>{$('#pageError').hidden=false;$('#pageImageWrap').hidden=true};
+findOne('#pageHeading').textContent='صفحة '+num(selected);
+findOne('#pageSection').textContent=part(selected);
+findOne('#readerPrev').disabled=index<=0;findOne('#readerNext').disabled=index===list.length-1;
+findOne('#readerBookmark').textContent=state.saved[selected]?'★ محفوظة':'☆ حفظ الصفحة';
+findOne('#readerMark').textContent=state.done[selected]?'✓ تمت مراجعتها':'○ علّم كمراجعة';
+findOne('#readerMark').classList.toggle('reader-done',!!state.done[selected]);
+findOne('#readerZoom').textContent=findOne('#pageImageWrap').classList.contains('zoom')?'تصغير':'تكبير';
+findOne('#pageError').hidden=true;findOne('#pageImageWrap').hidden=false;
+const img=findOne('#pageImage');img.onload=()=>{findOne('#pageError').hidden=true;findOne('#pageImageWrap').hidden=false};
+img.onerror=()=>{findOne('#pageError').hidden=false;findOne('#pageImageWrap').hidden=true};
 img.src='pages/page-'+selected+'.webp';
 img.alt='الأسئلة والاختيارات الأصلية في الصفحة '+num(selected)+' من قسم '+part(selected);
-$('#pageFallback').href=PDF+'#page='+selected;
+findOne('#pageFallback').href=PDF+'#page='+selected;
 }
-$('#readerSection').onchange=e=>{section=e.target.value;updatePages()};
-$('#readerSaved').onclick=()=>{savedOnly=!savedOnly;$('#readerSaved').textContent=savedOnly?'★ عرض المحفوظة فقط':'☆ الصفحات المحفوظة';updatePages()};
-$('#readerPrev').onclick=()=>{let a=displayPages(),i=a.indexOf(selected);if(i>0){selected=a[i-1];updatePages();$('#readerPaper').scrollIntoView({behavior:'smooth',block:'start'})}};
-$('#readerNext').onclick=()=>{let a=displayPages(),i=a.indexOf(selected);if(i<a.length-1){selected=a[i+1];updatePages();$('#readerPaper').scrollIntoView({behavior:'smooth',block:'start'})}};
-$('#readerBookmark').onclick=()=>{state.saved[selected]=!state.saved[selected];if(!state.saved[selected])delete state.saved[selected];persist();updatePages()};
-$('#readerMark').onclick=()=>{state.done[selected]=!state.done[selected];if(!state.done[selected])delete state.done[selected];persist();updatePages()};
-$('#readerZoom').onclick=()=>{$('#pageImageWrap').classList.toggle('zoom');$('#readerZoom').textContent=$('#pageImageWrap').classList.contains('zoom')?'تصغير':'تكبير'};
+findOne('#readerSection').onchange=e=>{section=e.target.value;updatePages()};
+findOne('#readerSaved').onclick=()=>{savedOnly=!savedOnly;findOne('#readerSaved').textContent=savedOnly?'★ عرض المحفوظة فقط':'☆ الصفحات المحفوظة';updatePages()};
+findOne('#readerPrev').onclick=()=>{let a=displayPages(),i=a.indexOf(selected);if(i>0){selected=a[i-1];updatePages();findOne('#readerPaper').scrollIntoView({behavior:'smooth',block:'start'})}};
+findOne('#readerNext').onclick=()=>{let a=displayPages(),i=a.indexOf(selected);if(i<a.length-1){selected=a[i+1];updatePages();findOne('#readerPaper').scrollIntoView({behavior:'smooth',block:'start'})}};
+findOne('#readerBookmark').onclick=()=>{state.saved[selected]=!state.saved[selected];if(!state.saved[selected])delete state.saved[selected];persist();updatePages()};
+findOne('#readerMark').onclick=()=>{state.done[selected]=!state.done[selected];if(!state.done[selected])delete state.done[selected];persist();updatePages()};
+findOne('#readerZoom').onclick=()=>{findOne('#pageImageWrap').classList.toggle('zoom');findOne('#readerZoom').textContent=findOne('#pageImageWrap').classList.contains('zoom')?'تصغير':'تكبير'};
 let current='reader';
 function switchTo(x){
-current=x;let reader=x==='reader';$('#allReader').hidden=!reader;
-$('.stats,.meter,.layout').forEach(el=>el.hidden=reader);
-$('#tabReader').classList.toggle('selected',reader);$('#tabQuiz').classList.toggle('selected',!reader);
+current=x;let reader=x==='reader';findOne('#allReader').hidden=!reader;
+findAll('.stats,.meter,.layout').forEach(el=>el.hidden=reader);
+findOne('#tabReader').classList.toggle('selected',reader);findOne('#tabQuiz').classList.toggle('selected',!reader);
 try{localStorage.setItem('ivory.verbal.openTab.v1',x)}catch(e){}
 if(reader)updatePages();
 }
-$('#tabReader').onclick=()=>switchTo('reader');
-$('#tabQuiz').onclick=()=>switchTo('quiz');
+findOne('#tabReader').onclick=()=>switchTo('reader');
+findOne('#tabQuiz').onclick=()=>switchTo('quiz');
 try{current=localStorage.getItem('ivory.verbal.openTab.v1')||'reader'}catch(e){}
 switchTo(current==='quiz'?'quiz':'reader');
 })();
